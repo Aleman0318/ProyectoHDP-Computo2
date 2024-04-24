@@ -1,0 +1,73 @@
+/* _var-form.scss */
+
+$font-white: #f0f0f0;
+$font-black: #0f0f0f;
+
+$font-bold: 200;
+$font-size: 20px;
+$font-family: 'Roboto';
+
+$mar-form: 10px;
+
+$mar-form-t: 10px;
+$mar-form-b: 10px;
+$mar-form-r: 10px;
+$mar-form-l: 10px;
+
+$mar-form-x: 0px 10px;
+$mar-form-y: 10px 0px;
+
+$padd-form-t: 10px;
+$padd-form-b: 10px;
+$padd-form-r: 10px;
+$padd-form-l: 10px;
+
+$padd-form-x: 0px 10px;
+$padd-form-y: 10px 0px;
+
+$padd-form: 20px;
+$padd-input: 5px;
+
+$div-input-radius: 5px;
+$div-input-bg-color: #ddd;
+
+/* form.scss*/
+
+@use 'var-form';
+
+.form-space{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding: var-form.$padd-form;
+}
+
+.label-space{
+    padding: 0;
+    margin: 0;
+    font-weight: var-form.$font-bold;
+    font-size: var-form.$font-size;
+    font-family: var-form.$font-family;
+    margin-top: 30px;
+}
+
+.input-space-item{
+    padding: 0;
+    font-size: var-form.$font-size;
+    font-family: var-form.$font-family;
+    padding: var-form.$padd-input;
+    box-sizing: border-box;
+}
+
+.input-space-group{
+    background-color: var-form.$div-input-bg-color;
+    margin: var-form.$mar-form-y;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: var-form.$div-input-radius;
+    font-family: var-form.$font-family;
+    padding: var-form.$padd-form-x;
+}
+
+/* DISCLAIMER: Trabajo sin terminar, uso basico y sin pretenciones */
