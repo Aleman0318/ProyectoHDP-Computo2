@@ -20,10 +20,12 @@ $mar-form-l: 10px;
 $mar-form-x: 0px 10px;
 $mar-form-y: 10px 0px;
 
-$padd-form-t: 10px;
-$padd-form-b: 10px;
-$padd-form-r: 10px;
-$padd-form-l: 10px;
+$padd-0: 0px;
+
+$padd-10: 10px;
+$padd-20: 20px;
+$padd-30: 30px;
+$padd-40: 40px;
 
 $padd-form-x: 0px 10px;
 $padd-form-y: 10px 0px;
@@ -86,6 +88,8 @@ $size-width-25: 25%;
 
 .input-space-item{
     padding: 0;
+    width: var-form.$size-width-100;
+    height: auto;
     font-size: var-form.$font-size;
     font-family: var-form.$font-family;
     padding: var-form.$padd-input;
@@ -93,18 +97,22 @@ $size-width-25: 25%;
     border: none;
 }
 
+.input-space-item:focus{
+    border: 0px solid;
+}
+
 .input-space-group{
+    height: var-form.$em-2-5;
     background-color: var-form.$div-input-bg-color;
     margin: var-form.$mar-form-y;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    width: var-form.$size-width-100;
     gap: var-form.$gap-10;
-    padding: var-form.$padd-form-y;
+    padding-left: var-form.$padd-10;
+    padding-right: var-form.$padd-0;
     border-radius: var-form.$div-input-radius;
     font-family: var-form.$font-family;
-    padding: var-form.$padd-form-x;
     border: 2px rgba($color: var-form.$color-0C5E5E, $alpha: 0.5) solid;
 }
 
