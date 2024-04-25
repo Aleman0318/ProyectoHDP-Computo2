@@ -4,6 +4,8 @@
 $font-white: #f0f0f0;
 $font-black: #0f0f0f;
 
+$color-0C5E5E: #0c5e5e;
+
 $font-bold: 200;
 $font-size: 20px;
 $font-family: 'Roboto';
@@ -31,6 +33,9 @@ $padd-input: 5px;
 
 $div-input-radius: 5px;
 $div-input-bg-color: #ddd;
+
+$gap-10: 10px;
+$gap-20: 20px;
 
 $em-0-5: 0.5em;
 $em-1: 1em;
@@ -85,16 +90,22 @@ $size-width-25: 25%;
     font-family: var-form.$font-family;
     padding: var-form.$padd-input;
     box-sizing: border-box;
+    border: none;
 }
 
 .input-space-group{
     background-color: var-form.$div-input-bg-color;
     margin: var-form.$mar-form-y;
     box-sizing: border-box;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    width: var-form.$size-width-100;
+    gap: var-form.$gap-10;
+    padding: var-form.$padd-form-y;
     border-radius: var-form.$div-input-radius;
     font-family: var-form.$font-family;
     padding: var-form.$padd-form-x;
+    border: 2px rgba($color: var-form.$color-0C5E5E, $alpha: 0.5) solid;
 }
 
 .navbar-space{
