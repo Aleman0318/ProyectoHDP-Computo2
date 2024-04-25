@@ -1,2 +1,22 @@
 //prueba de funcionaliad de github
 //Smashing
+//todo el codigo aqui pegaado esta en scss
+.btnstyle-1{
+    display: flex;
+    border-width: 3px;
+    border-radius: 5px;
+    justify-content: center;//este elemento es solo por las pruebas que estaba haciendo yo, si quieren probar esta clase de ejemplo pueden eliminar esta 
+    align-items: center;   //variable para que no se les centre el elemento al que se la quieren poner.
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  
+    @media (max-width: 768px) {
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  
+
+    @media (max-width: 480px) {
+      box-shadow: none;
+    }
+}
+//la clase anterior es una clase de pruebas que estaba haciendo, pueden probarla en botones, aun no se implementan valores de margin y padding por que eso no se como hacerlo bien para cada caso de responsive design aun xd
