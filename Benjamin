@@ -25,5 +25,5 @@
       padding: 2px;
     }
 }
-//la clase anterior es una clase de pruebas que estaba haciendo, pueden probarla en botones, aun no se implementan valores de margin y padding por que eso no se como hacerlo bien para cada caso de responsive design aun xd
+//la clase anterior es una clase de pruebas que estaba haciendo, pueden probarla en botones, lleva algunos valores de margin y padding asi que wachen ahi si se usan esos o si se usan otros
 //tambien pueden probar la clase esta en un boton para que vean que va mas o menos parecida al dise'o de interestelar que mando aleman
