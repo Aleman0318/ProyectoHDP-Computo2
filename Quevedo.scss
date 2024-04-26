@@ -4,6 +4,8 @@
 $font-white: #f0f0f0;
 $font-black: #0f0f0f;
 
+$color-0C5E5E: #0c5e5e;
+
 $font-bold: 200;
 $font-size: 20px;
 $font-family: 'Roboto';
@@ -18,10 +20,12 @@ $mar-form-l: 10px;
 $mar-form-x: 0px 10px;
 $mar-form-y: 10px 0px;
 
-$padd-form-t: 10px;
-$padd-form-b: 10px;
-$padd-form-r: 10px;
-$padd-form-l: 10px;
+$padd-0: 0px;
+
+$padd-10: 10px;
+$padd-20: 20px;
+$padd-30: 30px;
+$padd-40: 40px;
 
 $padd-form-x: 0px 10px;
 $padd-form-y: 10px 0px;
@@ -31,6 +35,35 @@ $padd-input: 5px;
 
 $div-input-radius: 5px;
 $div-input-bg-color: #ddd;
+
+$gap-10: 10px;
+$gap-20: 20px;
+
+$em-0-5: 0.5em;
+$em-1: 1em;
+$em-1-5: 1.5em;
+$em-2: 2em;
+$em-2-5: 2.5em;
+$em-3: 3em;
+$em-3-5: 3.5em;
+$em-4: 4em;
+$em-4-5: 4.5em;
+$em-5: 5em;
+$em-5-5: 6.5em;
+$em-6: 6em;
+
+$navbar-em-dflt: $em-3;
+
+$size-width-100: 100%;
+$size-width-90: 90%;
+$size-width-80: 80%;
+$size-width-75: 75%;
+$size-width-70: 70%;
+$size-width-60: 60%;
+$size-width-50: 50%;
+$size-width-40: 40%;
+$size-width-30: 30%;
+$size-width-25: 25%;
 
 /* form.scss*/
 
@@ -55,20 +88,59 @@ $div-input-bg-color: #ddd;
 
 .input-space-item{
     padding: 0;
+    width: var-form.$size-width-100;
+    height: auto;
     font-size: var-form.$font-size;
     font-family: var-form.$font-family;
     padding: var-form.$padd-input;
     box-sizing: border-box;
+    border: none;
+}
+
+.input-space-item:focus{
+    border: 0px solid;
 }
 
 .input-space-group{
+    height: var-form.$em-2-5;
     background-color: var-form.$div-input-bg-color;
     margin: var-form.$mar-form-y;
     box-sizing: border-box;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: var-form.$gap-10;
+    padding-left: var-form.$padd-10;
+    padding-right: var-form.$padd-0;
     border-radius: var-form.$div-input-radius;
     font-family: var-form.$font-family;
-    padding: var-form.$padd-form-x;
+    border: 2px rgba($color: var-form.$color-0C5E5E, $alpha: 0.5) solid;
+}
+
+.navbar-space{
+    height: var-form.$navbar-em-dflt;
+    font-size: var-form.$font-size;
+    font-family: var-form.$font-family;
+    display: flex;
+    align-content: center;
+}
+
+.navbar-size-full{
+    width: var-form.$size-width-100;
+}
+
+.navbar-size-75{
+    width: var-form.$size-width-75;
+}
+
+.navbar-size-50{
+    width: var-form.$size-width-50;
+}
+
+.navbar-center-item{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /* DISCLAIMER: Trabajo sin terminar, uso basico y sin pretenciones */
