@@ -30,7 +30,7 @@ $padd-40: 40px;
 $padd-form-x: 0px 10px;
 $padd-form-y: 10px 0px;
 
-$padd-form: 20px;
+$padd-form: $padd-20;
 $padd-input: 5px;
 
 $div-input-radius: 5px;
@@ -73,7 +73,6 @@ $size-width-25: 25%;
     width: auto;
     height: auto;
     margin: 0;
-    padding: 0;
     padding: var-form.$padd-form;
 }
 
@@ -122,6 +121,19 @@ $size-width-25: 25%;
     font-family: var-form.$font-family;
     display: flex;
     align-content: center;
+    padding-left: var-form.$padd-20;
+    padding-right: var-form.$padd-20;
+    box-sizing: border-box;
+    gap: var-form.$gap-10;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-acces{
+    gap: var-form.$gap-10;
 }
 
 .navbar-size-full{
@@ -134,6 +146,10 @@ $size-width-25: 25%;
 
 .navbar-size-50{
     width: var-form.$size-width-50;
+}
+
+.gap-10{
+    gap: var-form.$gap-10;
 }
 
 .navbar-center-item{
