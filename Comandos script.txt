@@ -1,2 +1,0 @@
-Set-ExecutionPolicy RemoteSigned (quitar seguridad)
-Set-ExecutionPolicy Restricted (poner seguridad)
