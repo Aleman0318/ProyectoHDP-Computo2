@@ -3,10 +3,18 @@
 @use 'principal-colors';
 @use 'principal-fonts';
 @use 'principal-types-text';
+@use 'principal-Alignments';
+@use 'principal-containers';
+
+
+
+//Botones y sus animaciones
 
 *,
 *:before,
 *::after {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -15,7 +23,7 @@ html,
 body {
     width: botones.$btn_grande;
     height: botones.$btn_grande;
-    background-color: principal-colors.$dark-enfasis;
+
   font-size: principal-sizes.$txt-small;
   margin: botones.$Cero;
   padding: botones.$Cero;
@@ -48,6 +56,8 @@ body {
 }
 
 .btn {
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     display: block;
     height: botones.$heigth;
@@ -78,7 +88,7 @@ body {
 }
 .btn_1::before {
   width: 0;
-  background-color: principal-colors.$sunset-enfasis;
+  background-color: principal-colors.$beige-enfasis;
   height: botones.$btn_width;
 }
 .btn_1:hover {
@@ -88,39 +98,105 @@ body {
   width: botones.$btn_width;
 }
 .btn_2:hover {
-    color: principal-colors.$desert;
+    background-color: principal-colors.$orange;
      box-shadow: 0 0 10px principal-colors.$desert, 0 0 20px principal-colors.$desert, 0 0 20px principal-colors.$desert;
   color: principal-colors.$dark-enfasis;
 }
-.btn_3:hover {
-    animation: shadow-pulse 1000ms 1;
-    background-color: principal-colors.$orange;
-    color: principal-colors.$basic-enfasis;
-  }
 
-  .btn_4::before {
-    left: -500px;
-    right: 0;
-    width: 100%;
-    height: 150%;
-    transition: all 750ms ease;
-    transform: rotate(90deg);
-    box-shadow: 0 0 10px #20e2d7, 0 0 20px #07f4e8, 0 0 40px #08fff3;
-  }
-  .btn_4:hover::before {
-    left: 520px;
-  }
-  
+.btn_3{
+  border-radius: 6px;
+}
+.btn_3::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(90deg, rgb(156, 23, 174), rgb(15, 146, 163), rgb(232, 232, 15), rgb(255, 15, 15));
+  background-size: 300%;
+  border-radius: 5px;
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+
+.btn_3:hover::after{
+  background-position: 100%;
+  filter: blur(15px);
+}
+
+.btn_3::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(90deg, rgb(255, 30, 143), rgb(19, 227, 255), rgb(251, 255, 20), rgb(255, 15, 15));
+  background-size: 300%;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.btn_3:hover::before{
+  background-position: 100%;
+  color: principal-colors.$basic-enfasis;
+}
+
+
+.btn_4{
+  transition: all 0.6s ease;
+}
+
+.btn_4::after{
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 110%;
+  left: -10%;
+  top: 0;
+  transform: skew(20deg, 0deg);
+  background-color: #ffffff;
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+
+.btn_4::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: skew(20deg, 0deg);
+  border: 3px solid #03cc57;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.btn_4:hover::after{
+  background-color: #ffffff31;
+  transform: skew(20deg, 0deg) translateX(340px);
+}
+
+.btn_4:hover::before{
+  background-color: #03cc57;
+  border: 3px solid #029740;
+  transform: skew(20deg, 0deg) scale(1.1);
+}
+
 
 @keyframes shadow-pulse {
     0% {
-      box-shadow: 0 0 0 0 #e04a05;
+      box-shadow: 0 0 0 0 principal-colors.$orange;
     }
     100% {
       box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
     }
   }
   
+
+  //TAMAÑOS DE LOS BOTONES
 
 .btn_pequeño{
     width: botones.$btn_pequeño;
@@ -134,6 +210,7 @@ body {
     height: botones.$btn_heigth;
     font-family: principal-types-text.$text-dead;
     font-size: principal-sizes.$txt-smedium;
+    
 }
 
 .btn_grande{
@@ -141,4 +218,48 @@ body {
     height: botones.$heigth;
     font-family: principal-types-text.$text-dead;
     font-size: principal-sizes.$txt-medium;
+}
+
+
+// TARJETAS Y ANIMACIONES
+
+
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1120px) {
+:root {
+  --h2-font-size: 1.5rem;
+  --small-font-size: .875rem;
+}
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+.container-B{
+
+  display: grid;
+  row-gap: 3.5rem;
+
+}
+
+.container-C{
+  
+  height: principal-containers.$altura-C;
+  display: principal-containers.$display-C;
+  place-items: center;
+  padding-block: 5rem;
+  margin-inline: 1.5rem;
+}
+
+.card_art{
+  position: relative;
+}
+
+.card_img{
+  width: 328px;
+  border-radius: 1.5rem;
 }
