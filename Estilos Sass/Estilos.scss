@@ -1,33 +1,9 @@
-.btnstyle-1{
-    display: flex;
-    border-width: 3px;
-    border-radius: 5px;
-    margin: 20px;
-    padding: 10px;
-    justify-content: center;//este elemento es solo por las pruebas que estaba haciendo yo, si quieren probar esta clase de ejemplo pueden eliminar esta 
-    align-items: center;   //variable para que no se les centre el elemento al que se la quieren poner.
+@use 'shadows';
+@use 'border';
+@use 'padding';
+@use 'margin';
 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  
-    @media (max-width: 768px) {
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-      margin: 10px;
-      padding: 5px;
-    }
-  
-
-    @media (max-width: 480px) {
-      box-shadow: none;
-      margin: 0;
-      padding: 2px;
-    }
-}
-.navar{
-    display: flexbox;
-    justify-content: space-around;
-    text-align: end;
- 
+.shadow{
+  box-shadow: shadows.$box-shadow;
 }
 
-
-  
