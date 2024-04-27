@@ -1,0 +1,38 @@
+@use 'principal-colors';
+
+.badge-text-uno{
+    background-color: $light-enfasis;
+    color: $dark-enfasis;
+}
+.badge-text-dos{
+    background-color: $sunset-enfasis;
+    color: $deep-enfasis;
+}
+.badge-text-tres{
+    background-color: $sky-enfasis;
+    color: $mars-enfasis;
+}
+.badge-text-cuatro{
+    background-color: $basic-enfasis;
+    color: $dark-enfasis;
+}
+.badge-text-cinco{
+    background-color: $light-enfasis;
+    color:$gray-enfasis;
+}
+.btn-uno{ 
+    background-color: $deep-enfasis;
+    color: $light-enfasis
+}
+.badge-btn-text{
+    background-color:$gray-enfasis;
+    color: $beige-enfasis;
+}
+.btn-dos{
+    background-color: $sunset-enfasis;
+    color: $deep-enfasis;
+}
+.btn-tres{
+    background-color: $sky-enfasis;
+    color: $light-enfasis;
+}
