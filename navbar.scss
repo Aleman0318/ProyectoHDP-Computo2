@@ -1,0 +1,35 @@
+@use 'principal-fonts';
+@use 'principal-sizes';
+@use 'principal-colors';
+@use 'principal-types-text';
+
+.navbar-space{
+    height: 3em;
+    font-size: principal-sizes.$txt-medium;
+    display: flex;
+    align-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-acces{
+    gap: 10px;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+.navbar-center-item{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
