@@ -1,7 +1,8 @@
 @use 'botones';
 @use 'principal-sizes';
 @use 'principal-colors';
-
+@use 'principal-fonts';
+@use 'principal-types-text';
 
 *,
 *:before,
@@ -31,15 +32,19 @@ body {
   font-family: sans-serif}
 
 .centered-elements {
+    gap: botones.$btn_heigth;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: botones.$btn_width;
+  flex-wrap: wrap;
+
 }
 
 .content {
     background-color: principal-colors.$dark-enfasis;
+    
 }
 
 .btn {
@@ -57,8 +62,8 @@ body {
     z-index: 0;
     font-weight: botones.$font_wei_btn;
     text-transform: uppercase;
-
   cursor: pointer;
+
 }
 .btn::before {
   content: "";
@@ -68,12 +73,12 @@ body {
   right: botones.$Cero;
   top: botones.$Cero;
   margin: auto;
-  background-color: principal-colors.$sunset-enfasis;
   transition: all botones.$transicion ease;
   z-index: -1;
 }
 .btn_1::before {
   width: 0;
+  background-color: principal-colors.$sunset-enfasis;
   height: botones.$btn_width;
 }
 .btn_1:hover {
@@ -92,12 +97,48 @@ body {
     background-color: principal-colors.$orange;
     color: principal-colors.$basic-enfasis;
   }
+
+  .btn_4::before {
+    left: -500px;
+    right: 0;
+    width: 100%;
+    height: 150%;
+    transition: all 750ms ease;
+    transform: rotate(90deg);
+    box-shadow: 0 0 10px #20e2d7, 0 0 20px #07f4e8, 0 0 40px #08fff3;
+  }
+  .btn_4:hover::before {
+    left: 520px;
+  }
+  
+
 @keyframes shadow-pulse {
-  0% {
-    box-shadow: 0 0 0 0 #e86c33;
+    0% {
+      box-shadow: 0 0 0 0 #e04a05;
+    }
+    100% {
+      box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
+    }
   }
-  100% {
-    box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
-  }
+  
+
+.btn_pequeño{
+    width: botones.$btn_pequeño;
+    height: botones.$btn_heigth;
+    font-family: principal-types-text.$text-dead;
+    font-size: principal-sizes.$txt-small;
 }
 
+.btn_mediano{
+    width: botones.$btn_mediano; 
+    height: botones.$btn_heigth;
+    font-family: principal-types-text.$text-dead;
+    font-size: principal-sizes.$txt-smedium;
+}
+
+.btn_grande{
+    width: botones.$btn_grande;
+    height: botones.$heigth;
+    font-family: principal-types-text.$text-dead;
+    font-size: principal-sizes.$txt-medium;
+}
