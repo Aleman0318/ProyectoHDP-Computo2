@@ -2,6 +2,8 @@
 @use 'principal-colors';
 @use 'principal-types-text';
 @use 'principal-sizes';
+@use 'principal-containers';
+@use 'principal-Alignments';
 
 //tipografia
 
@@ -102,8 +104,9 @@
     background-color: principal-colors.$basic-enfasis;
 }
 
-.bkg-none{
-    background-color: principal-colors.$transparent-enfasis;
+.bkg-blur{
+    background-color: principal-colors.$blur-enfasis; 
+    backdrop-filter: blur(50px);
 }
 
 //tipos de texto
@@ -150,3 +153,85 @@
 .txt-bigger{
     font-size: principal-sizes.$txt-bigger;
 }
+
+//contenedores
+
+
+//contenedor 1 (Marte - Tierra)
+//****************************************************************
+.container-A {
+    height: principal-containers.$altura-partB;
+    display: principal-containers.$display-A;
+    grid-template-columns: principal-containers.$columns-A;
+    grid-template-rows: principal-containers.$rows-A;
+    grid-template-areas: principal-containers.$areas-A;
+    gap: principal-containers.$gap-A;
+}
+
+.Lado-Izquierdo {
+    grid-area: principal-containers.$parte-Izq;
+    justify-content: principal-Alignments.$items-center;; 
+    align-items: principal-Alignments.$items-center;
+    height: principal-containers.$altura-partA;
+    position: sticky; //pega el elemento en la posicion actual
+    top: 0; //desde que parte del borde se pegara el elemento 
+}
+
+.Lado-Derecho {
+    grid-area: principal-containers.$parte-Der;
+    justify-content:principal-Alignments.$items-center; // ajusta el contenido al centro horizontalmente
+    align-items: principal-Alignments.$items-center; // ajusta el contenido al centro verticalmente
+    text-align: principal-Alignments.$items-center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: principal-containers.$altura-partB;
+}
+
+//*****************************************************************
+
+//Contenedor B
+
+.container-B{
+    height: principal-containers.$altura-B;
+    display: principal-containers.$display-B;
+    width: principal-containers.$ancho-B;
+    flex-wrap: principal-containers.$flex-wrap-B;
+}
+
+
+//contenedor C
+
+.container-C{
+    height: principal-containers.$altura-C;
+    display: principal-containers.$display-C;
+    flex-wrap: principal-containers.$flex-wrap-C;
+    gap: principal-containers.$gap-C;
+}
+
+
+//alineaciones y movimientos en pantalla
+
+.item-center-y{
+    align-items: principal-Alignments.$items-center;
+}
+
+.item-center-x{
+    justify-content:principal-Alignments.$items-center;
+}
+
+.text-center{
+    text-align: principal-Alignments.$items-center;
+}
+
+.item-SpaceAround{
+    justify-content: principal-Alignments.$items-spaceAround;
+}
+
+.item-SpaceBetween{
+    justify-content: principal-Alignments.$items-spaceBetween;
+}
+
+.item-SpaceEvenly{
+    justify-content: principal-Alignments.$items-spaceEvenly;
+}
+
