@@ -53,6 +53,7 @@ body {
 }
 
 .btn {
+  font-family: principal-fonts.$deco-font;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -198,14 +199,14 @@ body {
 .btn_pequeño{
     width: botones.$btn_pequeño;
     height: botones.$btn_heigth;
-    font-family: principal-fonts.$deco-font;
+    font-family: principal-fonts.$pf-font;
     font-size: principal-sizes.$txt-small;
 }
 
 .btn_mediano{
     width: botones.$btn_mediano; 
     height: botones.$btn_heigth;
-    font-family: principal-fonts.$deco-font;
+    font-family: principal-fonts.$pf-font;
     font-size: principal-sizes.$txt-smedium;
     
 }
@@ -213,7 +214,7 @@ body {
 .btn_grande{
     width: botones.$btn_grande;
     height: botones.$heigth;
-    font-family: principal-fonts.$deco-font;
+    font-family: principal-fonts.$pf-font;
     font-size: principal-sizes.$txt-medium;
 }
 
@@ -226,6 +227,7 @@ body {
   border-radius: botones.$border_r_btn;
   border: 0px;
   background-color: principal-colors.$light-enfasis;
+  
 }
 
 .btn_home:hover{
@@ -283,8 +285,8 @@ body {
 
     text-decoration: none;
     font-family: principal-fonts.$title-font;
-    font-size: principal-sizes.$txt-xmedium;
-    font-weight: 500;
+    font-size: principal-sizes.$txt-medium;
+    font-weight: 400;
     color: tarjetas.$title-color;
     margin-bottom: .75rem;
   }
@@ -307,7 +309,7 @@ body {
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
     position: absolute;
-    bottom: -2rem;
+    bottom: -9rem;
     right: 0;
     left: 0;
     opacity: 0;
