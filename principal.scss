@@ -5,7 +5,7 @@
 @use 'principal-types-text';
 @use 'principal-Alignments';
 @use 'principal-containers';
-
+@use 'tarjetas';
 
 
 //Botones y sus animaciones
@@ -24,17 +24,14 @@ body {
     width: botones.$btn_grande;
     height: botones.$btn_grande;
 
-  font-size: principal-sizes.$txt-small;
-  margin: botones.$Cero;
-  padding: botones.$Cero;
-}
-
-html,
-body {
-  display: block;
+    font-size: principal-sizes.$txt-small;
+    margin: botones.$Cero;
+    padding: botones.$Cero;
+    display: block;
 }
 
 body {
+  background-color: principal-colors.$fondo;
   line-height: 1.317101995;
   scroll-behavior: smooth;
   font-family: sans-serif}
@@ -51,7 +48,7 @@ body {
 }
 
 .content {
-    background-color: principal-colors.$dark-enfasis;
+    background-color: principal-colors.$sky-enfasis;
     
 }
 
@@ -100,7 +97,7 @@ body {
 .btn_2:hover {
     background-color: principal-colors.$orange;
      box-shadow: 0 0 10px principal-colors.$desert, 0 0 20px principal-colors.$desert, 0 0 20px principal-colors.$desert;
-  color: principal-colors.$dark-enfasis;
+    color: principal-colors.$dark-enfasis;
 }
 
 .btn_3{
@@ -113,7 +110,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: linear-gradient(90deg, rgb(156, 23, 174), rgb(15, 146, 163), rgb(232, 232, 15), rgb(255, 15, 15));
+  background-image: linear-gradient(90deg, rgb(177, 160, 47), rgb(14, 114, 127), rgb(255, 0, 0), rgb(244, 211, 0));
   background-size: 300%;
   border-radius: 5px;
   z-index: -1;
@@ -132,7 +129,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: linear-gradient(90deg, rgb(255, 30, 143), rgb(19, 227, 255), rgb(251, 255, 20), rgb(255, 15, 15));
+  background-image: linear-gradient(90deg, rgb(110, 53, 118), rgb(128, 210, 221), rgb(255, 0, 0), rgb(244, 211, 0));
   background-size: 300%;
   border-radius: 5px;
   z-index: -1;
@@ -201,14 +198,14 @@ body {
 .btn_pequeño{
     width: botones.$btn_pequeño;
     height: botones.$btn_heigth;
-    font-family: principal-types-text.$text-dead;
+    font-family: principal-fonts.$deco-font;
     font-size: principal-sizes.$txt-small;
 }
 
 .btn_mediano{
     width: botones.$btn_mediano; 
     height: botones.$btn_heigth;
-    font-family: principal-types-text.$text-dead;
+    font-family: principal-fonts.$deco-font;
     font-size: principal-sizes.$txt-smedium;
     
 }
@@ -216,10 +213,31 @@ body {
 .btn_grande{
     width: botones.$btn_grande;
     height: botones.$heigth;
-    font-family: principal-types-text.$text-dead;
+    font-family: principal-fonts.$deco-font;
     font-size: principal-sizes.$txt-medium;
 }
 
+// BOTON HOME
+
+.btn_home{
+  color: principal-colors.$dark-enfasis;
+  width: botones.$Home;
+  height: botones.$mg_boton;
+  border-radius: botones.$border_r_btn;
+  border: 0px;
+  background-color: principal-colors.$light-enfasis;
+}
+
+.btn_home:hover{
+  border: botones.$Home_borde solid principal-colors.$dark-enfasis;
+  transition: all 0.1s ease;
+  
+}
+
+.btn_home:hover::after{
+  border: botones.$Home_borde solid principal-colors.$dark-enfasis;
+  transition: all 0.4s ease;
+}
 
 // TARJETAS Y ANIMACIONES
 
@@ -227,39 +245,165 @@ body {
 
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1120px) {
-:root {
-  --h2-font-size: 1.5rem;
-  --small-font-size: .875rem;
-}
-}
-
-img {
-display: block;
-max-width: 100%;
-height: auto;
-}
-
-.container-B{
-
-  display: grid;
-  row-gap: 3.5rem;
-
-}
-
-.container-C{
+  :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: .875rem;
+  }
+  }
   
-  height: principal-containers.$altura-C;
-  display: principal-containers.$display-C;
-  place-items: center;
-  padding-block: 5rem;
-  margin-inline: 1.5rem;
-}
+  img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  }
+  
+  .card_container{
+    
+    box-sizing: 228px;
+    display: grid;
+    row-gap: 3.5rem;
+  
+  }
+  
+  .container{
+    display: grid;
+    place-items: center;
+    padding-block: 5rem;
+    margin-inline: 1.5rem;
+  }
+  
+  .card_descripcion{
+    font-family: principal-fonts.$pf-font;
+    display: block;
+    font-size: principal-sizes.$txt-small;
+    margin-bottom: .25rem;
+  }
 
-.card_art{
-  position: relative;
-}
+  .card_titulo{
 
-.card_img{
-  width: 328px;
-  border-radius: 1.5rem;
-}
+    text-decoration: none;
+    font-family: principal-fonts.$title-font;
+    font-size: principal-sizes.$txt-xmedium;
+    font-weight: 500;
+    color: tarjetas.$title-color;
+    margin-bottom: .75rem;
+  }
+
+  .card_artc{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card_img{
+    width: 328px;
+    border-radius: 1.5rem;
+
+  }
+
+  .card_inf{
+    width: 280px;
+    background-color: tarjetas.$container-color;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    margin-inline: auto;
+    transition: opacity 1s 1s;
+
+  }
+
+  .card_artc:hover .card_inf{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+
+  .card_artc:hover {
+    animation: remove-overflow 2s forwards;
+  }
+  
+  .card_artc:not(:hover) {
+    animation: show-overflow 2s forwards;
+  }
+  
+  .card_artc:not(:hover) .card_inf {
+    animation: remove-data 1s forwards;
+  }
+  
+  @keyframes show-data {
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(-7rem);
+    }
+  }
+
+  @keyframes remove-overflow {
+    to {
+      overflow: initial;
+    }
+  }
+  
+  @keyframes remove-data {
+    0% {
+      transform: translateY(-7rem);
+    }
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(.5rem);
+    }
+  }
+  
+  @keyframes show-overflow {
+    0% {
+      overflow: initial;
+      pointer-events: none;
+    }
+    50% {
+      overflow: hidden;
+    }
+  }
+
+  @media screen and (max-width: 340px) {
+    .container {
+      margin-inline: 1rem;
+    }
+  
+    .card_inf {
+      width: 250px;
+      padding: 1rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (min-width: 768px) {
+    .card_container {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1.5rem;
+    }
+  }
+  
+  /* For large devices */
+  @media screen and (min-width: 1120px) {
+    .container {
+      height: 100vh;
+    }
+  
+    .card_container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .card_img {
+      width: 348px;
+    }
+    .card_inf {
+      width: 316px;
+      padding-inline: 2.5rem;
+    }
+  }

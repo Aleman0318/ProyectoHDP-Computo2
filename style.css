@@ -34,14 +34,11 @@ body {
   font-size: 10px;
   margin: 0;
   padding: 0;
-}
-
-html,
-body {
   display: block;
 }
 
 body {
+  background-color: #9d70a0;
   line-height: 1.317101995;
   scroll-behavior: smooth;
   font-family: sans-serif;
@@ -58,7 +55,7 @@ body {
 }
 
 .content {
-  background-color: #222236;
+  background-color: #556b76;
 }
 
 .btn {
@@ -124,7 +121,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: linear-gradient(90deg, rgb(156, 23, 174), rgb(15, 146, 163), rgb(232, 232, 15), rgb(255, 15, 15));
+  background-image: linear-gradient(90deg, rgb(177, 160, 47), rgb(14, 114, 127), rgb(255, 0, 0), rgb(244, 211, 0));
   background-size: 300%;
   border-radius: 5px;
   z-index: -1;
@@ -143,7 +140,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: linear-gradient(90deg, rgb(255, 30, 143), rgb(19, 227, 255), rgb(251, 255, 20), rgb(255, 15, 15));
+  background-image: linear-gradient(90deg, rgb(110, 53, 118), rgb(128, 210, 221), rgb(255, 0, 0), rgb(244, 211, 0));
   background-size: 300%;
   border-radius: 5px;
   z-index: -1;
@@ -206,22 +203,41 @@ body {
 .btn_pequeño {
   width: 70px;
   height: 30px;
-  font-family: line-through;
+  font-family: deco;
   font-size: 10px;
 }
 
 .btn_mediano {
   width: 110px;
   height: 30px;
-  font-family: line-through;
+  font-family: deco;
   font-size: 15px;
 }
 
 .btn_grande {
   width: 100%;
   height: 60px;
-  font-family: line-through;
+  font-family: deco;
   font-size: 35px;
+}
+
+.btn_home {
+  color: #222236;
+  width: 90px;
+  height: 40px;
+  border-radius: 15px;
+  border: 0px;
+  background-color: #e6f6f6;
+}
+
+.btn_home:hover {
+  border: 3px solid #222236;
+  transition: all 0.1s ease;
+}
+
+.btn_home:hover::after {
+  border: 3px solid #222236;
+  transition: all 0.4s ease;
 }
 
 /*========== Responsive typography ==========*/
@@ -237,26 +253,142 @@ img {
   height: auto;
 }
 
-.container-B {
+.card_container {
+  box-sizing: 228px;
   display: grid;
   row-gap: 3.5rem;
 }
 
-.container-C {
-  height: auto;
-  display: flex;
+.container {
+  display: grid;
   place-items: center;
   padding-block: 5rem;
   margin-inline: 1.5rem;
 }
 
-.card_art {
+.card_descripcion {
+  font-family: parrafos;
+  display: block;
+  font-size: 10px;
+  margin-bottom: 0.25rem;
+}
+
+.card_titulo {
+  text-decoration: none;
+  font-family: titulos;
+  font-size: 20px;
+  font-weight: 500;
+  color: hsl(0, 0%, 15%);
+  margin-bottom: 0.75rem;
+}
+
+.card_artc {
   position: relative;
+  overflow: hidden;
 }
 
 .card_img {
   width: 328px;
   border-radius: 1.5rem;
+}
+
+.card_inf {
+  width: 280px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  margin-inline: auto;
+  transition: opacity 1s 1s;
+}
+
+.card_artc:hover .card_inf {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card_artc:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card_artc:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card_artc:not(:hover) .card_inf {
+  animation: remove-data 1s forwards;
+}
+
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .card_inf {
+    width: 250px;
+    padding: 1rem;
+  }
+}
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card_container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .container {
+    height: 100vh;
+  }
+  .card_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card_img {
+    width: 348px;
+  }
+  .card_inf {
+    width: 316px;
+    padding-inline: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
