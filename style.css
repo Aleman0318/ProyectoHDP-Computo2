@@ -1,0 +1,105 @@
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #222236;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  display: block;
+}
+
+body {
+  line-height: 1.317101995;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+.centered-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 300px;
+}
+
+.content {
+  background-color: #222236;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 300px;
+  color: #294457;
+  font-size: 15px;
+  overflow: hidden;
+  transition: all 500ms ease;
+  border: 2px solid #222236;
+  border-radius: 2px;
+  margin-bottom: 40px;
+  z-index: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  background-color: #c8a48c;
+  transition: all 500ms ease;
+  z-index: -1;
+}
+
+.btn_1::before {
+  width: 0;
+  height: 300px;
+}
+
+.btn_1:hover {
+  color: #ffffff;
+}
+
+.btn_1:hover::before {
+  width: 300px;
+}
+
+.btn_2:hover {
+  color: #d6b407;
+  box-shadow: 0 0 10px #d6b407, 0 0 20px #d6b407, 0 0 20px #d6b407;
+  color: #222236;
+}
+
+.btn_3:hover {
+  animation: shadow-pulse 1000ms 1;
+  background-color: #e86c33;
+  color: #ffffff;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #e86c33;
+  }
+  100% {
+    box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

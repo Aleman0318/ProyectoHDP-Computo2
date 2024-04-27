@@ -1,0 +1,103 @@
+@use 'botones';
+@use 'principal-sizes';
+@use 'principal-colors';
+
+
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: botones.$btn_grande;
+    height: botones.$btn_grande;
+    background-color: principal-colors.$dark-enfasis;
+  font-size: principal-sizes.$txt-small;
+  margin: botones.$Cero;
+  padding: botones.$Cero;
+}
+
+html,
+body {
+  display: block;
+}
+
+body {
+  line-height: 1.317101995;
+  scroll-behavior: smooth;
+  font-family: sans-serif}
+
+.centered-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: botones.$btn_width;
+}
+
+.content {
+    background-color: principal-colors.$dark-enfasis;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    height: botones.$heigth;
+    width: botones.$btn_width;
+    color: principal-colors.$deep-enfasis;
+    font-size: principal-sizes.$txt-smedium;
+    overflow: hidden;
+    transition: all botones.$transicion ease;
+    border: botones.$border_btn solid principal-colors.$dark-enfasis;
+    border-radius: botones.$border_btn;
+    margin-bottom: botones.$mg_boton;
+    z-index: 0;
+    font-weight: botones.$font_wei_btn;
+    text-transform: uppercase;
+
+  cursor: pointer;
+}
+.btn::before {
+  content: "";
+  content:'';
+  position: absolute;
+  left: botones.$Cero;
+  right: botones.$Cero;
+  top: botones.$Cero;
+  margin: auto;
+  background-color: principal-colors.$sunset-enfasis;
+  transition: all botones.$transicion ease;
+  z-index: -1;
+}
+.btn_1::before {
+  width: 0;
+  height: botones.$btn_width;
+}
+.btn_1:hover {
+  color: principal-colors.$basic-enfasis;
+}
+.btn_1:hover::before {
+  width: botones.$btn_width;
+}
+.btn_2:hover {
+    color: principal-colors.$desert;
+     box-shadow: 0 0 10px principal-colors.$desert, 0 0 20px principal-colors.$desert, 0 0 20px principal-colors.$desert;
+  color: principal-colors.$dark-enfasis;
+}
+.btn_3:hover {
+    animation: shadow-pulse 1000ms 1;
+    background-color: principal-colors.$orange;
+    color: principal-colors.$basic-enfasis;
+  }
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #e86c33;
+  }
+  100% {
+    box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
+  }
+}
+
