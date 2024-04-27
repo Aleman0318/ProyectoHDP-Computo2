@@ -223,6 +223,18 @@
     text-align: principal-Alignments.$items-center;
 }
 
+.text-justify{
+    text-align: principal-Alignments.$items-justify;
+}
+
+.text-right{
+    text-align: principal-Alignments.$items-rigth;
+}
+
+.text-left{
+    text-align: principal-Alignments.$items-left;
+}
+
 .item-SpaceAround{
     justify-content: principal-Alignments.$items-spaceAround;
 }
@@ -234,4 +246,6 @@
 .item-SpaceEvenly{
     justify-content: principal-Alignments.$items-spaceEvenly;
 }
+
+
 

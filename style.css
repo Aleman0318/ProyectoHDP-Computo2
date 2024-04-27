@@ -209,6 +209,18 @@
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .item-SpaceAround {
   justify-content: space-around;
 }
