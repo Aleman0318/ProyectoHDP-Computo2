@@ -1,0 +1,151 @@
+@use 'principal-colors.scss';
+@use 'padding.scss';
+@use 'botones.scss';
+@use 'principal-alineamientos.scss';
+@use 'principal-fonts.scss';
+@use 'principal-sizes.scss';
+@use 'principal-Alignments.scss';
+@use 'principal-types-text.scss';
+
+.badge-text-uno{
+    background-color: principal-colors.$light-enfasis;
+    color: principal-colors.$dark-enfasis;
+    padding: padding.$padding;
+}
+.badge-text-dos{
+    background-color: principal-colors.$sunset-enfasis;
+    color: principal-colors.$deep-enfasis;
+    padding: padding.$padding;
+}
+.badge-text-tres{
+    background-color: principal-colors.$sky-enfasis;
+    color: principal-colors.$mars-enfasis;
+    padding: padding.$padding;
+}
+.badge-text-cuatro{
+    background-color: principal-colors.$basic-enfasis;
+    color: principal-colors.$dark-enfasis;
+    padding: padding.$padding;
+}
+.badge-text-cinco{
+    background-color: principal-colors.$light-enfasis;
+    color: principal-colors.$gray-enfasis;
+    padding: padding.$padding;
+}
+.btn-uno{ 
+    width: botones.$btn_mediano;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: padding.$padding;
+
+}
+.badge-btn-text{
+    width: botones.$btn_mediano;
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$beige-enfasis;
+    padding: padding.$padding;
+}
+.btn-dos{
+    width: botones.$btn_mediano;
+    background-color: principal-colors.$sunset-enfasis;
+    color: principal-colors.$deep-enfasis;
+    padding: padding.$padding;
+}
+
+.btn-tres{
+    width: botones.$btn_mediano;
+    background-color: principal-colors.$sky-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: padding.$padding;
+}
+.order-badges{
+    position: principal-alineamientos.$position-bd;
+    transform: principal-alineamientos.$transform-bd;
+    border-radius: 10%;
+    font-family: principal-fonts.$title-font;
+    font-weight: principal-types-text.$text-bold;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: principal-sizes.$txt-small;
+}  
+.badge-text-primary{
+
+    border-radius: 5%;
+    background-color: principal-colors.$sky-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-text-secondary{
+    border-radius: 5%;
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-text-success{
+    border-radius: 5%;
+    background-color: principal-colors.$dark-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-text-danger{
+    border-radius: 5%;
+    background-color: principal-colors.$mars-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-text-warning{
+    border-radius: 5%;
+    background-color: principal-colors.$sunset-enfasis;
+    color: principal-colors.$dark-enfasis;
+}
+.badge-text-info{
+    border-radius: 5%;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-text-ligth{
+    border-radius: 5%;
+    background-color: principal-colors.$light-enfasis;
+    color: principal-colors.$dark-enfasis;
+}
+.badge-text-dark{
+    border-radius: 5%;
+    background-color: principal-colors.$dark-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-rounded-text-primary{
+    border-radius: 15%;
+    background-color: principal-colors.$sky-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-rounded-text-secondary{
+    border-radius: 15%;
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-rounded-text-success{
+    border-radius: 15%;
+    background-color: principal-colors.$dark-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-rounded-text-danger{
+    border-radius: 15%;
+    background-color: principal-colors.$mars-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-rounded-text-warning{
+    border-radius: 15%;
+    background-color: principal-colors.$sunset-enfasis;
+    color: principal-colors.$dark-enfasis;
+}
+.badge-rounded-text-info{
+    border-radius: 15%;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-rounded-text-ligth{
+    border-radius: 15%;
+    background-color: principal-colors.$light-enfasis;
+    color: principal-colors.$dark-enfasis;
+}
+.badge-rounded-text-dark{
+    border-radius: 15%;
+    background-color: principal-colors.$dark-enfasis;
+    color: principal-colors.$light-enfasis;
+}
