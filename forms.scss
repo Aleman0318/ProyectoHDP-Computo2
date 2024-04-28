@@ -17,16 +17,23 @@
     margin-top: 30px;
 }
 
+.input-text{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .input-space-item{
-    padding: 0;
+    color: principal-colors.$dark-enfasis;
+    padding: 10px;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 5pxt;
     box-sizing: border-box;
     border: none;
 }
 
 .input-space-group{
+    color: principal-colors.$basic-enfasis;
     font-size: principal-sizes.$txt-xmedium;
     height: 2.5em;
     background-color: principal-colors.$sky-enfasis;
@@ -34,9 +41,6 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding-left: 10px;
-    padding-right: 0px;
     border-radius: 5px;
     border: 2px rgba($color: principal-colors.$deep-enfasis, $alpha: 0.5) solid;
 }
