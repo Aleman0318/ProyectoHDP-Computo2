@@ -1,0 +1,138 @@
+@use 'principal-colors.scss';
+@use 'padding.scss';
+@use 'botones.scss';
+@use 'principal-alineamientos.scss';
+@use 'principal-fonts.scss';
+@use 'principal-sizes.scss';
+@use 'principal-Alignments.scss';
+@use 'principal-types-text.scss';
+
+.alert-primary{
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2% solid principal-colors.$sky-enfasis;
+}
+.alert-secondary{
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2% solid principal-colors.$light-enfasis;
+}
+.alert-success{
+    background-color: principal-colors.$basic-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2% solid principal-colors.$sky-enfasis;
+}
+.alert-danger{
+    background-color: principal-colors.$mars-enfasis;
+    color: principal-colors.$beige-enfasis;
+    border: 2% solid principal-colors.$baige-enfasis;
+}
+.alert-warning{
+    background-color: principal-colors.$beige-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2% solid principal-colors.$light-enfasis;
+}
+.alert-info{
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2% solid principal-colors.$sky-enfasis;
+}
+.alert-light{
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2% solid principal-colors.$light-enfasis;
+}
+.alert-dark{
+    background-color: principal-colors.$dark-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2% solid principal-colors.$gray-enfasis;
+}
+
+
+.alert--primary{
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2% solid principal-colors.$sky-enfasis;
+}
+.alert--secondary{
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2% solid principal-colors.$light-enfasis;
+}
+.alert--success{
+    background-color: principal-colors.$basic-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2% solid principal-colors.$sky-enfasis;
+}
+.alert--danger{
+    background-color: principal-colors.$mars-enfasis;
+    color: principal-colors.$beige-enfasis;
+    border: 2% solid principal-colors.$baige-enfasis;
+}
+.alert--warning{
+    background-color: principal-colors.$beige-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2% solid principal-colors.$light-enfasis;
+}
+.alert--info{
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2% solid principal-colors.$sky-enfasis;
+}
+.alert--light{
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2% solid principal-colors.$light-enfasis;
+}
+.alert--dark{
+    background-color: principal-colors.$dark-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2% solid principal-colors.$gray-enfasis;
+}
+.alert-success{
+   display: flex;
+   align-items: flex-start;
+}
+.bi-exclamation-triangle{
+    height: 60px;
+}
+.alert-primary-b{
+    display: flex;
+    align-items: flex-start;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2% solid principal-colors.$sky-enfasis;
+}
+.alert-success-b{
+    display: flex;
+    align-items: flex-start;
+    background-color: principal-colors.$basic-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2% solid principal-colors.$sky-enfasis;
+}
+.alert-warning-b{
+    display: flex;
+    align-items: flex-start;
+    background-color: principal-colors.$beige-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2% solid principal-colors.$light-enfasis;
+}
+.alert-danger-b{
+    display: flex;
+    align-items: flex-start;
+    background-color: principal-colors.$mars-enfasis;
+    color: principal-colors.$beige-enfasis;
+    border: 2% solid principal-colors.$baige-enfasis;
+}
+.imge1{
+    height: 60px;
+}
+.imge2{
+    height: 60px;
+}
+.imge3{
+    height: 60px;
+}
+.imge4{
+    height: 60px;
+}
