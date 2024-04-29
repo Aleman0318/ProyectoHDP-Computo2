@@ -20,27 +20,28 @@
 .input-text{
     padding-left: 10px;
     padding-right: 10px;
+    height: auto;
 }
 
 .input-space-item{
     color: principal-colors.$dark-enfasis;
     padding: 10px;
     width: 100%;
-    height: 100%;
-    padding: 5pxt;
+    height: 3em;
+    padding: 5px 10px;
     box-sizing: border-box;
-    border: none;
+    border: 2px rgba($color: principal-colors.$deep-enfasis, $alpha: 0.5) solid;;
 }
 
 .input-space-group{
+    padding: 0px;
     color: principal-colors.$basic-enfasis;
-    font-size: principal-sizes.$txt-xmedium;
     height: 2.5em;
     background-color: principal-colors.$sky-enfasis;
     margin: 10px 0px 10px 0px;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
     border-radius: 5px;
     border: 2px rgba($color: principal-colors.$deep-enfasis, $alpha: 0.5) solid;
 }
