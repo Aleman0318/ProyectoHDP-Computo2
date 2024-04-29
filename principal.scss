@@ -23,21 +23,15 @@ html,
 body {
     width: botones.$btn_grande;
     height: botones.$btn_grande;
-
     font-size: principal-sizes.$txt-small;
     margin: botones.$Cero;
     padding: botones.$Cero;
     display: block;
+    line-height: 1.317101995;
+    scroll-behavior: smooth;
 }
 
-body {
-  background-color: principal-colors.$fondo;
-  line-height: 1.317101995;
-  scroll-behavior: smooth;
-  font-family: sans-serif}
-
 .centered-elements {
-    gap: botones.$btn_heigth;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,35 +41,28 @@ body {
 
 }
 
-.content {
-    background-color: principal-colors.$sky-enfasis;
-    
-}
+
 
 .btn {
-  font-family: principal-fonts.$deco-font;
+    font-family: principal-fonts.$cmp-font;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     display: block;
     height: botones.$heigth;
     width: botones.$btn_width;
-    color: principal-colors.$deep-enfasis;
-    font-size: principal-sizes.$txt-smedium;
+    color: principal-colors.$dark-enfasis;
     overflow: hidden;
     transition: all botones.$transicion ease;
     border: botones.$border_btn solid principal-colors.$dark-enfasis;
-    border-radius: botones.$border_btn;
-    margin-bottom: botones.$mg_boton;
+    border-radius: botones.$border_r_btn;
     z-index: 0;
     font-weight: botones.$font_wei_btn;
     text-transform: uppercase;
-  cursor: pointer;
-
+    cursor:pointer;
 }
 .btn::before {
   content: "";
-  content:'';
   position: absolute;
   left: botones.$Cero;
   right: botones.$Cero;
@@ -97,13 +84,10 @@ body {
 }
 .btn_2:hover {
     background-color: principal-colors.$orange;
-     box-shadow: 0 0 10px principal-colors.$desert, 0 0 20px principal-colors.$desert, 0 0 20px principal-colors.$desert;
-    color: principal-colors.$dark-enfasis;
+     box-shadow: 0 0 25px principal-colors.$desert, 0 0 25px principal-colors.$desert, 0 0 25px principal-colors.$desert;
 }
 
-.btn_3{
-  border-radius: 6px;
-}
+
 .btn_3::after{
   content: "";
   position: absolute;
@@ -111,16 +95,20 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: linear-gradient(90deg, rgb(177, 160, 47), rgb(14, 114, 127), rgb(255, 0, 0), rgb(244, 211, 0));
+  background-image: linear-gradient(90deg, rgb(197, 86, 222), rgb(86, 4, 145), rgb(255, 0, 0), rgb(255, 218, 9));
   background-size: 300%;
-  border-radius: 5px;
   z-index: -1;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 
 .btn_3:hover::after{
   background-position: 100%;
+  
   filter: blur(15px);
+}
+
+.btn_3:hover{
+  color: principal-colors.$basic-enfasis;
 }
 
 .btn_3::before{
@@ -130,20 +118,13 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: linear-gradient(90deg, rgb(110, 53, 118), rgb(128, 210, 221), rgb(255, 0, 0), rgb(244, 211, 0));
   background-size: 300%;
-  border-radius: 5px;
+  background-image: linear-gradient(90deg, rgb(197, 86, 222), rgb(86, 4, 145), rgb(255, 0, 0), rgb(255, 218, 9));
   z-index: -1;
 }
 
 .btn_3:hover::before{
   background-position: 100%;
-  color: principal-colors.$basic-enfasis;
-}
-
-
-.btn_4{
-  transition: all 0.6s ease;
 }
 
 .btn_4::after{
@@ -151,12 +132,12 @@ body {
   position: absolute;
   width: 10%;
   height: 110%;
-  left: -10%;
+  left: -12%;
   top: 0;
   transform: skew(20deg, 0deg);
-  background-color: #ffffff;
+  background-color: principal-colors.$sunset-enfasis;
   z-index: -1;
-  transition: all 0.4s ease;
+  transition: all .1s ease;
 }
 
 .btn_4::before{
@@ -167,19 +148,17 @@ body {
   left: 0;
   top: 0;
   transform: skew(20deg, 0deg);
-  border: 3px solid #03cc57;
-  transition: all 0.4s ease;
+  transition: all .5s ease;
   z-index: -1;
 }
 
 .btn_4:hover::after{
-  background-color: #ffffff31;
+  background-color: #865d5d;
   transform: skew(20deg, 0deg) translateX(340px);
 }
 
 .btn_4:hover::before{
-  background-color: #03cc57;
-  border: 3px solid #029740;
+  background-color: principal-colors.$sunset-enfasis;
   transform: skew(20deg, 0deg) scale(1.1);
 }
 
@@ -199,24 +178,23 @@ body {
 .btn_pequeño{
     width: botones.$btn_pequeño;
     height: botones.$btn_heigth;
-    font-family: principal-fonts.$pf-font;
     font-size: principal-sizes.$txt-small;
 }
 
 .btn_mediano{
     width: botones.$btn_mediano; 
     height: botones.$btn_heigth;
-    font-family: principal-fonts.$pf-font;
     font-size: principal-sizes.$txt-smedium;
+    
     
 }
 
 .btn_grande{
     width: botones.$btn_grande;
     height: botones.$heigth;
-    font-family: principal-fonts.$pf-font;
     font-size: principal-sizes.$txt-medium;
 }
+
 
 // BOTON HOME
 
@@ -224,7 +202,6 @@ body {
   color: principal-colors.$dark-enfasis;
   width: botones.$Home;
   height: botones.$mg_boton;
-  border-radius: botones.$border_r_btn;
   border: 0px;
   background-color: principal-colors.$light-enfasis;
   
@@ -236,16 +213,9 @@ body {
   
 }
 
-.btn_home:hover::after{
-  border: botones.$Home_borde solid principal-colors.$dark-enfasis;
-  transition: all 0.4s ease;
-}
-
 // TARJETAS Y ANIMACIONES
 
 
-
-/*========== Responsive typography ==========*/
 @media screen and (min-width: 1120px) {
   :root {
     --h2-font-size: 1.5rem;
@@ -260,14 +230,13 @@ body {
   }
   
   .card_container{
-    
     box-sizing: 228px;
     display: grid;
     row-gap: 3.5rem;
   
   }
   
-  .container{
+  .container-C{
     display: grid;
     place-items: center;
     padding-block: 5rem;
@@ -282,13 +251,11 @@ body {
   }
 
   .card_titulo{
-
     text-decoration: none;
     font-family: principal-fonts.$title-font;
-    font-size: principal-sizes.$txt-medium;
-    font-weight: 400;
+    font-size: principal-sizes.$txt-xmedium;
     color: tarjetas.$title-color;
-    margin-bottom: .75rem;
+    margin-bottom: 10px;
   }
 
   .card_artc{
@@ -298,7 +265,7 @@ body {
   
   .card_img{
     width: 328px;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
 
   }
 
@@ -306,16 +273,15 @@ body {
     width: 280px;
     background-color: tarjetas.$container-color;
     padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-    border-radius: 1rem;
+    box-shadow: 0 10px 22px hsla(0, 0%, 0%, .15);
+    border-radius: 2rem;
     position: absolute;
     bottom: -9rem;
     right: 0;
     left: 0;
     opacity: 0;
     margin-inline: auto;
-    transition: opacity 1s 1s;
-
+    transition: opacity 1s .6s;
   }
 
   .card_artc:hover .card_inf{
@@ -384,7 +350,6 @@ body {
     }
   }
   
-  /* For medium devices */
   @media screen and (min-width: 768px) {
     .card_container {
       grid-template-columns: repeat(2, 1fr);
@@ -392,7 +357,6 @@ body {
     }
   }
   
-  /* For large devices */
   @media screen and (min-width: 1120px) {
     .container {
       height: 100vh;

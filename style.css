@@ -35,17 +35,11 @@ body {
   margin: 0;
   padding: 0;
   display: block;
-}
-
-body {
-  background-color: #9d70a0;
   line-height: 1.317101995;
   scroll-behavior: smooth;
-  font-family: sans-serif;
 }
 
 .centered-elements {
-  gap: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,25 +48,19 @@ body {
   flex-wrap: wrap;
 }
 
-.content {
-  background-color: #556b76;
-}
-
 .btn {
-  font-family: deco;
+  font-family: componentes;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   display: block;
   height: 60px;
   width: 300px;
-  color: #294457;
-  font-size: 15px;
+  color: #222236;
   overflow: hidden;
-  transition: all 500ms ease;
+  transition: all 0.3s ease;
   border: 2px solid #222236;
-  border-radius: 2px;
-  margin-bottom: 40px;
+  border-radius: 15px;
   z-index: 0;
   font-weight: 700;
   text-transform: uppercase;
@@ -81,13 +69,12 @@ body {
 
 .btn::before {
   content: "";
-  content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   margin: auto;
-  transition: all 500ms ease;
+  transition: all 0.3s ease;
   z-index: -1;
 }
 
@@ -106,13 +93,8 @@ body {
 }
 
 .btn_2:hover {
-  background-color: #f76e2e;
-  box-shadow: 0 0 10px #ddc755, 0 0 20px #ddc755, 0 0 20px #ddc755;
-  color: #222236;
-}
-
-.btn_3 {
-  border-radius: 6px;
+  background-color: #fc7209;
+  box-shadow: 0 0 25px #ffe359, 0 0 25px #ffe359, 0 0 25px #ffe359;
 }
 
 .btn_3::after {
@@ -122,16 +104,19 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: linear-gradient(90deg, rgb(177, 160, 47), rgb(14, 114, 127), rgb(255, 0, 0), rgb(244, 211, 0));
+  background-image: linear-gradient(90deg, rgb(197, 86, 222), rgb(86, 4, 145), rgb(255, 0, 0), rgb(255, 218, 9));
   background-size: 300%;
-  border-radius: 5px;
   z-index: -1;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 
 .btn_3:hover::after {
   background-position: 100%;
   filter: blur(15px);
+}
+
+.btn_3:hover {
+  color: #ffffff;
 }
 
 .btn_3::before {
@@ -141,19 +126,13 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: linear-gradient(90deg, rgb(110, 53, 118), rgb(128, 210, 221), rgb(255, 0, 0), rgb(244, 211, 0));
   background-size: 300%;
-  border-radius: 5px;
+  background-image: linear-gradient(90deg, rgb(197, 86, 222), rgb(86, 4, 145), rgb(255, 0, 0), rgb(255, 218, 9));
   z-index: -1;
 }
 
 .btn_3:hover::before {
   background-position: 100%;
-  color: #ffffff;
-}
-
-.btn_4 {
-  transition: all 0.6s ease;
 }
 
 .btn_4::after {
@@ -161,12 +140,12 @@ body {
   position: absolute;
   width: 10%;
   height: 110%;
-  left: -10%;
+  left: -12%;
   top: 0;
   transform: skew(20deg, 0deg);
-  background-color: #ffffff;
+  background-color: #c8a48c;
   z-index: -1;
-  transition: all 0.4s ease;
+  transition: all 0.1s ease;
 }
 
 .btn_4::before {
@@ -177,25 +156,23 @@ body {
   left: 0;
   top: 0;
   transform: skew(20deg, 0deg);
-  border: 3px solid #03cc57;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
   z-index: -1;
 }
 
 .btn_4:hover::after {
-  background-color: rgba(255, 255, 255, 0.1921568627);
+  background-color: #865d5d;
   transform: skew(20deg, 0deg) translateX(340px);
 }
 
 .btn_4:hover::before {
-  background-color: #03cc57;
-  border: 3px solid #029740;
+  background-color: #c8a48c;
   transform: skew(20deg, 0deg) scale(1.1);
 }
 
 @keyframes shadow-pulse {
   0% {
-    box-shadow: 0 0 0 0 #f76e2e;
+    box-shadow: 0 0 0 0 #fc7209;
   }
   100% {
     box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
@@ -204,21 +181,18 @@ body {
 .btn_pequeño {
   width: 70px;
   height: 30px;
-  font-family: parrafos;
   font-size: 10px;
 }
 
 .btn_mediano {
   width: 110px;
   height: 30px;
-  font-family: parrafos;
   font-size: 15px;
 }
 
 .btn_grande {
   width: 100%;
   height: 60px;
-  font-family: parrafos;
   font-size: 35px;
 }
 
@@ -226,7 +200,6 @@ body {
   color: #222236;
   width: 90px;
   height: 40px;
-  border-radius: 15px;
   border: 0px;
   background-color: #e6f6f6;
 }
@@ -236,12 +209,6 @@ body {
   transition: all 0.1s ease;
 }
 
-.btn_home:hover::after {
-  border: 3px solid #222236;
-  transition: all 0.4s ease;
-}
-
-/*========== Responsive typography ==========*/
 @media screen and (min-width: 1120px) {
   :root {
     --h2-font-size: 1.5rem;
@@ -260,7 +227,7 @@ img {
   row-gap: 3.5rem;
 }
 
-.container {
+.container-C {
   display: grid;
   place-items: center;
   padding-block: 5rem;
@@ -277,10 +244,9 @@ img {
 .card_titulo {
   text-decoration: none;
   font-family: titulos;
-  font-size: 35px;
-  font-weight: 400;
+  font-size: 20px;
   color: hsl(0, 0%, 15%);
-  margin-bottom: 0.75rem;
+  margin-bottom: 10px;
 }
 
 .card_artc {
@@ -290,22 +256,22 @@ img {
 
 .card_img {
   width: 328px;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
 }
 
 .card_inf {
   width: 280px;
   background-color: hsl(0, 0%, 100%);
   padding: 1.5rem 2rem;
-  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
-  border-radius: 1rem;
+  box-shadow: 0 10px 22px hsla(0, 0%, 0%, 0.15);
+  border-radius: 2rem;
   position: absolute;
   bottom: -9rem;
   right: 0;
   left: 0;
   opacity: 0;
   margin-inline: auto;
-  transition: opacity 1s 1s;
+  transition: opacity 1s 0.6s;
 }
 
 .card_artc:hover .card_inf {
@@ -368,14 +334,12 @@ img {
     padding: 1rem;
   }
 }
-/* For medium devices */
 @media screen and (min-width: 768px) {
   .card_container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
   }
 }
-/* For large devices */
 @media screen and (min-width: 1120px) {
   .container {
     height: 100vh;
