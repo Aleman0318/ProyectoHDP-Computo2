@@ -1,0 +1,125 @@
+.shadow {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+@media (max-width: 480px) {
+  .shadow {
+    box-shadow: none;
+  }
+}
+
+.shadow-soft {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-mid {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-strong {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.border-full {
+  border-radius: 0%;
+}
+
+.border-semi {
+  border-radius: 25%;
+}
+
+.border-round {
+  border-radius: 50%;
+}
+
+.spadding {
+  padding: 10%;
+}
+@media (max-width: 768px) {
+  .spadding {
+    padding: 5%;
+  }
+}
+@media (max-width: 480px) {
+  .spadding {
+    padding: 2%;
+  }
+}
+
+.mpadding {
+  padding: 15%;
+}
+@media (max-width: 768px) {
+  .mpadding {
+    padding: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .mpadding {
+    padding: 5%;
+  }
+}
+
+.lpadding {
+  padding: 25%;
+}
+@media (max-width: 768px) {
+  .lpadding {
+    padding: 15%;
+  }
+}
+@media (max-width: 480px) {
+  .lpadding {
+    padding: 10%;
+  }
+}
+
+.margins {
+  margin: 10%;
+}
+@media (max-width: 768px) {
+  .margins {
+    margin: 5%;
+  }
+}
+@media (max-width: 480px) {
+  .margins {
+    margin: 0%;
+  }
+}
+
+.marginm {
+  margin: 15%;
+}
+@media (max-width: 768px) {
+  .marginm {
+    margin: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .marginm {
+    margin: 0%;
+  }
+}
+
+.marginl {
+  margin: 20%;
+}
+@media (max-width: 768px) {
+  .marginl {
+    margin: 15%;
+  }
+}
+@media (max-width: 480px) {
+  .marginl {
+    margin: 0%;
+  }
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=Estilos.css.map */
