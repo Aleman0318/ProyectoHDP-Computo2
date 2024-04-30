@@ -1,0 +1,50 @@
+
+//estilo fuente para titulos
+
+//creamos un estilo de fuente personalizado- titulos super graficos o para marcas zonas bien vistosas
+@font-face {
+    font-family: zonas;
+    src: url('Fonts/Cotton-Hill.ttf') format('truetype');
+}
+
+$zone-font: zonas;
+
+//estilo fuente botones, componentes comunes
+
+@font-face {
+    font-family: componentes;
+    src: url('Fonts/SpaceMonoNerdFont-Regular.ttf') format('truetype');
+}
+
+
+$cmp-font: componentes;
+
+
+//estilo 3, puede servir para parrafos
+
+@font-face {
+    font-family: parrafos;
+    src: url('Fonts/OverpassNerdFontPropo-ExtraLight.ttf') format('truetype');
+}
+
+$pf-font: parrafos;
+
+
+//estilo 4 puede servir para titulos sobre los parrafos para los h1
+
+@font-face {
+    font-family: titulos;
+    src: url('Fonts/VictorMono-Light.ttf') format('truetype');
+}
+
+$title-font: titulos;
+
+
+//estilo 5 puede servir para encabezados especiales o botones especiales , decoracion
+
+@font-face {
+    font-family: deco;
+    src: url('Fonts/Spring\ Snowstorm.ttf') format('truetype');
+}
+
+$deco-font: deco;

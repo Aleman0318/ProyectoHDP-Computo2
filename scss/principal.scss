@@ -1,0 +1,251 @@
+@use 'principal-fonts'; 
+@use 'principal-colors';
+@use 'principal-types-text';
+@use 'principal-sizes';
+@use 'principal-containers';
+@use 'principal-Alignments';
+
+//tipografia
+
+.title-font {
+    font-family: principal-fonts.$title-font;
+}
+
+.zone-font {
+    font-family: principal-fonts.$zone-font;
+}
+
+.cmp-font{
+    font-family: principal-fonts.$cmp-font;
+}
+
+.pf-font{
+    font-family: principal-fonts.$pf-font;
+}
+
+.deco-font{
+    font-family: principal-fonts.$deco-font;
+}
+
+//colores
+
+.color-dark{
+    color: principal-colors.$dark-enfasis;
+}
+
+.color-light{
+    color: principal-colors.$light-enfasis;
+}
+
+.color-beige{
+    color: principal-colors.$beige-enfasis;
+}
+
+.color-basic{
+    color: principal-colors.$basic-enfasis;
+}
+
+.color-gray{
+    color: principal-colors.$gray-enfasis;
+}
+
+.color-sky{
+    color: principal-colors.$sky-enfasis;
+}
+
+.color-sunset{
+    color: principal-colors.$sunset-enfasis;
+}
+
+.color-deep{
+    color: principal-colors.$deep-enfasis;
+}
+
+.color-mars{
+    color: principal-colors.$mars-enfasis;
+}
+
+
+//fondos
+
+.bkg-dark{
+    background-color: principal-colors.$dark-enfasis;
+}
+
+.bkg-light{
+    background-color: principal-colors.$light-enfasis;
+}
+
+.bkg-basic{
+    background-color: principal-colors.$basic-enfasis;
+}
+
+.bkg-beige{
+    background-color: principal-colors.$beige-enfasis;
+}
+
+.bkg-gray{
+    background-color: principal-colors.$gray-enfasis;
+}
+
+.bkg-sky{
+    background-color: principal-colors.$sky-enfasis;
+}
+
+.bkg-sunset{
+    background-color: principal-colors.$sunset-enfasis;
+}
+
+.bkg-mars{
+    background-color: principal-colors.$mars-enfasis;
+}
+
+.bkg-basic{
+    background-color: principal-colors.$basic-enfasis;
+}
+
+.bkg-blur{
+    background-color: principal-colors.$blur-enfasis; 
+    backdrop-filter: blur(50px);
+}
+
+//tipos de texto
+
+.txt-italic{
+    font-style: principal-types-text.$text-italic;
+}
+
+.txt-sub{
+    text-decoration: principal-types-text.$text-sub;
+}
+
+.txt-dead{
+    text-decoration: principal-types-text.$text-dead;
+}
+
+.txt-bold{
+    font-weight: principal-types-text.$text-bold;
+}
+
+
+//tamaños de letra
+
+.txt-xsmall{
+    font-size: principal-sizes.$txt-xsmall;
+}
+
+.txt-small{
+    font-size: principal-sizes.$txt-small;
+}
+
+.txt-xmedium{
+    font-size: principal-sizes.$txt-xmedium;
+}
+
+.txt-medium{
+    font-size: principal-sizes.$txt-medium;
+}
+
+.txt-large{
+    font-size: principal-sizes.$txt-large;
+}
+
+.txt-bigger{
+    font-size: principal-sizes.$txt-bigger;
+}
+
+//contenedores
+
+
+//contenedor 1 (Marte - Tierra)
+//****************************************************************
+.container-A {
+    height: principal-containers.$altura-partB;
+    display: principal-containers.$display-A;
+    grid-template-columns: principal-containers.$columns-A;
+    grid-template-rows: principal-containers.$rows-A;
+    grid-template-areas: principal-containers.$areas-A;
+    gap: principal-containers.$gap-A;
+}
+
+.Lado-Izquierdo {
+    grid-area: principal-containers.$parte-Izq;
+    justify-content: principal-Alignments.$items-center;; 
+    align-items: principal-Alignments.$items-center;
+    height: principal-containers.$altura-partA;
+    position: sticky; //pega el elemento en la posicion actual
+    top: 0; //desde que parte del borde se pegara el elemento 
+}
+
+.Lado-Derecho {
+    grid-area: principal-containers.$parte-Der;
+    justify-content:principal-Alignments.$items-center; // ajusta el contenido al centro horizontalmente
+    align-items: principal-Alignments.$items-center; // ajusta el contenido al centro verticalmente
+    text-align: principal-Alignments.$items-center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: principal-containers.$altura-partB;
+}
+
+//*****************************************************************
+
+//Contenedor B
+
+.container-B{
+    height: principal-containers.$altura-B;
+    display: principal-containers.$display-B;
+    width: principal-containers.$ancho-B;
+    flex-wrap: principal-containers.$flex-wrap-B;
+}
+
+
+//contenedor C
+
+.container-C{
+    height: principal-containers.$altura-C;
+    display: principal-containers.$display-C;
+    flex-wrap: principal-containers.$flex-wrap-C;
+    gap: principal-containers.$gap-C;
+}
+
+
+//alineaciones y movimientos en pantalla
+
+.item-center-y{
+    align-items: principal-Alignments.$items-center;
+}
+
+.item-center-x{
+    justify-content:principal-Alignments.$items-center;
+}
+
+.text-center{
+    text-align: principal-Alignments.$items-center;
+}
+
+.text-justify{
+    text-align: principal-Alignments.$items-justify;
+}
+
+.text-right{
+    text-align: principal-Alignments.$items-rigth;
+}
+
+.text-left{
+    text-align: principal-Alignments.$items-left;
+}
+
+.item-SpaceAround{
+    justify-content: principal-Alignments.$items-spaceAround;
+}
+
+.item-SpaceBetween{
+    justify-content: principal-Alignments.$items-spaceBetween;
+}
+
+.item-SpaceEvenly{
+    justify-content: principal-Alignments.$items-spaceEvenly;
+}
+
+
+
