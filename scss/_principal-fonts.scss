@@ -4,7 +4,7 @@
 //creamos un estilo de fuente personalizado- titulos super graficos o para marcas zonas bien vistosas
 @font-face {
     font-family: zonas;
-    src: url('Resources/Cotton-Hill.ttf') format('truetype');
+    src: url('Fonts/Cotton-Hill.ttf') format('truetype');
 }
 
 $zone-font: zonas;
@@ -13,7 +13,7 @@ $zone-font: zonas;
 
 @font-face {
     font-family: componentes;
-    src: url('Resources/SpaceMonoNerdFont-Regular.ttf') format('truetype');
+    src: url('Fonts/SpaceMonoNerdFont-Regular.ttf') format('truetype');
 }
 
 
@@ -24,7 +24,7 @@ $cmp-font: componentes;
 
 @font-face {
     font-family: parrafos;
-    src: url('Resources/OverpassNerdFontPropo-ExtraLight.ttf') format('truetype');
+    src: url('Fonts/OverpassNerdFontPropo-ExtraLight.ttf') format('truetype');
 }
 
 $pf-font: parrafos;
@@ -34,7 +34,7 @@ $pf-font: parrafos;
 
 @font-face {
     font-family: titulos;
-    src: url('Resources/VictorMono-Light.ttf') format('truetype');
+    src: url('Fonts/VictorMono-Light.ttf') format('truetype');
 }
 
 $title-font: titulos;
@@ -44,7 +44,7 @@ $title-font: titulos;
 
 @font-face {
     font-family: deco;
-    src: url('Resources/Spring\ Snowstorm.ttf') format('truetype');
+    src: url('Fonts/Spring\ Snowstorm.ttf') format('truetype');
 }
 
 $deco-font: deco;
