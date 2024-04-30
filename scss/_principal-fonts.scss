@@ -4,7 +4,11 @@
 //creamos un estilo de fuente personalizado- titulos super graficos o para marcas zonas bien vistosas
 @font-face {
     font-family: zonas;
+<<<<<<< Updated upstream
     src: url('Resources/Cotton-Hill.ttf') format('truetype');
+=======
+    src: url('Fonts/Cotton-Hill.ttf') format('truetype');
+>>>>>>> Stashed changes
 }
 
 $zone-font: zonas;
@@ -13,7 +17,11 @@ $zone-font: zonas;
 
 @font-face {
     font-family: componentes;
+<<<<<<< Updated upstream
     src: url('Resources/SpaceMonoNerdFont-Regular.ttf') format('truetype');
+=======
+    src: url('Fonts/SpaceMonoNerdFont-Regular.ttf') format('truetype');
+>>>>>>> Stashed changes
 }
 
 
@@ -24,7 +32,11 @@ $cmp-font: componentes;
 
 @font-face {
     font-family: parrafos;
+<<<<<<< Updated upstream
     src: url('Resources/OverpassNerdFontPropo-ExtraLight.ttf') format('truetype');
+=======
+    src: url('Fonts/OverpassNerdFontPropo-ExtraLight.ttf') format('truetype');
+>>>>>>> Stashed changes
 }
 
 $pf-font: parrafos;
@@ -34,7 +46,11 @@ $pf-font: parrafos;
 
 @font-face {
     font-family: titulos;
+<<<<<<< Updated upstream
     src: url('Resources/VictorMono-Light.ttf') format('truetype');
+=======
+    src: url('Fonts/VictorMono-Light.ttf') format('truetype');
+>>>>>>> Stashed changes
 }
 
 $title-font: titulos;
@@ -44,7 +60,11 @@ $title-font: titulos;
 
 @font-face {
     font-family: deco;
+<<<<<<< Updated upstream
     src: url('Resources/Spring\ Snowstorm.ttf') format('truetype');
+=======
+    src: url('Fonts/Spring\ Snowstorm.ttf') format('truetype');
+>>>>>>> Stashed changes
 }
 
 $deco-font: deco;
