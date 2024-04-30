@@ -48,6 +48,16 @@
   border: 2px rgba(41, 68, 87, 0.5) solid;
 }
 
+.input-space-check {
+  color: #222236;
+  padding: 10px;
+  width: 2em;
+  height: 2em;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 2px rgba(41, 68, 87, 0.5) solid;
+}
+
 .input-space-group {
   padding: 0px;
   color: #ffffff;

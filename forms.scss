@@ -33,6 +33,16 @@
     border: 2px rgba($color: principal-colors.$deep-enfasis, $alpha: 0.5) solid;;
 }
 
+.input-space-check{
+    color: principal-colors.$dark-enfasis;
+    padding: 10px;
+    width: 2em;
+    height: 2em;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 2px rgba($color: principal-colors.$deep-enfasis, $alpha: 0.5) solid;;
+}
+
 .input-space-group{
     padding: 0px;
     color: principal-colors.$basic-enfasis;
