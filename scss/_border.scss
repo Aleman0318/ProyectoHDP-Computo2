@@ -1,0 +1,29 @@
+%border_small{
+$border-width: 3%;
+$border-style:  solid;
+$border-color:  #000000;
+}
+%border_medium{
+    $border-width: 6%;
+    $border-style:  solid;
+    $border-color:  #000000;
+    
+}
+ %border_largue{
+    $border-width: 9%;
+    $border-style:  solid;
+    $border-color:  #000000;
+    
+}
+ %bordes_cuadrados {
+        border-radius: 0%;
+}
+      
+%bordes_semiovalados {
+        border-radius: 25%;
+}
+      
+      
+%bordes_redondeados {
+        border-radius: 50%;
+}
