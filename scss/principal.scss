@@ -248,4 +248,162 @@
 }
 
 
+//badges
+
+.badge-text-uno{
+    background-color: principal-colors.$light-enfasis;
+    color: principal-colors.$dark-enfasis;
+    padding: padding.$padding;
+}
+.badge-text-dos{
+    background-color: principal-colors.$sunset-enfasis;
+    color: principal-colors.$deep-enfasis;
+    padding: padding.$padding;
+}
+.badge-text-tres{
+    background-color: principal-colors.$sky-enfasis;
+    color: principal-colors.$mars-enfasis;
+    padding: padding.$padding;
+}
+.badge-text-cuatro{
+    background-color: principal-colors.$basic-enfasis;
+    color: principal-colors.$dark-enfasis;
+    padding: padding.$padding;
+}
+.badge-text-cinco{
+    background-color: principal-colors.$light-enfasis;
+    color: principal-colors.$gray-enfasis;
+    padding: padding.$padding;
+}
+.btn-uno{ 
+    width: botones.$btn_mediano;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-btn-text{
+    width: botones.$btn_mediano;
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$beige-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.btn-dos{
+    width: botones.$btn_mediano;
+    background-color: principal-colors.$sunset-enfasis;
+    color: principal-colors.$deep-enfasis;
+    padding: principal-padding.$padding-small;
+}
+
+.btn-tres{
+    width: botones.$btn_mediano;
+    background-color: principal-colors.$sky-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.order-badges{
+    position: principal-alineamientos.$position-bd;
+    transform: principal-alineamientos.$transform-bd;
+    border-radius: 10%;
+    font-family: principal-fonts.$title-font;
+    font-weight: principal-types-text.$text-bold;
+    padding: principal-padding.$padding-small;
+    font-size: principal-sizes.$txt-small;
+}  
+.badge-text-primary{
+    padding: principal-padding.$padding-small;
+    border-radius: 6px;
+    background-color: principal-colors.$sky-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-text-secondary{
+    border-radius: 6px;
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-text-success{
+    border-radius: 6px;
+    background-color: principal-colors.$dark-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-text-danger{
+    border-radius: 6px;
+    padding: principal-padding.$padding-small;
+    background-color: principal-colors.$mars-enfasis;
+    color: principal-colors.$light-enfasis;
+}
+.badge-text-warning{
+    border-radius: 6px;
+    background-color: principal-colors.$sunset-enfasis;
+    color: principal-colors.$dark-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-text-info{
+    border-radius: 6px;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-text-ligth{
+    border-radius: 6px;
+    background-color: principal-colors.$light-enfasis;
+    color: principal-colors.$dark-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-text-dark{
+    border-radius: 6px;
+    background-color: principal-colors.$dark-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-rounded-text-primary{
+    border-radius: 20px;
+    background-color: principal-colors.$sky-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-rounded-text-secondary{
+    border-radius: 20px;
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-rounded-text-success{
+    border-radius: 20px;
+    background-color: principal-colors.$dark-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-rounded-text-danger{
+    border-radius: 20px;
+    background-color: principal-colors.$mars-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-rounded-text-warning{
+    border-radius: 20px;
+    background-color: principal-colors.$sunset-enfasis;
+    color: principal-colors.$dark-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-rounded-text-info{
+    border-radius: 20px;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$light-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-rounded-text-ligth{
+    border-radius: 20px;
+    background-color: principal-colors.$light-enfasis;
+    color: principal-colors.$dark-enfasis;
+    padding: principal-padding.$padding-small;
+}
+.badge-rounded-text-dark{
+    border-radius: 20px;
+    background-color: principal-colors.$dark-enfasis;
+    padding: principal-padding.$padding-small;
+    color: principal-colors.$light-enfasis;
+}
+
 
