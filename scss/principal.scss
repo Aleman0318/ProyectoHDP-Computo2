@@ -73,6 +73,10 @@
     color: principal-colors.$mars-enfasis;
 }
 
+.color-crimson{
+  color:principal-colors.$crimson;
+}
+
 
 //fondos
 
@@ -202,9 +206,9 @@ ol{
   justify-content: principal-Alignments.$items-center;
   align-items: principal-Alignments.$items-center;
   height: principal-containers.$altura-partA;
-  position: -webkit-sticky;
   position: sticky;
-  top: 2.5em; 
+  top: 0; 
+  overflow-y: auto;
 
 }
 
@@ -255,6 +259,27 @@ ol{
   display: principal-containers.$display-B;
   width: 30%;
   flex-wrap: principal-containers.$flex-wrap-B;
+}
+
+
+.container-S{
+  height:principal-containers.$altura-S;
+  width: principal-containers.$ancho-S;
+  display: principal-containers.$display-S;
+  overflow-y: principal-containers.$overflow-S;
+  overflow-x: principal-containers.$overflow-S;
+  background-color: principal-colors.$gray-enfasis;
+  color: principal-colors.$basic-enfasis;
+}
+
+
+.icon-image{
+  width: 30px;
+  height: 30px;
+}
+
+.top-nav{
+  top:2.5em;
 }
 
 //alineaciones y movimientos en pantalla
@@ -312,159 +337,162 @@ ol{
 //badges
 
 .badge-text-uno{
-    background-color: principal-colors.$light-enfasis;
-    color: principal-colors.$dark-enfasis;
-    padding: padding.$padding;
+  background-color: principal-colors.$light-enfasis;
+  color: principal-colors.$dark-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-text-dos{
-    background-color: principal-colors.$sunset-enfasis;
-    color: principal-colors.$deep-enfasis;
-    padding: padding.$padding;
+  background-color: principal-colors.$sunset-enfasis;
+  color: principal-colors.$deep-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-text-tres{
-    background-color: principal-colors.$sky-enfasis;
-    color: principal-colors.$mars-enfasis;
-    padding: padding.$padding;
+  background-color: principal-colors.$sky-enfasis;
+  color: principal-colors.$mars-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-text-cuatro{
-    background-color: principal-colors.$basic-enfasis;
-    color: principal-colors.$dark-enfasis;
-    padding: padding.$padding;
+  background-color: principal-colors.$basic-enfasis;
+  color: principal-colors.$dark-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-text-cinco{
-    background-color: principal-colors.$light-enfasis;
-    color: principal-colors.$gray-enfasis;
-    padding: padding.$padding;
+  background-color: principal-colors.$light-enfasis;
+  color: principal-colors.$gray-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .btn-uno{ 
-    width: botones.$btn_mediano;
-    background-color: principal-colors.$deep-enfasis;
-    color: principal-colors.$light-enfasis;
-    padding: principal-padding.$padding-small;
+  width: botones.$btn_mediano;
+  background-color: principal-colors.$deep-enfasis;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-btn-text{
-    width: botones.$btn_mediano;
-    background-color: principal-colors.$gray-enfasis;
-    color: principal-colors.$beige-enfasis;
-    padding: principal-padding.$padding-small;
+  width: botones.$btn_mediano;
+  background-color: principal-colors.$gray-enfasis;
+  color: principal-colors.$beige-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .btn-dos{
-    width: botones.$btn_mediano;
-    background-color: principal-colors.$sunset-enfasis;
-    color: principal-colors.$deep-enfasis;
-    padding: principal-padding.$padding-small;
+  width: botones.$btn_mediano;
+  background-color: principal-colors.$sunset-enfasis;
+  color: principal-colors.$deep-enfasis;
+  padding: principal-padding.$padding-small;
 }
 
 .btn-tres{
-    width: botones.$btn_mediano;
-    background-color: principal-colors.$sky-enfasis;
-    color: principal-colors.$light-enfasis;
-    padding: principal-padding.$padding-small;
+  width: botones.$btn_mediano;
+  background-color: principal-colors.$sky-enfasis;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .order-badges{
-    position: principal-alineamientos.$position-bd;
-    transform: principal-alineamientos.$transform-bd;
-    border-radius: 10%;
-    font-family: principal-fonts.$title-font;
-    font-weight: principal-types-text.$text-bold;
-    padding: principal-padding.$padding-small;
-    font-size: principal-sizes.$txt-small;
+  color: principal-colors.$light-enfasis;
+  background-color: principal-colors.$crimson;
+  position: principal-alineamientos.$position-bd;
+  transform: principal-alineamientos.$transform-bd;
+  border-radius: 20px;
+  font-family: principal-fonts.$title-font;
+  font-weight: principal-types-text.$text-bold;
+  padding: principal-padding.$padding-small;
+  font-size: principal-sizes.$txt-small;
 }  
 .badge-text-primary{
-    padding: principal-padding.$padding-small;
-    border-radius: 6px;
-    background-color: principal-colors.$sky-enfasis;
-    color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
+  border-radius: 6px;
+  background-color: principal-colors.$sky-enfasis;
+  color: principal-colors.$light-enfasis;
 }
 .badge-text-secondary{
-    border-radius: 6px;
-    background-color: principal-colors.$gray-enfasis;
-    color: principal-colors.$light-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 6px;
+  background-color: principal-colors.$gray-enfasis;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-text-success{
-    border-radius: 6px;
-    background-color: principal-colors.$dark-enfasis;
-    color: principal-colors.$light-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 6px;
+  background-color: principal-colors.$dark-enfasis;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-text-danger{
-    border-radius: 6px;
-    padding: principal-padding.$padding-small;
-    background-color: principal-colors.$mars-enfasis;
-    color: principal-colors.$light-enfasis;
+  border-radius: 6px;
+  padding: principal-padding.$padding-small;
+  background-color: principal-colors.$mars-enfasis;
+  color: principal-colors.$light-enfasis;
 }
 .badge-text-warning{
-    border-radius: 6px;
-    background-color: principal-colors.$sunset-enfasis;
-    color: principal-colors.$dark-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 6px;
+  background-color: principal-colors.$crimson;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-text-info{
-    border-radius: 6px;
-    background-color: principal-colors.$deep-enfasis;
-    color: principal-colors.$light-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 6px;
+  background-color: principal-colors.$deep-enfasis;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-text-ligth{
-    border-radius: 6px;
-    background-color: principal-colors.$light-enfasis;
-    color: principal-colors.$dark-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 6px;
+  background-color: principal-colors.$light-enfasis;
+  color: principal-colors.$dark-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-text-dark{
-    border-radius: 6px;
-    background-color: principal-colors.$dark-enfasis;
-    color: principal-colors.$light-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 6px;
+  background-color: principal-colors.$dark-enfasis;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-rounded-text-primary{
-    border-radius: 20px;
-    background-color: principal-colors.$sky-enfasis;
-    color: principal-colors.$light-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 20px;
+  background-color: principal-colors.$sky-enfasis;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-rounded-text-secondary{
-    border-radius: 20px;
-    background-color: principal-colors.$gray-enfasis;
-    color: principal-colors.$light-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 20px;
+  background-color: principal-colors.$gray-enfasis;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-rounded-text-success{
-    border-radius: 20px;
-    background-color: principal-colors.$dark-enfasis;
-    color: principal-colors.$light-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 20px;
+  background-color: principal-colors.$dark-enfasis;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-rounded-text-danger{
-    border-radius: 20px;
-    background-color: principal-colors.$mars-enfasis;
-    color: principal-colors.$light-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 20px;
+  background-color: principal-colors.$mars-enfasis;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-rounded-text-warning{
-    border-radius: 20px;
-    background-color: principal-colors.$sunset-enfasis;
-    color: principal-colors.$dark-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 20px;
+  color: principal-colors.$light-enfasis;
+  background-color: principal-colors.$crimson;
+  padding: principal-padding.$padding-small;
+
 }
 .badge-rounded-text-info{
-    border-radius: 20px;
-    background-color: principal-colors.$deep-enfasis;
-    color: principal-colors.$light-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 20px;
+  background-color: principal-colors.$deep-enfasis;
+  color: principal-colors.$light-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-rounded-text-ligth{
-    border-radius: 20px;
-    background-color: principal-colors.$light-enfasis;
-    color: principal-colors.$dark-enfasis;
-    padding: principal-padding.$padding-small;
+  border-radius: 20px;
+  background-color: principal-colors.$light-enfasis;
+  color: principal-colors.$dark-enfasis;
+  padding: principal-padding.$padding-small;
 }
 .badge-rounded-text-dark{
-    border-radius: 20px;
-    background-color: principal-colors.$dark-enfasis;
-    padding: principal-padding.$padding-small;
-    color: principal-colors.$light-enfasis;
+  border-radius: 20px;
+  background-color: principal-colors.$dark-enfasis;
+  padding: principal-padding.$padding-small;
+  color: principal-colors.$light-enfasis;
 }
 
 //Alertas-------------------------------
@@ -691,6 +719,9 @@ ol{
     color: principal-colors.$dark-enfasis;
     border: 2px solid principal-colors.$dark-enfasis;
 }
+.alert-success{
+  border: 2px solid principal-colors.$sky-enfasis;
+}
 .imge1{
     height: 50px;
 }
@@ -704,7 +735,7 @@ ol{
     height: 50px;
 }
 
-//Inicio de Benjamin
+//Inicio de Benjamin ----------------------------------
 //clases para sombras
 .shadow{//sombras normales
   @extend %sombra_res;
@@ -760,6 +791,14 @@ ol{
   @extend %paddding_grand;
 }
 
+.special-padding{
+  @extend %paddding_for_things;
+}
+
+.component-padding{
+  @extend %paddding_component;
+}
+
 //clases para margen
 .margins{//margen pequeño
   @extend %margin_small;
@@ -775,12 +814,24 @@ ol{
 
 //clase para ocultar
 .hide{
-  display: none;
+  @extend %noshow;
 }
-//fin de Ben
 
-// INICIO BOTONES Y TARJETAS
-//Botones y sus animaciones
+//clase para mostrar
+.show{
+  @extend %show;
+}
+
+//clase para primero ocultar y si se minimiza la ventana entonces mostrar
+.oculto-mostrar{
+  @extend %spell;
+}
+
+//clase para primero mostrar y si se minimiza la ventana entonces ocultar
+.oculto-mostrar{
+  @extend %magic;
+}
+//fin de Ben ---------------------------------
 
 *,
 *:before,
@@ -833,7 +884,6 @@ ol{
   overflow: hidden;
   transition: all botones.$transicion ease;
   border: 1.5px solid transparent;
-  border-radius: botones.$border_r_btn;
   z-index: 0;
   font-weight: botones.$font_wei_btn;
   text-transform: uppercase;
@@ -852,6 +902,8 @@ ol{
 }
 
 // ANIMACION BOTON 1
+
+
 
 .btn_1::before {
   width: 0;
@@ -961,22 +1013,9 @@ ol{
 }
 
 
-
-
-
-@keyframes shadow-pulse {
-    0% {
-      box-shadow: 0 0 0 0 principal-colors.$orange;
-    }
-    100% {
-      box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
-    }
-  }
-  
-
   //TAMAÑOS DE LOS BOTONES
 
-.btn_pequeño{
+  .btn_pequeño{
     width: botones.$btn_pequeño;
     height: botones.$btn_heigth;
     font-size: principal-sizes.$txt-small;
@@ -1079,13 +1118,15 @@ ol{
 }
 
 .card {
-  width: botones.$btn_grande;
+  width: 25%;
   margin: botones.$tarjetas;
+  height: auto;
   border-radius: 6px;
   overflow: hidden;
   background: #fff;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transition: all 400ms ease-out;
+  margin-top: 15px;
   cursor: pointer;
 }
 .card:hover {
@@ -1132,7 +1173,6 @@ ol{
 }
 
   // FIN BOTONES Y TARJETAS
-
 // navbar quevedo
 
 .navbar-space{
@@ -1152,6 +1192,11 @@ ol{
     
     flex-direction: row;
     align-items: center;
+}
+
+.navbar-fixed{
+  position: fixed;
+  z-index: 2;
 }
 
 .navbar-item{

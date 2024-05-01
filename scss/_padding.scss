@@ -1,5 +1,17 @@
 %paddding_peque{
-  padding: 2%;
+  padding: 5%;
+     @media (max-width: 768px) {
+
+        padding: 2%;
+      }
+    
+  
+      @media (max-width: 480px) {
+        padding: 1%;
+      }
+}
+%paddding_med{
+  padding: 7%;
      @media (max-width: 768px) {
 
         padding: 3%;
@@ -7,32 +19,53 @@
     
   
       @media (max-width: 480px) {
-        padding: 1.5%;
-      }
-}
-%paddding_med{
-  padding: 15%;
-     @media (max-width: 768px) {
-
-        padding: 10%;
-      }
-    
-  
-      @media (max-width: 480px) {
-        padding: 5%;
+        padding: 1%;
       }
 }
 %paddding_grand{
-  padding: 25%;
+  padding: 7%;
      @media (max-width: 768px) {
 
-        padding: 15%;
+        padding: 5%;
       }
     
   
       @media (max-width: 480px) {
-        padding: 10%;
+        padding: 3%;
       }
+}
+
+%paddding_for_things{
+   padding-left: 3%;
+   padding-right: 3%;
+     @media (max-width: 768px) {
+
+        padding-left: 1%;
+        padding-right: 1%;
+      }
+    
+  
+      @media (max-width: 480px) {
+        padding-left: 0%;
+        padding-right: 0%;
+      }
+}
+%paddding_component{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 1px;
+   @media (max-width: 768px) {
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+   }
+   @media (max-width: 768px) {
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+   }
 }
 
 

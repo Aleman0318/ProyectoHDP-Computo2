@@ -18,8 +18,6 @@ $display-B: flex;
 $ancho-B: 35%;
 $flex-wrap-B: wrap;
 
-
-
 //Container C (flex 100%) apto para introducir varios contenedores seguidos y anidados sin saltos
 $altura-C: auto;
 $display-C: flex;
@@ -27,9 +25,14 @@ $flex-wrap-C: wrap;
 $ancho-C: 100%;
 $gap-C: 5px;
 
-
 //container D 100% no flex (block)
 $altura-D: auto;
 $display-D: block;
 $ancho-D: 100%;
 $gap-D: 5px;
+
+//container snippets
+$altura-S: auto;
+$display-S: flex;
+$ancho-S: 100%;
+$overflow-S: auto;

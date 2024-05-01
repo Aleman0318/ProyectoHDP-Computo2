@@ -12,15 +12,38 @@
 }
 
 %sombra_suave {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
 %sombra_media {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 
 %sombra_fuerte {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+}
+
+
+%noshow{
+  display: none;
+}
+
+%show{
+ display: block;
+}
+
+%magic{
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+%spell{
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
