@@ -1,13 +1,13 @@
 %paddding_peque{
-  padding: 10%;
+  padding: 2%;
      @media (max-width: 768px) {
 
-        padding: 5%;
+        padding: 3%;
       }
     
   
       @media (max-width: 480px) {
-        padding: 2%;
+        padding: 1.5%;
       }
 }
 %paddding_med{
@@ -34,3 +34,6 @@
         padding: 10%;
       }
 }
+
+
+$padding: 2.5%;
