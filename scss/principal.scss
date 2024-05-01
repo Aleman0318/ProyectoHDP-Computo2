@@ -4,6 +4,11 @@
 @use 'principal-sizes';
 @use 'principal-containers';
 @use 'principal-Alignments';
+@use 'shadows' ;
+@use 'border' ;
+@use 'padding' ;
+@use 'margin' ;
+
 
 //tipografia
 
@@ -642,3 +647,79 @@
 .imge4{
     height: 50px;
 }
+
+//Inicio de Benjamin
+//clases para sombras
+.shadow{//sombras normales
+  @extend %sombra_res;
+}
+
+.shadow-soft{//sombras claras
+  @extend %sombra_suave;
+}
+
+.shadow-mid{//sombras medianas
+  @extend %sombra_media;
+}
+
+.shadow-strong{//sombras oscuras
+  @extend %sombra_fuerte;
+}
+
+//clases para bordes
+.border-s{//bordes chiquitos
+  @extend %border_small;
+}
+
+.border-m{//bordes medianos
+  @extend %border_medium;
+}
+
+.border-l{//bordes grandes
+  @extend %border_largue;
+}
+
+.border-full{//borde cuadrado
+  @extend %bordes_cuadrados;
+}
+
+.border-semi{//borde semi ovalado
+  @extend %bordes_semiovalados;
+}
+
+.border-round{//borde redondo
+  @extend %bordes_redondeados;
+}
+
+//clases para padding
+.spadding{//padding pequeño
+  @extend %paddding_peque;
+}
+
+.mpadding{//padding mediano
+  @extend %paddding_med;
+}
+
+.lpadding{//padding grande
+  @extend %paddding_grand;
+}
+
+//clases para margen
+.margins{//margen pequeño
+  @extend %margin_small;
+}
+
+.marginm{//margen mediano
+  @extend %margin_medium;
+}
+
+.marginl{//margen grande
+  @extend %margin_largue;
+}
+
+//clase para ocultar
+.hide{
+  display: none;
+}
+//fin de Ben
+
