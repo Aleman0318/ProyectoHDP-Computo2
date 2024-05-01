@@ -406,4 +406,239 @@
     color: principal-colors.$light-enfasis;
 }
 
+//Alertas-------------------------------
+.alert-primary{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$beige-enfasis;
+    border: 2px solid principal-colors.$sky-enfasis;
+}
+.alert-secondary{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2px solid principal-colors.$light-enfasis;
+}
+.alert-success{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$basic-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2px solid principal-colors.$sky-enfasis;
+}
+.alert-danger{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$mars-enfasis;
+    color: principal-colors.$beige-enfasis;
+    border: 2px solid principal-colors.$beige-enfasis;
+}
+.alert-warning{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$beige-enfasis;
+    color: principal-colors.$dark-enfasis;
+    border: 2px solid principal-colors.$light-enfasis;
+}
+.alert-info{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2px solid principal-colors.$sky-enfasis;
+}
+.alert-link-dark{
+    color: principal-colors.$dark-enfasis;
+}
+.alert-light{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2px solid principal-colors.$gray-enfasis;
+}
+.alert-dark{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$dark-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2px solid principal-colors.$gray-enfasis;
+}
 
+.alert-link{
+    color: principal-colors.$basic-enfasis;
+}
+.alert--primary{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2px solid principal-colors.$sky-enfasis;
+}
+.alert--secondary{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2px solid principal-colors.$light-enfasis;
+}
+.alert--success{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$basic-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2px solid principal-colors.$sky-enfasis;
+}
+.alert--danger{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$mars-enfasis;
+    color: principal-colors.$beige-enfasis;
+    border: 2px solid principal-colors.$beige-enfasis;
+}
+.alert--warning{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$beige-enfasis;
+    color: principal-colors.$gray-enfasis;
+    border: 2px solid principal-colors.$light-enfasis;
+}
+.alert--info{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2px solid principal-colors.$sky-enfasis;
+}
+.alert--light{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$gray-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2px solid principal-colors.$light-enfasis;
+}
+.alert--dark{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    background-color: principal-colors.$dark-enfasis;
+    color: principal-colors.$sky-enfasis;
+    border: 2px solid principal-colors.$gray-enfasis;
+}
+.alert-success{
+   display: flex;
+   align-items: flex-start;
+}
+.alert-triangle-primary{
+    padding: principal-padding.$padding-medium;
+    font-size: principal-sizes.$txt-xmedium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$basic-enfasis;
+    border: 2px solid principal-colors.$sky-enfasis;
+}
+.triangle{
+    height: 30px;
+}
+.alert-primary-b{
+    display: flex;
+    align-items: flex-start;
+    padding: principal-padding.$padding-medium;
+    font-size: principal-sizes.$txt-xmedium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$light-enfasis;
+    border: 2px solid principal-colors.$sky-enfasis;
+}
+.alert-success-b{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    display: flex;
+    align-items: flex-start;
+    background-color: principal-colors.$basic-enfasis;
+    color: principal-colors.$gray-enfasis;
+    border: 2px solid principal-colors.$dark-enfasis;
+}
+.alert-warning-b{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    display: flex;
+    align-items: flex-start;
+    background-color: principal-colors.$beige-enfasis;
+    color: principal-colors.$dark-enfasis;
+    border: 2px solid principal-colors.$light-enfasis;
+}
+.alert-danger-b{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    display: flex;
+    align-items: flex-start;
+    background-color: principal-colors.$mars-enfasis;
+    color: principal-colors.$dark-enfasis;
+    border: 2px solid principal-colors.$beige-enfasis;
+
+}
+.alert-warning-c{
+    padding: principal-padding.$padding-medium;
+    height: principal-dimensiones.$medio-alto;
+    width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
+    display: flex;
+    align-items: flex-start;
+    background-color: principal-colors.$mars-enfasis;
+    color: principal-colors.$dark-enfasis;
+    border: 2px solid principal-colors.$dark-enfasis;
+}
+.imge1{
+    height: 50px;
+}
+.imge2{
+    height: 50px;
+}
+.imge3{
+    height: 50px;
+}
+.imge4{
+    height: 50px;
+}
