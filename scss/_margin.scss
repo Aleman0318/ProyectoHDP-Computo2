@@ -25,3 +25,84 @@
     margin: 0%;
   }
 }
+
+
+%margin_all{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (max-width:768px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  }
+
+  @media (max-width:480px) {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    
+  }
+
+}
+
+%margin_top{
+  margin-top: 20px;
+
+  @media (max-width:768px) {
+    margin-top: 10px;
+    
+  }
+
+  @media (max-width:768px) {
+    margin-top: 3px;
+    
+  }
+}
+
+%margin_bottom{
+  margin-bottom: 20px;
+
+  @media (max-width:768px) {
+    margin-bottom: 10px;
+    
+  }
+
+  @media (max-width:768px) {
+    margin-bottom: 3px;
+    
+  }
+}
+
+%margin_left{
+  margin-left: 20px;
+
+  @media (max-width:768px) {
+    margin-left: 10px;
+    
+  }
+
+  @media (max-width:768px) {
+    margin-left: 3px;
+    
+  }
+}
+
+%margin_rigth{
+  margin-right: 20px;
+
+  @media (max-width:768px) {
+    margin-right: 10px;
+    
+  }
+
+  @media (max-width:768px) {
+    margin-right: 3px;
+    
+  }
+}

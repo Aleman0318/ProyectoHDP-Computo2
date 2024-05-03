@@ -10,7 +10,7 @@
 
 <body>
 
-  <nav class="navbar-space navbar-fixed">
+  <nav class="navbar-space navbar-fixed" id="navbar">
     <div class="navbar-item item-left">
       <img src="Resources/UES-2.png" alt="logo de la universidad de el salvador" class="logo-img">
     </div>
@@ -25,23 +25,23 @@
   </nav>
 
   <div class="container-A">
-    
-    <div class="Lado-Izquierdo bkg-light"  style="margin-top: 80px;">
+
+    <div class="Lado-Izquierdo bkg-light" style="margin-top: 80px;">
 
       <div class="container-C item-center-x item-center-y ">
         <img src="Resources/Components-icon.png" alt="" class="icon-image">
         <h1 class="deco-font color-dark txt-medium text-center component-padding">Components</h1>
       </div>
 
-      <button class="btn-border-none btn_4 btn_largo">Botones</button>
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('1')">Botones</button>
 
-      <button class="btn-border-none btn_4 btn_largo">Tarjetas</button>
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('2')">Tarjetas</button>
 
-      <button class="btn-border-none btn_4 btn_largo">Navbar</button>
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('3')">Navbar</button>
 
-      <button class="btn-border-none btn_4 btn_largo">Badges</button>
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('4')">Badges</button>
 
-      <button class="btn-border-none btn_4 btn_largo">Alertas</button>
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('5')">Alertas</button>
 
 
 
@@ -49,515 +49,1034 @@
         <img src="Resources/Form-icon.png" alt="" class="icon-image">
         <h1 class="deco-font color-dark txt-medium text-center component-padding">Forms</h1>
       </div>
-      
-      <button class="btn-border-none btn_4 btn_largo">Formularios</button>
+
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('6')">Formularios</button>
 
 
       <div class="container-C item-center-x item-center-y ">
         <img src="Resources/helper-icon.png" alt="" class="icon-image">
         <h1 class="deco-font color-dark txt-medium text-center component-padding">Helpers</h1>
       </div>
-      
-      <button class="btn-border-none btn_4 btn_largo">Positions</button>
+
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('7')">Positions</button>
 
 
       <div class="container-C item-center-x item-center-y ">
         <img src="Resources/utilities-icon.png" alt="" class="icon-image">
         <h1 class="deco-font color-dark txt-medium text-center component-padding">Utilities</h1>
       </div>
-      
-      <button class="btn-border-none btn_4 btn_largo">Sombras</button>
 
-      <button class="btn-border-none btn_4 btn_largo">Margenes</button>
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('8')">Sombras</button>
 
-      <button class="btn-border-none btn_4 btn_largo">Colores</button>
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('9')">Margenes</button>
 
-      <button class="btn-border-none btn_4 btn_largo">Fondos</button>
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('10')">Colores</button>
+
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('11')">Fondos</button>
 
 
       <div class="container-C item-center-x item-center-y ">
         <img src="Resources/layout-icon.png" alt="" class="icon-image">
         <h1 class="deco-font color-dark txt-medium text-center component-padding">Layout</h1>
       </div>
-      
-      <button class="btn-border-none btn_4 btn_largo">Contenedores</button>
+
+      <button class="btn-border-none btn_4 btn_largo" onclick="scrollToElement('12')">Contenedores</button>
 
     </div>
 
-    <div class="Lado-Derecho bkg-blur">
-      
+    <div class="Lado-Derecho bkg-basic" style="margin-top: 80px;">
 
-      <!--Botones "Bootstrap"-->
+      <!--Inicia parte botones diego"-->
+
+
+      
       <div>
-        <h1 class="txt-medium">Botones</h1>
-        <p>
+        <h1 class="txt-bigger zone-font margen-arriba component-padding" id="1">Botones</h1>
+        <p class="pf-font text-left margen-arriba">
           Utilice los botones personalizados para acciones en tu codigo personal.
           Poseen diferentes tamaños, estilos y más.
         </p>
-  
-        <h2>Boton base</h2>
+
+        <h2 class="margen-arriba title-font text-left margen-arriba">Boton base</h2>
         <button type="button" class="btn">Default</button>
-        
-  
-        <div class="container-S">
-  
-          <p>HTML</p>
-          <p>&lt;button type="button"&gt;Boton base&lt;/button&gt;</p>
-  
+
+
+        <div class="container-C item-center-x">
+
+          <div class="container-S margen-arriba">
+            <div class="Lado-Arriba-S">
+              <p>HTML</p>
+            </div>
+            <div class="Lado-Abajo-S">
+              <pre>
+&lt;button type="button"&gt;Boton base&lt;/button&gt;</pre>
+            </div>
+          </div>
         </div>
-  
-          
-        <h2>Variantes</h2>
-        <p>
+
+
+        <h2 class="title-font text-left margen-arriba">Variantes</h2>
+        <p class="pf-font text-left margen-arriba">
           ¿Te gustan los coloritos y la distracción visual? Pues te dejo esto por
           acá.
         </p>
         <br />
-        <button type="button" class="btn btn_1">Boton 1</button>
-        <button type="button" class="btn btn_2">Boton 2</button>
-        <button type="button" class="btn btn_3">Boton 3</button>
-        <button type="button" class="btn btn_4">Boton 4</button>
-  
-        <div class="container-S">
-  
-          <p>HTML</p>
-          <p>
-            &lt;button type="button" class="btn btn_1"&gt;Boton 1&lt;/button&gt;
-            <br />
-            &lt;button type="button" class="btn btn_2"&gt;Boton 2&lt;/button&gt;
-            <br />
-            &lt;button type="button" class="btn btn_3"&gt;Boton 3&lt;/button&gt;
-            <br />
-            &lt;button type="button" class="btn btn_4"&gt;Boton 4&lt;/button&gt;
-            <br />
-          </p>
+
+        <div class="container-C item-SpaceEvenly">
+          <div class="container-E">
+            <button type="button" class="btn btn_1">Boton 1</button>
+          </div>
+          <div class="container-E">
+            <button type="button" class="btn btn_2">Boton 2</button>
+          </div>
+          <div class="container-E">
+            <button type="button" class="btn btn_3">Boton 3</button>
+          </div>
+          <div class="container-E">
+            <button type="button" class="btn btn_4">Boton 4</button>
+          </div>
         </div>
-  
-        <h2>Tamaños</h2>
-        <p>
+
+
+        <div class="container-C item-center-x">
+
+          <div class="container-S margen-arriba">
+            <div class="Lado-Arriba-S">
+              <p>HTML</p>
+            </div>
+            <div class="Lado-Abajo-S">
+              <pre>
+&lt;button type="button" class="btn btn_1"&gt;Boton 1&lt;/button&gt;
+              
+&lt;button type="button" class="btn btn_2"&gt;Boton 2&lt;/button&gt;
+              
+&lt;button type="button" class="btn btn_3"&gt;Boton 3&lt;/button&gt;
+              
+&lt;button type="button" class="btn btn_4"&gt;Boton 4&lt;/button&gt;</pre>
+            </div>
+          </div>
+        </div>
+
+
+        <h2 class="title-font text-left margen-arriba">Tamaños</h2>
+        <p class="pf-font text-left margen-arriba">
           ¿De que sirven botones con un tamaño que no se ajusta a tu disposición?
           Acá dejamos algunos tamaños que esperamos y te sirvan
         </p>
-        <br />
-        <button type="button" class="btn btn_pequeño">Pequeño</button>
-        <button type="button" class="btn btn_mediano">Mediano</button>
-        <button type="button" class="btn btn_grande">Grande</button>
-        <button type="button" class="btn btn_largo">Largo</button>
-  
-         
-  
-        <div class="container-S">
-          <p>HTML</p>
-          <p>
-            &lt;button type="button" class="btn
-            btn_pequeño"&gt;Pequeño&lt;/button&gt; <br />
-            &lt;button type="button" class="btn
-            btn_mediano&gt;Mediano&lt;/button&gt; <br />
-            &lt;button type="button" class="btn btn_grande"&gt;Grande&lt;/button&gt;
-            <br />
-            &lt;button type="button" class="btn btn_largo"&gt;Largo&lt;/button&gt;
-            <br />
-          </p>
+
+        <div class="container-C item-center-x">
+          <div class="container-B margen-arriba">
+            <button type="button" class="btn btn_pequeño">Pequeño</button>
+            <button type="button" class="btn btn_mediano">Mediano</button>
+          </div>
+
+          <button type="button" class="btn btn_grande">Grande</button>
+          <button type="button" class="btn btn_largo">Largo</button>
+
         </div>
+
+
+        <div class="container-C item-center-x">
+
+          <div class="container-S margen-arriba">
+            <div class="Lado-Arriba-S">
+              <p>HTML</p>
+            </div>
+            <div class="Lado-Abajo-S">
+              <pre>
+&lt;button type="button" class="btn
+btn_pequeño"&gt;Pequeño&lt;/button&gt;
+              
+&lt;button type="button" class="btn
+btn_mediano&gt;Mediano&lt;/button&gt;
+            
+&lt;button type="button" class="btn btn_grande"&gt;Grande&lt;/button&gt;
+                
+&lt;button type="button" class="btn btn_largo"&gt;Largo&lt;/button&gt;
+            </pre>
+            </div>
+
+          </div>
+        </div>
+
+
       </div>
-      <!--Botones "Bootstrap"-->
+      <!--FIN PARTE BOTONES DIEGOs"-->
 
-      <!--Tarjetas Bootstrap-->
 
+
+      <!-- inician Tarjetas de diego-->
       <div>
-        <h1 class="txt-medium">Tarjetas.</h1>
-        <p>Las tarjetas sirven para proporcionar un contenedor de contenido, flexible.</p>
-  
-  
-        <h2>Cuerpo de la tarjeta.</h2>
-        <p>Esta es la estructura super basica sobre la tarjeta y lo que se puede incluir en ella.</p>
-        <div class="container-C"> 
+        <h1 class="txt-bigger zone-font margen-arriba component-padding" id="2">Tarjetas</h1>
+        <p class="pf-font text-left margen-arriba">Las tarjetas sirven para proporcionar un contenedor de contenido,
+          flexible.</p>
+
+
+        <h2 class="title-font text-left margen-arriba">Cuerpo de la tarjeta.</h2>
+        <p class="pf-font text-left margen-arriba">Esta es la estructura super basica sobre la tarjeta y lo que se puede
+          incluir en ella.</p>
+          
+        <div class="container-C item-center-x">
           <div class="card">
-              <p>Cuerpo de la tarjeta.</p>
+            <p class="text-left pf-font ">Cuerpo de la tarjeta.</p>
           </div>
         </div>
-       
-        <div class="container-S">
+
+        <div class="container-C item-center-x">
+
+          <div class="container-S margen-arriba">
+            <div class="Lado-Arriba-S">
+              <p>HTML</p>
+            </div>
+            <div class="Lado-Abajo-S">
+              <pre>
+
+&lt;div class="container-C item-center-x"&gt;
+
+    &lt;div class="card&gt;
   
-          <p>HTML</p>
-          <p>
-            &lt;div class="container-C"&gt; 
-            &lt;div class="card container-t"&gt;
-            &lt;p&gt;CONTENIDO&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;/div&gt;
-          </p>
+      &lt;p class="text-left pf-font"&gt;Cuerpo de la tarjeta&lt;/p&gt;
   
-        </div>  
-  
-        <h2>Imagen, texto y boton.</h2>
-        <p>Acá se hace uso de la tarjeta tal y como fue pensada, dandole ese toque difuminado con la clase bkg-blur. Al igual que haciendo uso de la clase para centrar los items que haya dentro de este</p>
-      <div class="container-C item-SpaceAround">
-        <div class="card container-t bkg-blur item-center-x">
-          <img
-            src="Resources/nasa-hubble-space-telescope-V2IH4b1GNPQ-unsplash.jpg"
-            alt="1"
-          />
-          <h1 class="txt-xmedium">Pilares del universo</h1>
-          <p class="txt text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-            deleniti autem, illum necessitatibus asperiores doloremque quis
-            ducimus placeat deserunt veritatis illo repudiandae velit tenetur
-            sapiente nam laborum eos ad tempora.
-          </p>
-          <button type="button" class="btn btn_pequeño">Ver más</button>
+    &lt;/div&gt;
+   
+&lt;/div&gt;
+
+            </pre>
+            </div>
+
+          </div>
         </div>
 
-        <div class="card container-t bkg-blur item-center-x">
-          <img
-            src="Resources/nasa-hubble-space-telescope-2491h0QA73Q-unsplash.jpg"
-            alt="2"
-          />
-          <h1 class="txt-xsmedium">El ojo de Dios</h1>
-          <p class="txt text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-            deleniti autem, illum necessitatibus asperiores doloremque quis
-            ducimus placeat deserunt veritatis illo repudiandae velit tenetur
-            sapiente nam laborum eos ad tempora.
-          </p>
-          <button type="button" class="btn btn_pequeño">Ver más</button>
-        </div>
+        <h2 class="title-font text-left pf-font margen-arriba">Imagen, texto y boton.</h2>
+        <p class="pf-font text-left margen-arriba">Acá se hace uso de la tarjeta tal y como fue pensada, dandole ese
+          toque difuminado con la clase bkg-blur. Al igual que haciendo uso de la clase para centrar los items que haya
+          dentro de este</p>
 
-        <div class="card container-t bkg-blur item-center-x">
-          <img
-            src="Resources/nasa-hubble-space-telescope-OoL6vyPjTPw-unsplash.jpg"
-            alt="3"
-          />
-          <h1 class="txt-xsmedium">Cúmulo de galaxias</h1>
-          <p class="txt text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-            deleniti autem, illum necessitatibus asperiores doloremque quis
-            ducimus placeat deserunt veritatis illo repudiandae velit tenetur
-            sapiente nam laborum eos ad tempora.
-          </p>
-          <button type="button" class="btn btn_pequeño">Ver más</button>
-        </div>
-  
-           
-          <div class="container-S">
-  
-            <p>HTML</p>
-            <p>
-              &lt;div class="card container-t item-center-x"&gt;
-              &lt;img src="IMAGEN" alt="" /&gt;
-              &lt;h1 class="txt-xmedium"&gt;Pilares del universo&lt;/h1&gt;
-              &lt;p class="txt text-center"&gt;
-                  Lorem ipsum.
-              &lt;/p&gt;
-              &lt;/div&gt;
+        <div class="container-C item-SpaceAround">
+          <div class="card container-t bkg-blur item-center-x">
+            <img src="Resources/Tarjeta_1.jpg" alt="1" />
+            <h1 class="txt-xsmedium">Mariposa</h1>
+            <p class="txt text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+              deleniti autem, illum necessitatibus asperiores doloremque quis
+              ducimus placeat deserunt veritatis illo repudiandae velit tenetur
+              sapiente nam laborum eos ad tempora.
             </p>
-            &lt;button type="button" class="btn
-            btn_pequeño"&gt;Pequeño&lt;/button&gt
-  
+            <button type="button" class="btn btn_home">Ver más</button>
           </div>
-        </div>
-      </div>
 
-      <!--Tarjetas Bootstrap-->
+          <div class="card container-t bkg-blur item-center-x">
+            <img src="Resources/Tarjeta_2.jpg" alt="2" />
+            <h1 class="txt-xsmedium">El ojo de Dios</h1>
+            <p class="txt text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+              deleniti autem, illum necessitatibus asperiores doloremque quis
+              ducimus placeat deserunt veritatis illo repudiandae velit tenetur
+              sapiente nam laborum eos ad tempora.
+            </p>
+            <button type="button" class="btn btn_home">Ver más</button>
+          </div>
 
-      <!-- form and navbar -->
+          <div class="card container-t bkg-blur item-center-x">
+            <img src="Resources/Tarjeta_3.jpg" alt="3" />
+            <h1 class="txt-xsmedium">Cúmulo de galaxias</h1>
+            <p class="txt text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+              deleniti autem, illum necessitatibus asperiores doloremque quis
+              ducimus placeat deserunt veritatis illo repudiandae velit tenetur
+              sapiente nam laborum eos ad tempora.
+            </p>
+            <button type="button" class="btn btn_home">Ver más</button>
+          </div>
 
-      <p>Clase "navbar-space" se usa para definir un espacio en el html que sera un navbar.</p>
-      <p>Clase "navbar-item" se usa para definir un elemento dentro del navbar.</p>
-      <p>Clase "navbar-center-item" se usa para centrar un elemento dentro de un contenedor interno dentro del navbar.</p>
-      <nav class="navbar-space">
-        <a href=""></a>
-      
-          <span class="navbar-item navbar-center-item">navbar-space</span>
-      
-        <div class="navbar-center-item">
-          <h3 class="navbar-item">item</h3>
-          <h3 class="navbar-item">item</h3>
-        </div>
-      </nav>
-      <p>Aquí envuelve al "navbar-center-item" con un container de clase "container-C item-SpaceEvenly" dentro del navbar.</p>
-      <nav class="navbar-space">
-        <a href=""></a>
-      
-          <span class="navbar-item navbar-center-item">Logo</span>
-      
-          <div class="container-C item-SpaceEvenly">
-              <div class="navbar-center-item">
-                <h3 class="navbar-item">item</h3>
-                <h3 class="navbar-item">item</h3>
+          <div class="card container-t bkg-blur item-center-x">
+            <img src="Resources/Tarjeta_4.jpg" alt="4" />
+            <h1 class="txt-xsmedium">Pilares del universo</h1>
+            <p class="txt text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+              deleniti autem, illum necessitatibus asperiores doloremque quis
+              ducimus placeat deserunt veritatis illo repudiandae velit tenetur
+              sapiente nam laborum eos ad tempora.
+            </p>
+            <button type="button" class="btn btn_home">Ver más</button>
+          </div>
+
+          <div class="container-C item-center-x">
+
+            <div class="container-S margen-arriba">
+              <div class="Lado-Arriba-S">
+                <p>HTML</p>
               </div>
-          </div>
-      </nav>
-      <p>Aquí se agrega "item-right" al container mensioando anteriormente.</p>
-      <nav class="navbar-space">
-        <a href=""></a>
-      
-          <span class="navbar-item navbar-center-item">Logo</span>
-        <div class="container-C item-right item-SpaceEvenly">
-          <div class="navbar-center-item">
-            <h3 class="navbar-item">item</h3>
-                <h3 class="navbar-item">item</h3>
-          </div>
-        </div>
-      
-      </nav>
-      <p>Para definir un espacio form se agrga la clase "form-space"</p>
-      <p>Para definir un label dentro del form se agrega la clase "label-space".</p>
-      <p>Para definir un input se le agrega la clase "input-space-item".</p>
-      <form class="form-space">
-        <label for="" class="label-space">Bienvenido</label>
-        <input type="" class="input-space-item">
-        <br>
-        <p>Para conseguir el siguiente efecto en el input, envuelva el input de un container con la clase "input-space-group".</p>
-        <p>Luego, agrege en el lugar de su preferencia una etiqueta span con la clase "input-text".</p>
-        <div>
-          <label class="label-space">Text</label>
-          <div class="input-space-group">
-              <span class="input-text">Nombre</span>
-              <input type="text" class="input-space-item">
+              <div class="Lado-Abajo-S">
+                <pre>
+
+&lt;div class="card container-t bkg-blur item-center-x"&gt;
+  &lt;img src="IMAGEN QUE DESEE" alt="ALT QUE DESEE" /&gt;
+  &lt;h1 class="txt-xsmedium"&gt;Título&lt;/h1&gt;
+  &lt;p class="txt text-center"&gt;
+    Descripcion de la imagen
+  &lt;/p&gt;</pre>
+                
+                <pre class="">
+  &lt;button type="button" class="btn btn_home"&gt;Ver más&lt;/button&gt;
+&lt;/div&gt;  
+              </pre>
+              </div>
+
+            </div>
+
           </div>
         </div>
-        <p>Aquí otras formas de organizarlos.</p>
-        <div>
-          <label class="label-space">Number</label>
-          <div class="input-space-group">
-              <span class="input-text">#</span>
-              <input type="number" class="input-space-item">
-              <span class="input-text">waos</span>
-              <input type="number" class="input-space-item">
-          </div>
-        </div>
-        <div>
-          <label class="label-space">Mail</label>
-          <div class="input-space-group">
-              <span class="input-text">@</span>
-              <input type="email" class="input-space-item">
-              <span class="input-text">✈</span>
-          </div>
-        </div>
-      </form>
+        <!--finalizan tarjetas de Diego-->
 
 
-      <div>
-        <!--badges-->
-        <br><br>
-        <h3 class="zone-font tittle-font text-left">Badges</h3><br>
-        <p class="pf-font">Guia y ejemplos sobre Badges, una herramienta para agregar etiquetas pequeñas a tu interfaz</p>
-        <h3 class="zone-font tittle-font text-left">Ejemplos</h3>
-        <p class= "pf-font">Los distintivos están disponibles para una variedad de tipos de encabezados y ofrecen una variedad de estilos para adaptarse a diferentes necesidades de diseño.</p><br>
-        <h3 class="zone-font tittle-font text-left">Encabezados</h3><br>
-        <h1>INTERSTELLAR <span class="badge-text-uno">New</span></h1><br>
-        <h2>INTERSTELLAR <span class="badge-text-uno">New</span></h2><br>
-        <h3>INTERSTELLAR <span class="badge-text-uno">New</span></h3><br>
-        <h4>INTERSTELLAR <span class="badge-text-uno">New</span></h4><br>
-        <h5>INTERSTELLAR <span class="badge-text-uno">New</span></h5><br>
-        <h6>INTERSTELLAR <span class="badge-text-uno">New</span></h6><br><br>
-    
-        <h1>INTERSTELLAR <span class="badge-text-dos">New</span></h1><br>
-        <h2>INTERSTELLAR <span class="badge-text-dos">New</span></h2><br>
-        <h3>INTERSTELLAR <span class="badge-text-dos">New</span></h3><br>
-        <h4>INTERSTELLAR <span class="badge-text-dos">New</span></h4><br>
-        <h5>INTERSTELLAR <span class="badge-text-dos">New</span></h5><br>
-        <h6>INTERSTELLAR <span class="badge-text-dos">New</span></h6><br><br>
-    
-        <h1>INTERSTELLAR <span class="badge-text-tres">New</span></h1><br>
-        <h2>INTERSTELLAR <span class="badge-text-tres">New</span></h2><br>
-        <h3>INTERSTELLAR <span class="badge-text-tres">New</span></h3><br>
-        <h4>INTERSTELLAR <span class="badge-text-tres">New</span></h4><br>
-        <h5>INTERSTELLAR <span class="badge-text-tres">New</span></h5><br>
-        <h6>INTERSTELLAR <span class="badge-text-tres">New</span></h6><br><br>
-    
-        <h1>INTERSTELLAR <span class="badge-text-cuatro">New</span></h1><br>
-        <h2>INTERSTELLAR <span class="badge-text-cuatro">New</span></h2><br>
-        <h3>INTERSTELLAR <span class="badge-text-cuatro">New</span></h3><br>
-        <h4>INTERSTELLAR <span class="badge-text-cuatro">New</span></h4><br>
-        <h5>INTERSTELLAR <span class="badge-text-cuatro">New</span></h5><br>
-        <h6>INTERSTELLAR <span class="badge-text-cuatro">New</span></h6><br><br>
-    
-        <h1>INTERSTELLAR <span class="badge-text-cinco">New</span></h1><br>
-        <h2>INTERSTELLAR <span class="badge-text-cinco">New</span></h2><br>
-        <h3>INTERSTELLAR <span class="badge-text-cinco">New</span></h3><br>
-        <h4>INTERSTELLAR <span class="badge-text-cinco">New</span></h4><br>
-        <h5>INTERSTELLAR <span class="badge-text-cinco">New</span></h5><br>
-        <h6>INTERSTELLAR <span class="badge-text-cinco">New</span></h6><br><br>
         
-        <h3 class="zone-font tittle-font text-left">Botones</h3><p><br>
-        <p class="pf-font">Los badges tambien los podemos utilizar en los botones como por ejemplo notificaciones</p>
+        <!-- inicia navbar de quevedo -->
+
+        <div class="margen-arriba">
+          <h1 class="txt-bigger component-padding zone-font">NavBar</h1>
+          <div class="margen-arriba text-left">
+            <p class="pf-font">Clase "navbar-space" se usa para definir un espacio en el html que sera un navbar.</p>
+            <p class="pf-font">Clase "navbar-center-item" se usa para centrar un elemento dentro de un contenedor
+              interno
+              dentro del navbar.</p>
+            <p class="pf-font">Clase "navbar-item" se usa para definir un elemento dentro del navbar.</p>
+            <p class="pf-font">Clase "navbar-center-item" se usa para centrar un elemento dentro de un contenedor
+              interno
+              dentro del navbar.</p>
+          </div>
+          <div class="container-S margen-arriba">
+
+            <p>HTML</p>
+            <p class="margen-arriba">
+              &lt;nav class="navbar-space"&gt;
+              &lt;span class="navbar-item navbar-center-item"&gt;navbar-space&lt;/span&gt;
+              &lt;div class="navbar-center-item"&gt;
+              &lt;h3 class="navbar-item"&gt;item&lt;/h3&gt;
+              &lt;h3 class="navbar-item"&gt;item&lt;/h3&gt;
+              &lt;/div&gt;
+              &lt;/nav&gt;
+            </p>
+
+          </div>
+          <nav class="navbar-space">
+
+            <span class="navbar-item navbar-center-item">navbar-space</span>
+
+            <div class="navbar-center-item">
+              <h3 class="navbar-item">item</h3>
+              <h3 class="navbar-item">item</h3>
+            </div>
+          </nav>
+          <div class="margen-arriba text-left">
+            <p class="pf-font">Aquí envuelve al "navbar-center-item" con un container de clase "container-C
+              item-SpaceEvenly" dentro del navbar.</p>
+          </div>
+          <div class="container-S margen-arriba">
+
+            <p>HTML</p>
+            <p class="margen-arriba">
+              &lt;nav class="navbar-space"&gt;
+              &lt;span class="container-C item-SpaceEvenly"&gt;Logo&lt;/span&gt;
+              &lt;div class="navbar-center-item"&gt;
+              &lt;h3 class="navbar-item"&gt;item&lt;/h3&gt;
+              &lt;h3 class="navbar-item"&gt;item&lt;/h3&gt;
+              &lt;/div&gt;
+              &lt;/nav&gt;
+            </p>
+
+          </div>
+          
+
+        <!--finaliza parte navbar quevedix-->
+
+        <!--inicia parte bagdes de cristina-->
         
+        <h1 class="txt-bigger zone-font margen-arriba component-padding" id="4">Badges</h1>
+        <p class="pf-font text-left margen-arriba">Guia y ejemplos sobre Badges, una herramienta para agregar
+          etiquetas pequeñas a tu interfaz</p>
+        <h2 class="title-font text-left margen-arriba">Ejemplos</h2>
+        <p class="pf-font text-left margen-arriba">Los distintivos están disponibles para una variedad de tipos 
+          de encabezados y ofrecen una variedad de estilos para adaptarse a diferentes necesidades de diseño.</p>
+        <h2 class="title-font text-left margen-arriba">Encabezados</h2>
+
+          <div class="container-D">
+            <h1 class="margin-separador">INTERSTELLAR <span class="badge-text-uno">New</span></h1>
+          <h2 class="margin-separador">INTERSTELLAR <span class="badge-text-uno">New</span></h2>
+          <h3 class="margin-separador">INTERSTELLAR <span class="badge-text-uno">New</span></h3>
+          <h4 class="margin-separador">INTERSTELLAR <span class="badge-text-uno">New</span></h4>
+          <h5 class="margin-separador">INTERSTELLAR <span class="badge-text-uno">New</span></h5>
+          <h6 class="margin-separador">INTERSTELLAR <span class="badge-text-uno">New</span></h6>
+
+          <h1 class="margin-separador">INTERSTELLAR <span class="badge-text-dos">New</span></h1>
+          <h2 class="margin-separador">INTERSTELLAR <span class="badge-text-dos">New</span></h2>
+          <h3 class="margin-separador">INTERSTELLAR <span class="badge-text-dos">New</span></h3>
+          <h4 class="margin-separador">INTERSTELLAR <span class="badge-text-dos">New</span></h4>
+          <h5 class="margin-separador">INTERSTELLAR <span class="badge-text-dos">New</span></h5>
+          <h6 class="margin-separador">INTERSTELLAR <span class="badge-text-dos">New</span></h6>
+
+          <h1 class="margin-separador">INTERSTELLAR <span class="badge-text-tres">New</span></h1>
+          <h2 class="margin-separador">INTERSTELLAR <span class="badge-text-tres">New</span></h2>
+          <h3 class="margin-separador">INTERSTELLAR <span class="badge-text-tres">New</span></h3>
+          <h4 class="margin-separador">INTERSTELLAR <span class="badge-text-tres">New</span></h4>
+          <h5 class="margin-separador">INTERSTELLAR <span class="badge-text-tres">New</span></h5>
+          <h6 class="margin-separador">INTERSTELLAR <span class="badge-text-tres">New</span></h6>
+
+          <h1 class="margin-separador">INTERSTELLAR <span class="badge-text-cuatro">New</span></h1>
+          <h2 class="margin-separador">INTERSTELLAR <span class="badge-text-cuatro">New</span></h2>
+          <h3 class="margin-separador">INTERSTELLAR <span class="badge-text-cuatro">New</span></h3>
+          <h4 class="margin-separador">INTERSTELLAR <span class="badge-text-cuatro">New</span></h4>
+          <h5 class="margin-separador">INTERSTELLAR <span class="badge-text-cuatro">New</span></h5>
+          <h6 class="margin-separador">INTERSTELLAR <span class="badge-text-cuatro">New</span></h6>
+
+          <h1 class="margin-separador">INTERSTELLAR <span class="badge-text-cinco">New</span></h1>
+          <h2 class="margin-separador">INTERSTELLAR <span class="badge-text-cinco">New</span></h2>
+          <h3 class="margin-separador">INTERSTELLAR <span class="badge-text-cinco">New</span></h3>
+          <h4 class="margin-separador">INTERSTELLAR <span class="badge-text-cinco">New</span></h4>
+          <h5 class="margin-separador">INTERSTELLAR <span class="badge-text-cinco">New</span></h5>
+          <h6 class="margin-separador">INTERSTELLAR <span class="badge-text-cinco">New</span></h6>
+          </div>
+
+          <div class="container-C item-center-x">
+
+            <div class="container-S margen-arriba">
+              <div class="Lado-Arriba-S">
+                <p>HTML</p>
+              </div>
+              <div class="Lado-Abajo-S">
+                <pre>
+  
+  &lt;h1 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-uno"&gt;New&lt;/span&gt;&lt;/h1&gt;
+  &lt;h2 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-uno"&gt;New&lt;/span&gt;&lt;/h2&gt;
+  &lt;h3 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-uno"&gt;New&lt;/span&gt;&lt;/h3&gt;
+  &lt;h4 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-uno"&gt;New&lt;/span&gt;&lt;/h4&gt;
+  &lt;h5 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-uno"&gt;New&lt;/span&gt;&lt;/h5&gt;
+  &lt;h6 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-uno"&gt;New&lt;/span&gt;&lt;/h6&gt;
+                    
+  &lt;h1 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-dos"&gt;New&lt;/span&gt;&lt;/h1&gt;
+  &lt;h2 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-dos"&gt;New&lt;/span&gt;&lt;/h2&gt;
+  &lt;h3 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-dos"&gt;New&lt;/span&gt;&lt;/h3&gt;
+  &lt;h4 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-dos"&gt;New&lt;/span&gt;&lt;/h4&gt;
+  &lt;h5 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-dos"&gt;New&lt;/span&gt;&lt;/h5&gt;
+  &lt;h6 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-dos"&gt;New&lt;/span&gt;&lt;/h6&gt;
+                    
+  &lt;h1 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-tres"&gt;New&lt;/span&gt;&lt;/h1&gt;
+  &lt;h2 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-tres"&gt;New&lt;/span&gt;&lt;/h2&gt;
+  &lt;h3 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-tres"&gt;New&lt;/span&gt;&lt;/h3&gt;
+  &lt;h4 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-tres"&gt;New&lt;/span&gt;&lt;/h4&gt;
+  &lt;h5 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-tres"&gt;New&lt;/span&gt;&lt;/h5&gt;
+  &lt;h6 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-tres"&gt;New&lt;/span&gt;&lt;/h6&gt;
+                    
+  &lt;h1 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cuatro"&gt;New&lt;/span&gt;&lt;/h1&gt;
+  &lt;h2 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cuatro"&gt;New&lt;/span&gt;&lt;/h2&gt;
+  &lt;h3 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cuatro"&gt;New&lt;/span&gt;&lt;/h3&gt;
+  &lt;h4 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cuatro"&gt;New&lt;/span&gt;&lt;/h4&gt;
+  &lt;h5 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cuatro"&gt;New&lt;/span&gt;&lt;/h5&gt;
+  &lt;h6 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cuatro"&gt;New&lt;/span&gt;&lt;/h6&gt;
+                    
+  &lt;h1 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cinco"&gt;New&lt;/span&gt;&lt;/h1&gt;
+  &lt;h2 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cinco"&gt;New&lt;/span&gt;&lt;/h2&gt;
+  &lt;h3 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cinco"&gt;New&lt;/span&gt;&lt;/h3&gt;
+  &lt;h4 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cinco"&gt;New&lt;/span&gt;&lt;/h4&gt;
+  &lt;h5 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cinco"&gt;New&lt;/span&gt;&lt;/h5&gt;
+  &lt;h6 class="margin-separador"&gt;INTERSTELLAR &lt;span class="badge-text-cinco"&gt;New&lt;/span&gt;&lt;/h6&gt;
+                    
+    
+                </pre>
+              </div>
+  
+            </div>
+          </div>
+        <h2 class="title-font text-left margen-arriba">Botones</h2>
+        <p>
+
+        <p class="pf-font text-left margen-arriba">Los badges tambien los podemos utilizar en los botones como
+          por
+          ejemplo notificaciones</p>
+
         <button type="button" class="btn-uno">
-            Notifications <span class="badge-btn-text">4</span>
-        </button><br>
-        <p>Recordemos que segun como se utilicen los badges, puede ser confuso a pesar de los estilos y peculiaridades que posean. Los badges pueden ser numeros o palabras, y se pueden ubicar en botones como podemos ver en el siguiente ejemplo en el cual nuestro badge nos mostraria lo que son las notificaciones. </p>
- 
-        <button type="button" class="btn-dos">
+          Notifications <span class="badge-btn-text">4</span>
+        </button>
+
+        <div class="container-C item-center-x">
+
+          <div class="container-S margen-arriba">
+            <div class="Lado-Arriba-S">
+              <p>HTML</p>
+            </div>
+            <div class="Lado-Abajo-S">
+              <pre>
+
+&lt;button type="button" class="btn-uno"&gt;
+Notifications &lt;span class="badge-btn-text"&gt;4&lt;/span&gt;
+&lt;/button&gt;
+              
+            </pre>
+            </div>
+
+          </div>
+        </div>
+        
+        <p class="pf-font text-left margen-arriba">Recordemos que segun como se utilicen los badges,
+          puede ser
+          confuso a pesar de los estilos y peculiaridades que posean. Los badges pueden ser numeros
+           o palabras,
+          y se
+          pueden ubicar en botones como podemos ver en el siguiente ejemplo en el cual nuestro badge nos
+          mostraria
+          lo que son las notificaciones. </p>
+
+        <h2 class="title-font text-left margen-arriba">Positioned</h2>
+        <p class="pf-font text-left margen-arriba">Para poder colocar las notificaciones en la parte superior
+          del
+          boton, se debe utilizar la clase .order</p>
+
+        <div>
+          <button type="button" class="btn-dos">
             Inbox
             <span class="order-badges">
               99+
             </span>
-        </button>  
-        <h3 class="zone-font tittle-font text-left">Positioned</h3><br>
-        <p class="pf-font">Para poder colocar las notificaciones en la parte superior del boton, se debe utilizar la clase .order</p><br>   
-        <button type="button" class="btn-tres">
-            Profile
-            <span class="order-badges">
-            <span class="order-badges">New alerts</span>
-            </span>
-        </button><br><br>
+          </button>
+        </div>
+        <div class="container-C item-center-x">
 
-        <span class="badge-text-primary">Primary</span>
-        <span class="badge-text-secondary">Secondary</span>
-        <span class="badge-text-success">Success</span>
-        <span class="badge-text-danger">Danger</span>
-        <span class="badge-text-warning">Warning</span>
-        <span class="badge-text-info">Info</span>
-        <span class="badge-text-light">Light</span>
-        <span class="badge-text-dark">Dark</span><br><br><br>
+          <div class="container-S margen-arriba">
+            <div class="Lado-Arriba-S">
+              <p>HTML</p>
+            </div>
+            <div class="Lado-Abajo-S">
+              <pre>
+&lt;div&gt;
+&lt;button type="button" class="btn-dos"&gt;
+  Inbox
+  &lt;span class="order-badges"&gt;
+    99+
+    &lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+              
+            </pre>
+            </div>
+
+          </div>
+        </div>
+        <p class="pf-font text-left margen-arriba">También podemos utilizar el badge como indicador sin
+          necesidad de
+          incluir números o letras; puede quedar perfectamente vacío si la situación lo amerita, siempre y
+          cuando
+          cumpla su función como indicador.</p>
+
+        <div>
+          <button type="button" class="btn-tres margin-separador">
+            Profile
+            <span class="order-badges"></span>
+            </span>
+          </button>
+        </div>
+
+        <div class="container-C item-center-x">
+
+          <div class="container-S margen-arriba">
+            <div class="Lado-Arriba-S">
+              <p>HTML</p>
+            </div>
+            <div class="Lado-Abajo-S">
+              <pre>
+
+&lt;div&gt;
+  &lt;button type="button" class="btn-tres margin-separador"&gt;
+    Profile
+    &lt;span class="order-badges"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+              
+            </pre>
+          </div>
+          </div>
+        </div>
+        <h2 class="title-font text-left margen-arriba">Background colors </h2>
+        <p class="pf-font text-left margen-arriba">Hemos establecido diferentes Background-color, para tener
+          variedad de estilos.</p>
+
+          <div class="container-C item-SpaceEvenly">
+            <span class="badge-text-primary">Primary</span>
+            <span class="badge-text-secondary">Secondary</span>
+            <span class="badge-text-success">Success</span>
+            <span class="badge-text-danger">Danger</span>
+            <span class="badge-text-warning">Warning</span>
+            <span class="badge-text-info">Info</span>
+            <span class="badge-text-light">Light</span>
+            <span class="badge-text-dark">Dark</span>
+          </div>
+        
+          <div class="container-C item-center-x">
+
+            <div class="container-S margen-arriba">
+              <div class="Lado-Arriba-S">
+                <p>HTML</p>
+              </div>
+              <div class="Lado-Abajo-S">
+                <pre>
   
-        <span class="badge-rounded-text-primary">Primary</span>
-        <span class="badge-rounded-text-secondary">Secondary</span>
-        <span class="badge-rounded-text-success">Success</span>
-        <span class="badge-rounded-text-danger">Danger</span>
-        <span class="badge-rounded-text-warning">Warning</span>
-        <span class="badge-rounded-text-info">Info</span>
-        <span class="badge-rounded-text-light">Light</span>
-        <span class="badge-rounded-text-dark">Dark</span><br><br><br>
-      </div>
-      <!--Alertas-->
-      <div>
-        <div class="alert-primary" role="alert">
-          A simple primary alert—check it out!
-        </div>
-        <br>
-        <div class="alert-secondary" role="alert">
-          A simple secondary alert—check it out!
-        </div>
-        <br>
-        <div class="alert-success" role="alert">
-          A simple success alert—check it out!
-        </div>
-        <br>
-        <div class="alert-danger" role="alert">
-          A simple danger alert—check it out!
-        </div>
-        <br>
-        <div class="alert-warning" role="alert">
-          A simple warning alert—check it out!
-        </div>
-        <br>
-        <div class="alert-info" role="alert">
-          A simple info alert—check it out!
-        </div>
-        <br>
-        <div class="alert-light" role="alert">
-          A simple light alert—check it out!
-        </div>
-        <br>
-        <div class="alert-dark" role="alert">
-          A simple dark alert—check it out!
-        </div>
-        <br>
-        <div class="alert--primary" role="alert">
-          A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-        </div>
-        <br>
-        <div class="alert--secondary" role="alert">
-          A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-        </div>
-        <br>
-        <div class="alert--success" role="alert">
-          A simple success alert with <a href="#" class="alert-link-dark">an example link</a>. Give it a click if you like.
-        </div>
-        <br>
-        <div class="alert--danger" role="alert">
-          A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-        </div>
-        <br>
-        <div class="alert--warning" role="alert">
-          A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-        </div>
-        <br>
-        <div class="alert--info" role="alert">
-          A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-        </div>
-        <br>
-        <div class="alert--light" role="alert">
-          A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-        </div>
-        <br>
-        <div class="alert--dark" role="alert">
-          A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-        </div>
-        <br>
+  &lt;div class="container-C margin-separador"&gt;
+    &lt;span class="badge-text-primary margin-separador"&gt;Primary&lt;/span&gt;
+    &lt;span class="badge-text-secondary margin-separador"&gt;Secondary&lt;/span&gt;
+    &lt;span class="badge-text-success margin-separador"&gt;Success&lt;/span&gt;
+    &lt;span class="badge-text-danger margin-separador"&gt;Danger&lt;/span&gt;
+    &lt;span class="badge-text-warning margin-separador"&gt;Warning&lt;/span&gt;
+    &lt;span class="badge-text-info margin-separador"&gt;Info&lt;/span&gt;
+    &lt;span class="badge-text-light margin-separador"&gt;Light&lt;/span&gt;
+    &lt;span class="badge-text-dark margin-separador"&gt;Dark&lt;/span&gt;
+  &lt;/div&gt;
   
-        <div class="container-C ">
-        <div class="alert-success" role="alert">
-          <h4 class="alert-heading">Well done!</h4>
-          <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-          <hr>
-          <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+              </pre>
+              </div>
+  
+            </div>
+          </div>
+
+        <h2 class="title-font text-left margen-arriba">Pill Badges</h2>
+        <p class="pf-font text-left margen-arriba">En estos badges hacemos uso de la propiedad border-radius 
+          para
+          darle ese aspecto redondeado en los bordes, a diferencia de los anteriores que no tienen ese grado de
+          redondeo.</p>
+
+          <div class="container-C item-SpaceEvenly component-padding">
+            <span class="badge-rounded-text-primary">Primary</span>
+            <span class="badge-rounded-text-secondary">Secondary</span>
+            <span class="badge-rounded-text-success">Success</span>
+            <span class="badge-rounded-text-danger">Danger</span>
+            <span class="badge-rounded-text-warning">Warning</span>
+            <span class="badge-rounded-text-info">Info</span>
+            <span class="badge-rounded-text-light">Light</span>
+            <span class="badge-rounded-text-dark">Dark</span>
+          </div>
+
+          <div class="container-C item-center-x">
+
+            <div class="container-S margen-arriba">
+              <div class="Lado-Arriba-S">
+                <p>HTML</p>
+              </div>
+              <div class="Lado-Abajo-S">
+                <pre>
+  
+  &lt;div class="container-C margin-separador"&gt;
+    &lt;span class="badge-rounded-text-primary margin-separador"&gt;Primary&lt;/span&gt;
+    &lt;span class="badge-rounded-text-secondary margin-separador"&gt;Secondary&lt;/span&gt;
+    &lt;span class="badge-rounded-text-success margin-separador"&gt;Success&lt;/span&gt;
+    &lt;span class="badge-rounded-text-danger margin-separador"&gt;Danger&lt;/span&gt;
+    &lt;span class="badge-rounded-text-warning margin-separador"&gt;Warning&lt;/span&gt;
+    &lt;span class="badge-rounded-text-info margin-separador"&gt;Info&lt;/span&gt;
+    &lt;span class="badge-rounded-text-light margin-separador"&gt;Light&lt;/span&gt;
+    &lt;span class="badge-rounded-text-dark margin-separador"&gt;Dark&lt;/span&gt;
+  &lt;/div&gt;
+                
+              </pre>
+              </div>
+            </div>
+          </div>
+
+        <!--finalizan badges cristina-->
+        
+
+        <!--inician alertas cristina-->
+        
+
+        <!--Alertas-->
+        <h1 class="txt-bigger zone-font margen-arriba component-padding" id="5">Alertas</h1>
+        <p class="pf-font text-left margen-arriba">Las alertas son elementos visuales que se utilizan para
+          notificar al
+          usuario sobre diferentes eventos, y pueden variar en su diseño y contenido dependiendo del contexto
+          y la
+          gravedad del mensaje que se quiere transmitir.</p>
+
+        <h2 class="title-font text-left margen-arriba">Ejemplos</h2>
+        <p class="pf-font text-left margen-arriba">Entre algunos modelos basicos de alertas como danger o 
+          warning, hemos creado los siguientes estilos, los cuales con JavaScrip puedes darles funcionalidad</p>
+
+        <div class="container-C item-SpaceEvenly margin-separador">
+          <div class="alert-primary margin-separador" role="alert">
+            A simple primary alert—check it out!
+          </div>
+
+          <div class="alert-secondary margin-separador" role="alert">
+            A simple secondary alert—check it out!
+          </div>
+
+          <div class="alert-success margin-separador" role="alert">
+            A simple success alert—check it out!
+          </div>
+
+          <div class="alert-danger margin-separador" role="alert">
+            A simple danger alert—check it out!
+          </div>
+
+          <div class="alert-warning margin-separador" role="alert">
+            A simple warning alert—check it out!
+          </div>
+
+          <div class="alert-info margin-separador" role="alert">
+            A simple info alert—check it out!
+          </div>
+
+          <div class="alert-light margin-separador" role="alert">
+            A simple light alert—check it out!
+          </div>
+
+          <div class="alert-dark margin-separador" role="alert">
+            A simple dark alert—check it out!
+          </div>
         </div>
-      </div>
-        <br>
-        <div class="alert-triangle-primary" role="alert">
-          <svg xmlns="http://www.w3.org/2000/svg" class="triangle" viewBox="0 0 16 16" role="img" aria-label="Warning:">
-            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+
+        <h2 class="title-font text-left margen-arriba">Link color</h2>
+        <p class="pf-font text-left margen-arriba">Utilice la clase .alert-link-dark para tener el link en
+          color negro la clase .alert-link-light para tener el enlace en un color celeste claro, y para un
+          enlace de color blanco solamente será .alert-link</p>
+
+        <div class="container-C item-SpaceEvenly">
+          <div class="alert--primary margin-separador" role="alert">
+            A simple primary alert with <a href="#" class="alert-link-light">an example link</a>. Give it a click
+            if
+            you like.
+          </div>
+          <div class="alert--secondary margin-separador" role="alert">
+            A simple secondary alert with <a href="#" class="alert-link-light">an example link</a>. Give it a
+            click if
+            you like.
+          </div>
+          <div class="alert--success margin-separador" role="alert">
+            A simple success alert with <a href="#" class="alert-link-light">an example link</a>. Give it a click
+            if
+            you like.
+          </div>
+          <div class="alert--danger margin-separador" role="alert">
+            A simple danger alert with <a href="#" class="alert-link-light">an example link</a>. Give it a click
+            if
+            you like.
+          </div>
+          <div class="alert--warning margin-separador" role="alert">
+            A simple warning alert with <a href="#" class="alert-link-light">an example link</a>. Give it a click
+            if
+            you like.
+          </div>
+          <div class="alert--info margin-separador" role="alert">
+            A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click 
+            if 
+            you like.
+          </div>
+          <div class="alert--light margin-separador" role="alert">
+            A simple light alert with <a href="#" class="alert-link-light">an example link</a>. Give it a click 
+            if 
+            you like.
+          </div>
+          <div class="alert--dark margin-separador" role="alert">
+            A simple dark alert with <a href="#" class="alert-link-light">an example link</a>. Give it a click
+            if 
+            you like.
+          </div>
+        </div>
+
+        <h2 class="title-font text-left margen-arriba">Icon</h2>
+        <p class="pf-font text-left margen-arriba">Podemos crear diferentes estilos personalizados con los
+          diferentes iconos.</p>
+
+        <div class="container-C item-SpaceEvenly">
+          <div class="alert-triangle-primary margin-separador" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" class="triangle" viewBox="0 0 16 16" role="img"
+              aria-label="Warning:">
+              <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+            <div>
+              An example alert with an icon
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="pf-font text-left margen-arriba"></p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="d-none margin-separador">
+            <symbol id="check-circle-fill" viewBox="0 0 16 16">
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+            </symbol>
+            <symbol id="info-fill" viewBox="0 0 16 16">
+              <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+            </symbol>
+            <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+              <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </symbol>
+          </svg>
+        </div>
+
+        <p class="pf-font text-left margen-arriba">Aqui hay mas iconos para tener diferentes estilos segun sea
+          la necesidad de estilizacion o el tipo de alerta que se desea implementar</p>
+
+        <div class="alert-primary-b margin-separador" role="alert">
+          <svg class="imge1" role="img" aria-label="Info:">
+            <use xlink:href="#info-fill" />
           </svg>
           <div>
             An example alert with an icon
           </div>
         </div>
-        <br>
-        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-          <symbol id="check-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-          </symbol>
-          <symbol id="info-fill" viewBox="0 0 16 16">
-            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-          </symbol>
-          <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
-            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-          </symbol>
-        </svg>
-        
-        <div class="alert-primary-b" role="alert">
-          <svg class="imge1" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-          <div>
-            An example alert with an icon
-          </div>
-        </div>
-        <br>
-        <div class="alert-success-b" role="alert">
-          <svg class="imge2" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+
+        <div class="alert-success-b margin-separador" role="alert">
+          <svg class="imge2" role="img" aria-label="Success:">
+            <use xlink:href="#check-circle-fill" />
+          </svg>
           <div>
             An example success alert with an icon
           </div>
         </div>
-        <br>
-        <div class="alert-warning-b" role="alert">
-          <svg class="imge3" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+
+        <div class="alert-warning-b margin-separador" role="alert">
+          <svg class="imge3" role="img" aria-label="Warning:">
+            <use xlink:href="#exclamation-triangle-fill" />
+          </svg>
           <div>
             An example warning alert with an icon
           </div>
         </div>
-        <br>
-        <div class="alert-danger-b" role="alert">
-          <svg class="imge4" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+
+        <div class="alert-danger-b margin-separador" role="alert">
+          <svg class="imge4" role="img" aria-label="Danger:">
+            <use xlink:href="#exclamation-triangle-fill" />
+          </svg>
           <div>
             An example danger alert with an icon
           </div>
         </div>
-        <br>
-        <div class="alert-warning-c" role="alert">
-          <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+        <p class="pf-font text-left margen-arriba"></p>
+      </div>
+        <!--finalizan alertas cristina-->
+      
+      <!-- formularios -->
+
+      <div class="margen-arriba">
+        <h1 class="txt-bigger component-padding zone-font" id="6">Form</h1>
+        <div class="margen-arriba text-left">
+          <p class="pf-font">Para definir un espacio form se agrga la clase "form-space"</p>
+          <p class="pf-font">Para definir un label dentro del form se agrega la clase "label-space".</p>
+          <p class="pf-font">Para definir un input se le agrega la clase "input-space-item".</p>
         </div>
-        <br>
-      </div>  
-    
-    </div><!--lado derecho-->
-    
-    
-  </div>
+        <div class="container-S margen-arriba">
+
+          <p>HTML</p>
+          <p class="margen-arriba">
+            &lt;form class="form-space"&gt;
+            &lt;label for="" class="label-space"&gt;Bienvenido&lt;/label&gt;
+            &lt;input type="text" class="input-space-item"&gt;
+            &lt;/form&gt;
+          </p>
+
+        </div>
+
+        <form class="form-space">
+          <label for="" class="label-space">Bienvenido</label>
+          <input type="text" class="input-space-item">
+        </form>
+        <div class="margen-arriba text-left">
+          <p class="pf-font">Para conseguir el siguiente efecto en el input, envuelva el input de un
+           container
+            con
+            la
+            clase "input-space-group".</p>
+          <p class="pf-font">Luego, agrege en el lugar de su preferencia una etiqueta span con la clase
+            "input-text".
+          </p>
+        </div>
+
+        <div class="container-S margen-arriba">
+
+          <p>HTML</p>
+          <p class="margen-arriba">
+            &lt;form class="form-space"&gt;
+            &lt;label for="" class="label-space"&gt;Text&lt;/label&gt;
+            &lt;div class="input-space-group"&gt;
+            &lt;span class="input-text"&gt;Nombre&lt;/span&gt;
+            &lt;input type="text" class="input-space-item"&gt;
+            &lt;/div&gt;
+            &lt;/form&gt;
+          </p>
+
+        </div>
+
+        <form>
+          <label class="label-space">Text</label>
+          <div class="input-space-group">
+            <span class="input-text">Nombre</span>
+            <input type="text" class="input-space-item">
+          </div>
+        </form>
+        <div class="margen-arriba text-left">
+          <p class="pf-font">Aquí otras formas de organizarlos.</p>
+        </div>
+
+        <div class="container-S margen-arriba">
+
+          <p>HTML</p>
+          <p class="margen-arriba">
+            &lt;form class="form-space"&gt;
+            &lt;label for="" class="label-space"&gt;Number&lt;/label&gt;
+            &lt;div class="input-space-group"&gt;
+            &lt;span class="input-text"&gt;#&lt;/span&gt;
+            &lt;input type="number" class="input-space-item"&gt;
+            &lt;span class="input-text"&gt;Waos&lt;/span&gt;
+            &lt;input type="number" class="input-space-item"&gt;
+            &lt;/div&gt;
+            &lt;label for="" class="label-space"&gt;Mail&lt;/label&gt;
+            &lt;div class="input-space-group"&gt;
+            &lt;span class="input-text"&gt;@&lt;/span&gt;
+            &lt;input type="email" class="input-space-item"&gt;
+            &lt;span class="input-text"&gt;✈&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;/form&gt;
+          </p>
+
+        </div>
+
+        <form>
+
+          <label class="label-space">Number</label>
+          <div class="input-space-group">
+            <span class="input-text">#</span>
+            <input type="number" class="input-space-item">
+            <span class="input-text">waos</span>
+            <input type="number" class="input-space-item">
+          </div>
+
+
+          <label class="label-space">Mail</label>
+          <div class="input-space-group">
+            <span class="input-text">@</span>
+            <input type="email" class="input-space-item">
+            <span class="input-text">✈</span>
+          </div>
+
+        </form>
+
+      </div>
+
+      <!-- SOMBRAS -->
+
+
+      <h1 class="zone-font txt-bigger margen-arriba component-padding" id="8">Sombras</h1>
+      <p class="pf-font text-left component-padding">Las sombras son un elemento que se puede usar para dar la
+        sensacion de profundidad en un elemento al agregarle una sombra alredeor del borde, en este caso se
+        pueden
+        llamar con las clases "shadow-soft", "shadow-mid" y "shadow-strong"</p>
+      <div class="container-C item-center-x item-SpaceEvenly component-padding paddingl">
+        <div class="container-E shadow-soft pf-font item-center-x component-padding">Estoy usando sombras
+          suaves!
+        </div>
+        <div class="container-E shadow-mid pf-font item-center-x component-padding ">Estoy usando sombras
+          medianas!
+        </div>
+        <div class="container-E shadow-strong pf-font item-center-x component-padding">Estoy usando sombras
+          fuertes!
+        </div>
+      </div>
+      <!--BORDES-->
+      <h1 class="zone-font txt-bigger margen-arriba component-padding" id="9">Bordes</h1>
+      <p class="pf-font">Los bordes son un elemento que se usa para remarcar o agregarle relieve a los bordes
+        de
+        los
+        elementos seleccionables, en este caso se pueden llamar con las clases "border-s", "border-m" y
+        "border-l"
+        para determinar el tamaño del borde, y usamos las clases "border-full", "border-semi" y "border-round"
+        para la
+        forma del borde</p>
+      <div>
+        <button class="border-full border-s pf-font item-center-x item-SpaceAround">Los bordes de este boton
+          son
+          cuadrados y pequeños</button>
+        <button class="border-semi border-m pf-font item-center-x item-SpaceAround">Los bordes de este boton
+          son
+          semiovalados y medianos</button>
+        <button class="border-round border-l pf-font item-center-x item-SpaceAround">Los bordes de este boton
+          son
+          circulares y grandes</button>
+      </div>
+      <!--PADDING-->
+      <h1 class="zone-font txt-bigger margen-arriba component-padding" id="10">Padding</h1>
+      <p class="pf-font text-left">El padding es un elemento de diseño que nos permite crear una especie de
+        borde
+        entre los margenes de un elemento para modificar su posicion usando valores para ello: "spadding",
+        "mpadding",
+        "lpadding", "special-padding" y "component-padding" son clases que tienen valores predeterminados para
+        padding, para que puedan ser usados en distintas ocaciones </p>
+      <div>
+        <button class="mpadding pf-font item-center-x item-SpaceAround">Mi padding es pequeño</button>
+        <button class="spadding pf-font item-center-x item-SpaceAround">Mi padding es mediano</button>
+        <button class="lpadding pf-font item-center-x item-SpaceAround">Mi padding es grande</button>
+      </div>
+      <!--MARGIN-->
+      <h1 class="zone-font txt-bigger margen-arriba component-padding" id="1">Margin</h1>
+      <p class="pf-font text-left">El margin es un elemento tambien de diseño que nos sirve para crear espacio
+        entre
+        los bordes de un elemento y el resto del contenido, similar al padding, pero generalmente se usa mas
+        el
+        margin
+        como principal y el padding para complementar. "margins", "marginm" y "marginl" son clases que
+        contienen
+        valores para distintos tamaños de margen, asi como "margin-separador", y "margin-arriba",
+        "margin-abajo",
+        "margin-izquierda" y "margin-derecha" contienen valores para agregar margenes en un lugar en
+        especifico
+      </p>
+      <div>
+        <button class="margins pf-font item-center-x item-SpaceAround">Tengo margenes pequeños en todos
+          lados</button>
+        <button class="margin-izquierda pf-font item-center-x item-SpaceAround">Yo solo tengo margen a la
+          izquierda</button>
+        <button class="margin-derecha pf-font item-center-x item-SpaceAround">Yo solo tengo margen a la
+          derecha</button>
+      </div>
+      <!--HIDE-->
+      <h1 class="zone-font txt-bigger margen-arriba component-padding" id="12">Hide</h1>
+      <p class="pf-font text-left">La propiedad Hide nos permite mostrar u ocultar un elemento con las clases
+        "hide" y
+        "show", y con las clases "oculto-mostrar" y "mostrar-oculto" podemos usar responsive design para
+        mostrar y
+        luego ocultar o viceversa un elemento </p>
+      <div>
+        <button class="mostrar-oculto margin-izquierda special-padding item-center-x item-SpaceAround"> Me veo
+          a
+          pantalla completa</button>
+        <button class="oculto-mostrar margin-derecha  special-padding item-center-x item-SpaceAround">Me veo
+          al
+          cambiar el tamaño de la ventana</button>
+      </div>
+
+
+
+
+      <!--INICIA PARTE LAYOUTS-->
+      <h1 class="zone-font txt-bigger margen-arriba component-padding" id="12">Contenedores</h1>
+
+    </div>
+
+
+    <script>
+      function scrollToElement(id) {
+        var navbarHeight = document.getElementById('navbar').offsetHeight;
+        var element = document.getElementById(id);
+        if (element) {
+          var offsetPosition = element.offsetTop - navbarHeight;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
+    </script>
+
 </body>
 
 </html>

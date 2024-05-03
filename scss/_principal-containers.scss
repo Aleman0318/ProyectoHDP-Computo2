@@ -31,8 +31,22 @@ $display-D: block;
 $ancho-D: 100%;
 $gap-D: 5px;
 
-//container snippets
-$altura-S: auto;
-$display-S: flex;
-$ancho-S: 100%;
-$overflow-S: auto;
+
+//contenedor snippets
+$altura-partA-S: 100%; 
+$altura-partB-S: 95%;
+$ancho-partA-S: 60%;
+$ancho-partB-S: 60%;
+$display-S: grid;
+$columns-S: [col1] 1fr;
+$rows-S: auto;
+$areas-S:
+ "Part-A-S part-A-S"
+ "Part-B-S part-B-S";
+$parte-Arriba-S: Part-A-S;
+$parte-Abajo-S: Part-B-S;
+
+$altura-E: auto;
+$display-E: flex;
+$ancho-E: 20%;
+$flex-wrap-E: wrap;

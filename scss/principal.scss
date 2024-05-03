@@ -9,7 +9,6 @@
 @use 'padding' ;
 @use 'margin' ;
 @use 'botones';
-@use 'tarjetas';
 @use 'principal-alineamientos';
 @use 'principal-dimensiones';
 @use 'principal-padding';
@@ -78,6 +77,8 @@
 }
 
 
+
+
 //fondos
 
 .bkg-dark{
@@ -123,16 +124,23 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
+.bkg-fondo{
+  background-color: principal-colors.$light-enfasis;
+}
+
+
+
 img{
   width: 100%;
   height: auto;
 }
 
-.bkg-img{
+.bkg-img-fondo{
   background-image: url('Resources/fondo-1.png');
   background-size: contain;
   background-attachment: fixed;
 }
+
 
 
 
@@ -221,6 +229,27 @@ ol{
     flex-wrap: wrap;
     overflow-y: auto;
     height: principal-containers.$altura-partB;
+    box-sizing: border-box;
+}
+
+.Lado-Izquierdo::-webkit-scrollbar{
+  background-color: principal-colors.$dark-enfasis;
+}
+
+.Lado-Izquierdo::-webkit-scrollbar-thumb{
+  background-color: principal-colors.$light-enfasis;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+body::-webkit-scrollbar{
+  background-color: principal-colors.$dark-enfasis;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: principal-colors.$light-enfasis;
+  border-radius: 15px;
+  border: 1px solid black;
 }
 
 
@@ -261,17 +290,60 @@ ol{
   flex-wrap: principal-containers.$flex-wrap-B;
 }
 
-
+//contenedor para snippets **********
 .container-S{
-  height:principal-containers.$altura-S;
-  width: principal-containers.$ancho-S;
-  display: principal-containers.$display-S;
-  overflow-y: principal-containers.$overflow-S;
-  overflow-x: principal-containers.$overflow-S;
-  background-color: principal-colors.$gray-enfasis;
-  color: principal-colors.$basic-enfasis;
+    height: principal-containers.$altura-partB-S;
+    width: principal-containers.$ancho-partB-S;;
+    display: principal-containers.$display-S;
+    grid-template-columns: principal-containers.$columns-S;
+    grid-template-rows: principal-containers.$rows-S;
+    grid-template-areas: principal-containers.$areas-S;
+    overflow: auto;
+    justify-content: principal-Alignments.$items-left;
+    align-items: principal-Alignments.$items-left;
+    text-align: principal-Alignments.$items-left;
 }
 
+.Lado-Arriba-S{
+    grid-area: principal-containers.$parte-Arriba-S;
+    height: principal-containers.$altura-partA-S;
+    background-color: principal-colors.$gray-enfasis;
+    font-family: principal-fonts.$title-font;
+    font-weight: principal-types-text.$text-bold;
+    font-size: principal-sizes.$txt-smedium;
+    color: principal-colors.$basic-enfasis;
+    text-align: principal-Alignments.$items-left;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.Lado-Abajo-S{
+    grid-area: principal-containers.$parte-Abajo-S;
+    text-align: principal-Alignments.$items-rigth;
+    overflow: auto;
+    height: principal-containers.$altura-partB-S;
+    background-color: principal-colors.$snippets;
+    color: principal-colors.$basic-enfasis;
+    font-family: principal-fonts.$pf-font;
+    font-size: principal-sizes.$txt-xsmedium;
+    padding: 10px;
+}
+//*************************************
+
+
+.container-E{
+  height: principal-containers.$altura-E;
+  display: principal-containers.$display-E;
+  width: principal-containers.$ancho-E;
+  flex-wrap: principal-containers.$flex-wrap-E;
+}
+
+pre{
+  justify-content: principal-Alignments.$items-left;
+  text-align: principal-Alignments.$items-left;
+  align-items: principal-Alignments.$items-left;
+}
 
 .icon-image{
   width: 30px;
@@ -307,6 +379,7 @@ ol{
 .text-left{
     text-align: principal-Alignments.$items-left;
 }
+
 
 .item-SpaceAround{
     justify-content: principal-Alignments.$items-spaceAround;
@@ -363,14 +436,14 @@ ol{
 }
 .btn-uno{ 
   width: botones.$btn_mediano;
-  background-color: principal-colors.$deep-enfasis;
+  background-color: principal-colors.$fondo;
   color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
 .badge-btn-text{
   width: botones.$btn_mediano;
-  background-color: principal-colors.$gray-enfasis;
-  color: principal-colors.$beige-enfasis;
+  background-color: principal-colors.$dark-enfasis;
+  color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
 .btn-dos{
@@ -418,13 +491,14 @@ ol{
 .badge-text-danger{
   border-radius: 6px;
   padding: principal-padding.$padding-small;
-  background-color: principal-colors.$mars-enfasis;
+  background-color: principal-colors.$crimson;
   color: principal-colors.$light-enfasis;
+  border: 2px solid principal-colors.$mars-enfasis;
 }
 .badge-text-warning{
   border-radius: 6px;
-  background-color: principal-colors.$crimson;
-  color: principal-colors.$light-enfasis;
+  background-color: principal-colors.$desert;
+  color: principal-colors.$dark-enfasis;
   padding: principal-padding.$padding-small;
 }
 .badge-text-info{
@@ -438,6 +512,7 @@ ol{
   background-color: principal-colors.$light-enfasis;
   color: principal-colors.$dark-enfasis;
   padding: principal-padding.$padding-small;
+  border: 2px solid principal-colors.$dark-enfasis;
 }
 .badge-text-dark{
   border-radius: 6px;
@@ -465,14 +540,14 @@ ol{
 }
 .badge-rounded-text-danger{
   border-radius: 20px;
-  background-color: principal-colors.$mars-enfasis;
+  background-color: principal-colors.$crimson;
   color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
 .badge-rounded-text-warning{
   border-radius: 20px;
-  color: principal-colors.$light-enfasis;
-  background-color: principal-colors.$crimson;
+  color: principal-colors.$dark-enfasis;
+  background-color: principal-colors.$desert;
   padding: principal-padding.$padding-small;
 
 }
@@ -487,6 +562,7 @@ ol{
   background-color: principal-colors.$light-enfasis;
   color: principal-colors.$dark-enfasis;
   padding: principal-padding.$padding-small;
+  border: 2px solid principal-colors.$gray-enfasis;
 }
 .badge-rounded-text-dark{
   border-radius: 20px;
@@ -519,8 +595,8 @@ ol{
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
-    background-color: principal-colors.$basic-enfasis;
-    color: principal-colors.$sky-enfasis;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
 }
 .alert-danger{
@@ -528,38 +604,41 @@ ol{
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
-    background-color: principal-colors.$mars-enfasis;
-    color: principal-colors.$beige-enfasis;
-    border: 2px solid principal-colors.$beige-enfasis;
+    background-color: principal-colors.$crimson;
+    color: principal-colors.$light-enfasis;
+    border: 2px solid principal-colors.$mars-enfasis;  
 }
 .alert-warning{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
-    background-color: principal-colors.$beige-enfasis;
+    background-color: principal-colors.$desert;
     color: principal-colors.$dark-enfasis;
-    border: 2px solid principal-colors.$light-enfasis;
+    border: 2px solid principal-colors.$gray-enfasis;
 }
 .alert-info{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
-    background-color: principal-colors.$deep-enfasis;
+    background-color: principal-colors.$fondo;
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
 }
 .alert-link-dark{
     color: principal-colors.$dark-enfasis;
 }
+.alert-link-light{
+    color: principal-colors.$marine;
+}
 .alert-light{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
-    background-color: principal-colors.$gray-enfasis;
-    color: principal-colors.$light-enfasis;
+    background-color: principal-colors.$light-enfasis;
+    color: principal-colors.$dark-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
 }
 .alert-dark{
@@ -568,7 +647,7 @@ ol{
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$dark-enfasis;
-    color: principal-colors.$sky-enfasis;
+    color: principal-colors.$beige-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
 }
 
@@ -581,7 +660,7 @@ ol{
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$deep-enfasis;
-    color: principal-colors.$sky-enfasis;
+    color: principal-colors.$beige-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
 }
 .alert--secondary{
@@ -598,8 +677,8 @@ ol{
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
-    background-color: principal-colors.$basic-enfasis;
-    color: principal-colors.$sky-enfasis;
+    background-color: principal-colors.$deep-enfasis;
+    color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
 }
 .alert--danger{
@@ -607,26 +686,26 @@ ol{
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
-    background-color: principal-colors.$mars-enfasis;
-    color: principal-colors.$beige-enfasis;
-    border: 2px solid principal-colors.$beige-enfasis;
+    background-color: principal-colors.$crimson;
+    color: principal-colors.$light-enfasis;
+    border: 2px solid principal-colors.$mars-enfasis;
 }
 .alert--warning{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
-    background-color: principal-colors.$beige-enfasis;
-    color: principal-colors.$gray-enfasis;
-    border: 2px solid principal-colors.$light-enfasis;
+    background-color: principal-colors.$desert;
+    color: principal-colors.$dark-enfasis;
+    border: 2px solid principal-colors.$gray-enfasis;
 }
 .alert--info{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
-    background-color: principal-colors.$deep-enfasis;
-    color: principal-colors.$sky-enfasis;
+    background-color: principal-colors.$fondo;
+    color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
 }
 .alert--light{
@@ -634,9 +713,9 @@ ol{
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
-    background-color: principal-colors.$gray-enfasis;
-    color: principal-colors.$light-enfasis;
-    border: 2px solid principal-colors.$light-enfasis;
+    background-color: principal-colors.$light-enfasis;
+    color: principal-colors.$dark-enfasis;
+    border: 2px solid principal-colors.$gray-enfasis;
 }
 .alert--dark{
     padding: principal-padding.$padding-medium;
@@ -644,7 +723,7 @@ ol{
     width: principal-dimensiones.$medio-ancho;
     font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$dark-enfasis;
-    color: principal-colors.$sky-enfasis;
+    color: principal-colors.$beige-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
 }
 .alert-success{
@@ -653,9 +732,9 @@ ol{
 }
 .alert-triangle-primary{
     padding: principal-padding.$padding-medium;
-    font-size: principal-sizes.$txt-xmedium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
+    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$deep-enfasis;
     color: principal-colors.$basic-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
@@ -681,7 +760,7 @@ ol{
     font-size: principal-sizes.$txt-xmedium;
     display: flex;
     align-items: flex-start;
-    background-color: principal-colors.$basic-enfasis;
+    background-color: principal-colors.$light-enfasis;
     color: principal-colors.$gray-enfasis;
     border: 2px solid principal-colors.$dark-enfasis;
 }
@@ -692,9 +771,9 @@ ol{
     font-size: principal-sizes.$txt-xmedium;
     display: flex;
     align-items: flex-start;
-    background-color: principal-colors.$beige-enfasis;
+    background-color: principal-colors.$desert;
     color: principal-colors.$dark-enfasis;
-    border: 2px solid principal-colors.$light-enfasis;
+    border: 2px solid principal-colors.$gray-enfasis;
 }
 .alert-danger-b{
     padding: principal-padding.$padding-medium;
@@ -703,21 +782,10 @@ ol{
     font-size: principal-sizes.$txt-xmedium;
     display: flex;
     align-items: flex-start;
-    background-color: principal-colors.$mars-enfasis;
-    color: principal-colors.$dark-enfasis;
-    border: 2px solid principal-colors.$beige-enfasis;
+    background-color: principal-colors.$crimson;
+    color: principal-colors.$light-enfasis;
+    border: 2px solid principal-colors.$mars-enfasis;
 
-}
-.alert-warning-c{
-    padding: principal-padding.$padding-medium;
-    height: principal-dimensiones.$medio-alto;
-    width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
-    display: flex;
-    align-items: flex-start;
-    background-color: principal-colors.$mars-enfasis;
-    color: principal-colors.$dark-enfasis;
-    border: 2px solid principal-colors.$dark-enfasis;
 }
 .alert-success{
   border: 2px solid principal-colors.$sky-enfasis;
@@ -783,7 +851,7 @@ ol{
   @extend %paddding_peque;
 }
 
-.padding{//padding mediano
+.mpadding{//padding mediano
   @extend %paddding_med;
 }
 
@@ -799,6 +867,7 @@ ol{
   @extend %paddding_component;
 }
 
+
 //clases para margen
 .margins{//margen pequeño
   @extend %margin_small;
@@ -811,6 +880,27 @@ ol{
 .marginl{//margen grande
   @extend %margin_largue;
 }
+
+.margin-separador{
+  @extend %margin_all;
+}
+
+.margen-arriba{
+  @extend %margin_top;
+}
+
+.margen-abajo{
+  @extend %margin_bottom;
+}
+
+.margen-izquierda{
+  @extend %margin_left;
+}
+
+.margen-derecha{
+  @extend %margin_rigth;
+}
+
 
 //clase para ocultar
 .hide{
@@ -843,19 +933,10 @@ ol{
 
 
 
-.centered-elements {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: botones.$btn_width;
-  flex-wrap: wrap;
-
-}
-
 // CONFIGURACION BOTONES
 
 .btn {
+    background-color: principal-colors.$light-enfasis;
     font-family: principal-fonts.$cmp-font;
     margin-left: auto;
     margin-right: auto;
@@ -871,6 +952,7 @@ ol{
     font-weight: botones.$font_wei_btn;
     text-transform: uppercase;
     cursor:pointer;
+    
 }
 
 .btn-border-none {
@@ -896,7 +978,7 @@ ol{
   left: botones.$Cero;
   right: botones.$Cero;
   top: botones.$Cero;
-  margin: auto;
+  margin: auto; 
   transition: all botones.$transicion ease;
   z-index: -1;
 }
@@ -1048,9 +1130,8 @@ ol{
   height: botones.$mg_boton;
   border: 1.5px solid transparent;
   transition: border-color 0.3s ease;
-  background-color: principal-colors.$light-enfasis;
   border-radius: 15px;
-  
+  background-color: principal-colors.$transparent-enfasis;
 }
 
 .btn_home:hover{
@@ -1107,18 +1188,9 @@ ol{
   height: 95%;
 }
 
-.bd-code-snippet {
-  font-family: monospace;
-  background-color: principal-colors.$dark-enfasis;
-  border: 1px solid #dee2e6;
-  border-radius: .25rem;
-  padding: 10px;
-  overflow-x: auto;
-  color: principal-colors.$light-enfasis;
-}
 
 .card {
-  width: 25%;
+  width: 35%;
   margin: botones.$tarjetas;
   height: auto;
   border-radius: 6px;
