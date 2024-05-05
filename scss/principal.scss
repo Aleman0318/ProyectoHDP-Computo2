@@ -277,6 +277,19 @@ img{
   }
 }
 
+@media (max-width: 560px) {
+  p:not(.txt-xsmall):not(.txt-small):not(.txt-xsmedium):not(.txt-smedium):not(.txt-xmedium):not(.txt-medium):not(.txt-large):not(.txt-bigger) {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 720px) {
+  p:not(.txt-xsmall):not(.txt-small):not(.txt-xsmedium):not(.txt-smedium):not(.txt-xmedium):not(.txt-medium):not(.txt-large):not(.txt-bigger) {
+    font-size: 14.5px;
+  }
+}
+
+
 @media(max-width:560px){
   h1{
     font-size: 16px;
@@ -343,7 +356,7 @@ ol{
   .container-A .pf-font{
     font-size: 10px;
   }
-  p:not([class]) {
+  p:not(.txt-xsmall):not(.txt-small):not(.txt-xsmedium):not(.txt-smedium):not(.txt-xmedium):not(.txt-medium):not(.txt-large):not(.txt-bigger) {
     font-size: 10px;
   }
 
@@ -1568,6 +1581,13 @@ svg.img4{
     
     flex-direction: row;
     align-items: center;
+}
+
+@media (max-width:560px){
+  .navbar-space .btn{
+    height: 30px;
+    width: 150px;
+  }
 }
 
 .navbar-fixed{

@@ -17,9 +17,8 @@
 
     <div class="container-C item-right item-SpaceEvenly">
       <div class="navbar-item">
-        <button class="btn btn_home">Home</button>
-        <button class="btn btn_home">Documentation</button>
-        <button class="btn btn_home">About us</button>
+        <button class="btn btn_home" onclick="window.location.href = 'Index.html';">Home</button>
+        <button class="btn btn_home" onclick="window.location.href = 'Documentacion.html';">Documentation</button>
       </div>
     </div>
   </nav>
@@ -81,13 +80,15 @@
 
       <button class="btn-border-none btn_fugaz btn_largo" onclick="scrollToElement('15')">Tipografía</button>
 
+      <button class="btn-border-none btn_fugaz btn_largo" onclick="scrollToElement('16')">Tipos de Texto</button>
+
 
       <div class="container-C item-center-x item-center-y ">
         <img src="Resources/layout-icon.png" alt="" class="icon-image">
         <h1 class="deco-font color-dark txt-medium text-center component-padding">Layout</h1>
       </div>
 
-      <button class="btn-border-none btn_fugaz btn_largo" onclick="scrollToElement('16')">Contenedores</button>
+      <button class="btn-border-none btn_fugaz btn_largo" onclick="scrollToElement('17')">Contenedores</button>
 
     </div>
 
@@ -1194,20 +1195,38 @@ Notifications &lt;span class="badge-btn-text"&gt;4&lt;/span&gt;
 
       
 
-      <!--Inician positions-->
+      <!--Inician #positions-->
       <h1 class="zone-font txt-bigger margen-arriba component-padding" id="7">Posiitions</h1>
+      <h2 class="title-font text-left margen-arriba">Alignments</h2>
       <p class="pf-font text-left component-padding">
         En este apartado, conoceremos las clases que nos ayudaran a modificar posiciones de los elementos
         ya sean texto o items. Podras aprender a tener control de los elementos dentro de un contenedor.
       </p>
 
-      <div class="container-C item-center-x"> centrar elementos en el plano x </div>
-      <div class="container-C item-center-y"> centrar elementos en el plano y </div>
-      <div class="container-C item-left"> alinear elementos a la izquierda </div>
-      <div class="container-C item-right"> alinear elementos a la derecha </div>
-      <div class="container-C item-SpaceAround"> centrar elementos en el plano x </div>
-      <div class="container-C item-SpaceBetween"> centrar elementos en el plano x </div>
-      <div class="container-C item-SpaceEvenly"> centrar elementos en el plano x </div>
+      
+      
+      <div class="container-C item-center-x">
+
+        <div class="container-S margen-arriba">
+          <div class="Lado-Arriba-S">
+            <p>HTML</p>
+          </div>
+          <div class="Lado-Abajo-S">
+            <pre>
+&lt;div class="container-C item-center-x"&gt; centrar elementos en el plano x &lt;/div&gt;
+&lt;div class="container-C item-center-y"&gt; centrar elementos en el plano y &lt;/div&gt;
+&lt;div class="container-C item-left"&gt; alinear elementos a la izquierda &lt;/div&gt;
+&lt;div class="container-C item-right"&gt; alinear elementos a la derecha &lt;/div&gt;
+&lt;div class="container-C item-SpaceAround"&gt; tendra espacio igual entre elementos pero la mitad a sus extremos &lt;/div&gt;
+&lt;div class="container-C item-SpaceBetween"&gt; tendra espacio igual entre los elementos pero sus extremos iran pegado a estos &lt;/div&gt;
+&lt;div class="container-C item-SpaceEvenly"&gt; distribuye por igual todo el espacio entre elementos y sus extremos&lt;/div&gt;
+&lt;div class="text-center"&gt;Centra el texto en el contenedor&lt;/div&gt;
+&lt;div class="text-justify"&gt;Justifica el texto en el contenedor&lt;/div&gt;
+&lt;div class="text-right"&gt;Alinea el texto a la derecha del contenedor&lt;/div&gt;
+&lt;div class="text-left"&gt;Alinea el texto a la izquierda del contenedor&lt;/div&gt;</pre>
+          </div>
+        </div>
+      </div>
 
       <!--finalizan positions-->
 
@@ -1245,10 +1264,7 @@ Notifications &lt;span class="badge-btn-text"&gt;4&lt;/span&gt;
 &lt;div class="container-E shadow-soft pf-font item-center-x component-padding"&gt;Estoy usando sombras suaves!&lt;/div&gt;
   &lt;div class="container-E shadow-mid pf-font item-center-x component-padding "&gt;Estoy usando sombras medianas!&lt;/div&gt;
   &lt;div class="container-E shadow-strong pf-font item-center-x component-padding"&gt;Estoy usando sombras fuertes!&lt;/div&gt;
-&lt;/div&gt;
-
-            
-          </pre>
+&lt;/div&gt;</pre>
           </div>
         </div>
       </div>
@@ -1288,7 +1304,6 @@ Notifications &lt;span class="badge-btn-text"&gt;4&lt;/span&gt;
   &lt;button class="border-semi border-m pf-font item-center-x item-SpaceAround"&gt;Los bordes de este boton son semiovalados y medianos&lt;/button&gt;
   &lt;button class="border-round border-l pf-font item-center-x item-SpaceAround"&gt;Los bordes de este boton son circulares y grandes&lt;/button&gt;
 &lt;/div&gt;
-            
           </pre>
           </div>
         </div>
@@ -1675,8 +1690,43 @@ Notifications &lt;span class="badge-btn-text"&gt;4&lt;/span&gt;
 
       <!--finalizan tipografias-->
 
+
+      <!--inician #types de texto-->
+
+      <h1 class="zone-font txt-bigger margen-arriba component-padding" id="16">Tipos de Texto</h1>
+      <h2 class="title-font text-left margen-arriba">Decoración textual</h2>
+      <p class="pf-font text-left component-padding">
+        En este apartado, conoceremos las clases que nos ayudaran a modificar la forma del texto, ya sean resaltados, tachados, negrita
+        y muchas mas que seran muy utiles en tu web.
+      </p>
+
+      <p class="txt-italic title-font">Texto italica</p>
+      <p class="txt-bold title-font">Texto negrita</p>
+      <p class="txt-sub title-font">Texto subrayado</p>
+      <p class="txt-dead title-font">Texto tachado</p>
+
+
+<div class="container-C item-center-x">
+
+        <div class="container-S margen-arriba">
+          <div class="Lado-Arriba-S">
+            <p>HTML</p>
+          </div>
+          <div class="Lado-Abajo-S">
+            <pre>
+&lt;p class="txt-italic title-font"&gt;Texto italica&lt;/p&gt;
+&lt;p class="txt-bold title-font"&gt;Texto negrita&lt;/p&gt;
+&lt;p class="txt-sub title-font"&gt;Texto subrayado&lt;/p&gt;
+&lt;p class="txt-dead title-font"&gt;Texto tachado&lt;/p&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+
+      <!--finalizan tipos de texto-->
+
       <!--INICIA PARTE #LAYOUTS-->
-      <h1 class="zone-font txt-bigger margen-arriba component-padding" id="16">Contenedores</h1>
+      <h1 class="zone-font txt-bigger margen-arriba component-padding" id="17">Contenedores</h1>
       <div class="container-C text-left pf-font">
         <p>
           Los contenedores son una parte fundamental para SpaceAround, sin ellos nuestro proyecto no tendria mucho
