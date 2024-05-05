@@ -12,3 +12,5 @@
 * Contribuidores
 * Version
 * Copyright y Licencia
+
+<hr height = 2px>
