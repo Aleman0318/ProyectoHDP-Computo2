@@ -35,7 +35,7 @@ Clases y soluciones para el diseño de tus proyectos que te permitiran ser más 
 **Marlon Alemán**
 [Aleman0318](https://github.com/Aleman0318)
 
-**Alejandro**
+**Alejandro Flores**
 [XxAlexX003](https://github.com/XxAlexX003)
 
 **Benjamin Rivera**
