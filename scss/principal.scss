@@ -72,6 +72,14 @@
     color: principal-colors.$mars-enfasis;
 }
 
+.color-marine{
+  color: principal-colors.$marine;
+}
+
+.color-desert{
+  color: principal-colors.$desert;
+}
+
 .color-crimson{
   color:principal-colors.$crimson;
 }
@@ -117,6 +125,18 @@
     background-color: principal-colors.$basic-enfasis;
 }
 
+.bkg-desert{
+  background-color: principal-colors.$desert;
+}
+
+.bkg-marine{
+  background-color: principal-colors.$marine;
+}
+
+.bkg-crimson{
+  background-color: principal-colors.$crimson;
+}
+
 .bkg-blur{
     background-color: principal-colors.$transparent-enfasis;
     backdrop-filter: blur(20px);
@@ -124,9 +144,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
-.bkg-fondo{
-  background-color: principal-colors.$light-enfasis;
-}
 
 
 
@@ -170,29 +187,138 @@ img{
     font-size: principal-sizes.$txt-xsmall;
 }
 
+
 .txt-small{
     font-size: principal-sizes.$txt-small;
 }
 
+@media(max-width:560px){
+  .txt-small{
+    font-size: 7px;
+  }
+}
+
+
 .txt-xsmedium{
   font-size: principal-sizes.$txt-xsmedium;
+}
+
+@media(max-width:560px){
+  .txt-xsmedium{
+    font-size: 8px;
+  }
+}
+
+.txt-smedium{
+  font-size: principal-sizes.$txt-smedium;
+}
+
+@media(max-width:560px){
+  .txt-smedium{
+    font-size: 10px;
+  }
 }
 
 .txt-xmedium{
     font-size: principal-sizes.$txt-xmedium;
 }
 
+@media(max-width:560px){
+  .txt-xmedium{
+    font-size: 14px;
+  }
+}
+
 .txt-medium{
     font-size: principal-sizes.$txt-medium;
+}
+
+@media(max-width:560px){
+  .txt-medium{
+    font-size: 18px;
+  }
 }
 
 .txt-large{
     font-size: principal-sizes.$txt-large;
 }
 
+@media(max-width:560px){
+  .txt-large{
+    font-size: 23px;
+  }
+}
+
 .txt-bigger{
     font-size: principal-sizes.$txt-bigger;
 }
+
+@media(max-width:560px){
+  .txt-bigger{
+    font-size: 40px;
+  }
+
+  .container-A .txt-bigger{
+    font-size: 30px;
+  }
+}
+
+
+
+@media(max-width:560px){
+  p{
+    font-size: 11px;
+  }
+}
+
+@media(max-width:720px){
+  p{
+    font-size: 14.5px;
+  }
+}
+
+@media(max-width:560px){
+  h1{
+    font-size: 16px;
+  }
+}
+
+@media(max-width:560px){
+  h2{
+    font-size: 14px;
+  }
+}
+
+@media(max-width:560px){
+  h3{
+    font-size: 11px;
+  }
+}
+
+@media(max-width:560px){
+  h4{
+    font-size: 9px;
+  }
+}
+
+@media(max-width:560px){
+  h5{
+    font-size: 7px;
+  }
+}
+
+@media(max-width:560px){
+  h6{
+    font-size: 5px;
+  }
+}
+
+@media(max-width:560px){
+  button{
+    font-size: 10px;
+  }
+}
+
 
 ol{
   padding: padding.$padding;
@@ -212,6 +338,18 @@ ol{
     grid-template-areas: principal-containers.$areas-A;
     gap: principal-containers.$gap-A;
 }
+
+@media(max-width:560px){
+  .container-A .pf-font{
+    font-size: 10px;
+  }
+  p:not([class]) {
+    font-size: 10px;
+  }
+
+}
+
+
 
 .Lado-Izquierdo {
   grid-area: principal-containers.$parte-Izq;
@@ -234,6 +372,7 @@ ol{
     overflow-y: auto;
     height: principal-containers.$altura-partB;
     box-sizing: border-box;
+    position: sticky;
 }
 
 .Lado-Izquierdo::-webkit-scrollbar{
@@ -330,7 +469,7 @@ body::-webkit-scrollbar-thumb{
     background-color: principal-colors.$snippets;
     color: principal-colors.$basic-enfasis;
     font-family: principal-fonts.$pf-font;
-    font-size: principal-sizes.$txt-xsmedium;
+    font-size: principal-sizes.$txt-small;
     padding: 10px;
 }
 //*************************************
@@ -341,6 +480,18 @@ body::-webkit-scrollbar-thumb{
   display: principal-containers.$display-E;
   width: principal-containers.$ancho-E;
   flex-wrap: principal-containers.$flex-wrap-E;
+}
+
+@media (max-width: 720px){
+  .container-E p{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 720px){
+  .container-E .pf-font{
+    font-size: 10px;
+  }
 }
 
 pre{
@@ -413,6 +564,12 @@ pre{
 
 //badges
 
+@media(max-width:560px){
+  span{
+    font-size: 12px;
+  }
+}
+
 .badge-text-uno{
   background-color: principal-colors.$light-enfasis;
   color: principal-colors.$dark-enfasis;
@@ -474,107 +631,213 @@ pre{
   padding: principal-padding.$padding-small;
   font-size: principal-sizes.$txt-small;
 }  
-.badge-text-primary{
+.badge-primary{
   padding: principal-padding.$padding-small;
   border-radius: 6px;
   background-color: principal-colors.$sky-enfasis;
   color: principal-colors.$light-enfasis;
 }
-.badge-text-secondary{
+
+@media (max-width:560px){
+  .badge-primary{
+    height: 30px;
+    width: 60px;
+  }
+}
+.badge-secondary{
   border-radius: 6px;
   background-color: principal-colors.$gray-enfasis;
   color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
-.badge-text-success{
+
+@media (max-width:560px){
+  .badge-secondary{
+    height: 30px;
+    width: 60px;
+  }
+}
+.badge-success{
   border-radius: 6px;
   background-color: principal-colors.$dark-enfasis;
   color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
-.badge-text-danger{
+
+@media (max-width:560px){
+  .badge-success{
+    height: 30px;
+    width: 60px;
+  }
+}
+.badge-danger{
   border-radius: 6px;
   padding: principal-padding.$padding-small;
   background-color: principal-colors.$crimson;
   color: principal-colors.$light-enfasis;
   border: 2px solid principal-colors.$mars-enfasis;
 }
-.badge-text-warning{
+
+@media (max-width:560px){
+  .badge-danger{
+    height: 30px;
+    width: 60px;
+  }
+}
+.badge-warning{
   border-radius: 6px;
   background-color: principal-colors.$desert;
   color: principal-colors.$dark-enfasis;
   padding: principal-padding.$padding-small;
 }
-.badge-text-info{
+
+@media (max-width:560px){
+  .badge-warning{
+    height: 30px;
+    width: 60px;
+  }
+}
+.badge-info{
   border-radius: 6px;
   background-color: principal-colors.$deep-enfasis;
   color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
-.badge-text-ligth{
+
+@media (max-width:560px){
+  .badge-info{
+    height: 30px;
+    width: 60px;
+  }
+}
+.badge-ligth{
   border-radius: 6px;
   background-color: principal-colors.$light-enfasis;
   color: principal-colors.$dark-enfasis;
   padding: principal-padding.$padding-small;
   border: 2px solid principal-colors.$dark-enfasis;
 }
-.badge-text-dark{
+
+@media (max-width:560px){
+  .badge-ligth{
+    height: 30px;
+    width: 60px;
+  }
+}
+.badge-dark{
   border-radius: 6px;
   background-color: principal-colors.$dark-enfasis;
   color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
-.badge-rounded-text-primary{
+
+@media (max-width:560px){
+  .badge-dark{
+    width: 30px;
+    width: 60px;
+  }
+}
+.badge-rounded-primary{
   border-radius: 20px;
   background-color: principal-colors.$sky-enfasis;
   color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
-.badge-rounded-text-secondary{
+
+@media (max-width:560px){
+  .badge-rounded-primary{
+    width: 30px;
+    width: 60px;
+  }
+}
+.badge-rounded-secondary{
   border-radius: 20px;
   background-color: principal-colors.$gray-enfasis;
   color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
-.badge-rounded-text-success{
+@media (max-width:560px){
+  .badge-rounded-secondary{
+    width: 30px;
+    width: 60px;
+  }
+}
+.badge-rounded-success{
   border-radius: 20px;
   background-color: principal-colors.$dark-enfasis;
   color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
-.badge-rounded-text-danger{
+@media (max-width:560px){
+  .badge-rounded-success{
+    width: 30px;
+    width: 60px;
+  }
+}
+.badge-rounded-danger{
   border-radius: 20px;
   background-color: principal-colors.$crimson;
   color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
-.badge-rounded-text-warning{
+
+@media (max-width:560px){
+  .badge-rounded-danger{
+    width: 30px;
+    width: 60px;
+  }
+}
+.badge-rounded-warning{
   border-radius: 20px;
   color: principal-colors.$dark-enfasis;
   background-color: principal-colors.$desert;
   padding: principal-padding.$padding-small;
 
 }
-.badge-rounded-text-info{
+@media (max-width:560px){
+  .badge-rounded-warning{
+    width: 30px;
+    width: 60px;
+  }
+}
+.badge-rounded-info{
   border-radius: 20px;
   background-color: principal-colors.$deep-enfasis;
   color: principal-colors.$light-enfasis;
   padding: principal-padding.$padding-small;
 }
-.badge-rounded-text-ligth{
+@media (max-width:560px){
+  .badge-rounded-info{
+    width: 30px;
+    width: 60px;
+  }
+}
+.badge-rounded-ligth{
   border-radius: 20px;
   background-color: principal-colors.$light-enfasis;
   color: principal-colors.$dark-enfasis;
   padding: principal-padding.$padding-small;
   border: 2px solid principal-colors.$gray-enfasis;
 }
-.badge-rounded-text-dark{
+
+@media (max-width:560px){
+  .badge-rounded-ligth{
+    width: 30px;
+    width: 60px;
+  }
+}
+.badge-rounded-dark{
   border-radius: 20px;
   background-color: principal-colors.$dark-enfasis;
   padding: principal-padding.$padding-small;
   color: principal-colors.$light-enfasis;
 }
-
+@media (max-width:560px){
+  .badge-rounded-dark{
+    width: 30px;
+    width: 60px;
+  }
+}
 //Alertas-------------------------------
 .alert-primary{
     padding: principal-padding.$padding-medium;
@@ -592,7 +855,7 @@ pre{
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$light-enfasis;
 }
-.alert-success{
+.alert-succes{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
@@ -624,6 +887,9 @@ pre{
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
 }
+.alert-link{
+  color: principal-colors.$basic-enfasis;
+}
 .alert-link-dark{
     color: principal-colors.$dark-enfasis;
 }
@@ -647,10 +913,7 @@ pre{
     border: 2px solid principal-colors.$gray-enfasis;
 }
 
-.alert-link{
-    color: principal-colors.$basic-enfasis;
-}
-.alert--primary{
+.alert-primary-link{
   padding: principal-padding.$padding-medium;
   height: principal-dimensiones.$medio-alto;
   width: principal-dimensiones.$medio-ancho;
@@ -658,7 +921,7 @@ pre{
   color: principal-colors.$beige-enfasis;
   border: 2px solid principal-colors.$sky-enfasis;
 }
-.alert--secondary{
+.alert-secondary-link{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
@@ -666,7 +929,7 @@ pre{
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$light-enfasis;
 }
-.alert--success{
+.alert-success-link{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
@@ -674,7 +937,7 @@ pre{
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
 }
-.alert--danger{
+.alert-danger-link{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
@@ -682,7 +945,7 @@ pre{
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$mars-enfasis;
 }
-.alert--warning{
+.alert-warning-link{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
@@ -690,7 +953,7 @@ pre{
     color: principal-colors.$dark-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
 }
-.alert--info{
+.alert-info-link{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
@@ -698,7 +961,7 @@ pre{
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
 }
-.alert--light{
+.alert-light-link{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
@@ -706,7 +969,7 @@ pre{
     color: principal-colors.$dark-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
 }
-.alert--dark{
+.alert-dark-link{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
@@ -714,11 +977,10 @@ pre{
     color: principal-colors.$beige-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
 }
-.alert-success{
-   display: flex;
-   align-items: flex-start;
-}
+
 .alert-triangle-primary{
+    display:flex;
+    justify-content: flex-start;
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
@@ -726,9 +988,9 @@ pre{
     color: principal-colors.$basic-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
 }
-.alert-primary-b{
-    display: flex;
-    align-items: flex-start;
+.alert-primary-icon{
+    display:flex;
+    justify-content: flex-start;
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
@@ -736,78 +998,59 @@ pre{
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
 }
-.alert-success-b{
+.alert-success-icon{
+    display:flex;
+    justify-content: flex-start;
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    display: flex;
-    align-items: flex-start;
     background-color: principal-colors.$light-enfasis;
     color: principal-colors.$gray-enfasis;
     border: 2px solid principal-colors.$dark-enfasis;
 }
-.alert-warning-b{
+.alert-warning-icon{
+    display:flex;
+    justify-content: flex-start;
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    display: flex;
-    align-items: flex-start;
     background-color: principal-colors.$desert;
     color: principal-colors.$dark-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
 }
-.alert-danger-b{
+.alert-danger-icon{
+    display:flex;
+    justify-content: flex-start;
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    display: flex;
-    align-items: flex-start;
     background-color: principal-colors.$crimson;
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$mars-enfasis;
+}
 
-}
-.alert-success{
-  border: 2px solid principal-colors.$sky-enfasis;
-}
 .alert-triangle-primary {
-  display: flex;
-  align-items: center;
+  height: 30px;
+  width: 30px;
 }
 
-.triangle {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  height: 25px;
-  transform: translateY(-50%);
+svg.img1{
+  height: 30px;
+  width: 30px;
 }
+svg.img2{
 
-.imge1{
-  position: absolute;
-  left: 0;
-  top: 50%;
-  height: 25px;
+  height: 30px;
+  width: 30px;
 }
-.imge2{
-  position: absolute;
-  left: 0;
-  top: 50%;
-    height: 25px;
+svg.img3{
+  height: 30px;
+  width: 30px;
 }
-.imge3{
-  position: absolute;
-  left: 0;
-  top: 50%;
-  height: 25px;
+svg.img4{
+  width: 30px;
+  height: 30px;
 }
-.imge4{
-  position: absolute;
-  left: 0;
-  top: 50%;
-  height: 25px;
-}
-
 //Inicio de Benjamin ----------------------------------
 //clases para sombras
 .shadow{//sombras normales
@@ -955,10 +1198,11 @@ pre{
 
 // CONFIGURACION BOTONES
 
+
 .btn{
     background-color: principal-colors.$transparent-enfasis;
     font-family: principal-fonts.$cmp-font;
-    margin-left: auto;
+    margin-left: auto;  
     margin-right: auto;
     position: relative;
     height: botones.$heigth;
@@ -971,8 +1215,14 @@ pre{
     z-index: 0;
     font-weight: botones.$font_wei_btn;
     text-transform: uppercase;
-    cursor:pointer;
-    
+    cursor:pointer; 
+}
+
+@media (max-width:560px){
+    .btn{
+      height: 30px;
+      width: 150px;
+    }
 }
 
 .btn-border-none {
@@ -990,6 +1240,12 @@ pre{
   font-weight: botones.$font_wei_btn;
   text-transform: uppercase;
   cursor:pointer;
+}
+@media (max-width:560px){
+  .btn-border-none{
+    height: 30px;
+    width: 150px;
+  }
 }
 
 .btn::before {
@@ -1022,61 +1278,65 @@ pre{
 // ANIMACION BOTON 2
 
 .btn_gargantua:hover {
-    background-color: principal-colors.$black-enfasis;
-    box-shadow: 0 0 15px principal-colors.$Shadow-btn, 0 0 15px principal-colors.$Shadow-btn, 0 0 15px principal-colors.$Shadow-btn       ;
-    border: 2px solid #fff;
-    color: principal-colors.$basic-enfasis;
+  background-color: principal-colors.$black-enfasis;
+  box-shadow: 0 0 15px principal-colors.$Shadow-btn, 0 0 15px principal-colors.$Shadow-btn, 0 0 15px principal-colors.$Shadow-btn;
+  border: 2px solid #fff;
+  color: principal-colors.$basic-enfasis;
+  transition: background-color 1s ease, box-shadow 0.5s ease, border 0.5s ease, color 0.5s ease; /* Agregamos la transición */
 }
+
 
 // ANIMACIONES BOTON 3
 
-.btn_3::after{
-  content: "";
-  position: absolute;
-  width: botones.$btn_grande;
-  height: botones.$btn_grande;
-  left: botones.$Cero;
-  top: botones.$Cero;
-  background-image: linear-gradient(90deg, rgb(197, 86, 222), rgb(86, 4, 145), #bc8474, #1F2A35);
-  background-size: 300%;
-  z-index: -1;
-  transition: all 0.2s ease;
-}
-
-.btn_3:hover::after{
-  background-position: botones.$btn_grande;
-  
-  filter: blur(15px);
-}
-
-.btn_3:hover{
+.btn_andromeda{
   color: principal-colors.$basic-enfasis;
 }
 
-.btn_3::before{
+.btn_andromeda::after{
   content: "";
   position: absolute;
   width: botones.$btn_grande;
   height: botones.$btn_grande;
   left: botones.$Cero;
   top: botones.$Cero;
+  background-image: linear-gradient(70deg, #6959e3,  #bc71c8,#bdd1f5, #bc8474, #1F2A35, #3d3b8c);
   background-size: 300%;
-  background-image: linear-gradient(90deg, rgb(197, 86, 222), rgb(86, 4, 145), #bc8474, #1F2A35);
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.btn_andromeda:hover::after{
+  background-position: botones.$btn_grande;
+  filter: blur(15px);
+}
+
+.btn_andromeda:hover{
+  color: principal-colors.$basic-enfasis;
+}
+
+.btn_andromeda::before{
+  content: "";
+  position: absolute;
+  width: botones.$btn_grande;
+  height: botones.$btn_grande;
+  left: botones.$Cero;
+  top: botones.$Cero;
+  background-size: 300%;  background-image: linear-gradient(70deg, #6959e3,  #bc71c8,#bdd1f5, #bc8474, #1F2A35, #3d3b8c);
   z-index: -1;
 }
 
-.btn_3:hover::before{
+.btn_andromeda:hover::before{
   background-position: botones.$btn_grande;
 }
 
 // ANIMACIONES BOTON 4
 
-.btn_4::after{
+.btn_fugaz::after{
   content: "";
   position: absolute;
   width: 10%;
   height: 110%;
-  left: -13%;
+  left: -16%;
   top: 0;
   transform: skew(20deg, 0deg);
   background-color: principal-colors.$dark-enfasis; //color de inicio de animacion
@@ -1085,35 +1345,34 @@ pre{
   color:principal-colors.$light-enfasis;
 }
 
-.btn_4::before{
+.btn_fugaz::before{
   content: "";
   position: absolute;
   width: botones.$btn_grande;
   height: botones.$btn_grande;
   left: botones.$Cero;
   top: botones.$Cero;
-  transform: skew(20deg, 0deg);
   transition: all .5s ease;
   z-index: -1;
-  background-color: principal-colors.$light-enfasis; //color de fondo normal
+  background-color: principal-colors.$light-enfasis;
   color:principal-colors.$dark-enfasis;
 }
 
-.btn_4:hover::after{
+.btn_fugaz:hover::after{
   background-color: principal-colors.$light-enfasis; //color final de animacion
   transform: skew(20deg, 0deg) translateX(340px);
   color:principal-colors.$light-enfasis;
 }
 
-.btn_4:hover::before{
+.btn_fugaz:hover::before{
   background-color: principal-colors.$dark-enfasis; //color fondo boton despues de la animacion
   transform: skew(20deg, 0deg) scale(1.1);
   color:principal-colors.$light-enfasis;
 
 }
 
-.btn_4:hover{
-   color:principal-colors.$light-enfasis;
+.btn_fugaz:hover{
+   color:principal-colors.$basic-enfasis;
 }
 
 
@@ -1135,6 +1394,12 @@ pre{
     width: botones.$btn_grande;
     height: botones.$heigth;
     font-size: principal-sizes.$txt-medium;
+}
+
+@media(max-width:560px){
+  .btn_grande{
+    font-size: 18px;
+  }
 }
 
 .btn_largo{
@@ -1203,6 +1468,14 @@ pre{
   font-family: principal-fonts.$pf-font;
 }
 
+@media(max-width:560px){
+  .txt{
+    font-size: 8.5px;
+  }
+}
+
+
+
 .container-card {
   width: 110%;
   display: flex;
@@ -1224,6 +1497,14 @@ pre{
   margin-top: 15px;
   cursor: pointer;
 }
+
+
+@media(max-width:720px){
+  .txt{
+    font-size: 10.5px;
+  }
+}
+
 .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
@@ -1368,5 +1649,12 @@ pre{
     border-radius: 5px;
     border: 2px rgba($color: principal-colors.$deep-enfasis, $alpha: 0.5) solid;
 }
+
+
+.margin-nav{
+  margin-top: margin.$margin-nav;
+}
+
+
 
 // fin quevedo
