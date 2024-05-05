@@ -174,6 +174,10 @@ img{
     font-size: principal-sizes.$txt-small;
 }
 
+.txt-xsmedium{
+  font-size: principal-sizes.$txt-xsmedium;
+}
+
 .txt-xmedium{
     font-size: principal-sizes.$txt-xmedium;
 }
@@ -321,7 +325,7 @@ body::-webkit-scrollbar-thumb{
 .Lado-Abajo-S{
     grid-area: principal-containers.$parte-Abajo-S;
     text-align: principal-Alignments.$items-rigth;
-    overflow: auto;
+    overflow-x: auto;
     height: principal-containers.$altura-partB-S;
     background-color: principal-colors.$snippets;
     color: principal-colors.$basic-enfasis;
@@ -576,7 +580,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$deep-enfasis;
     color: principal-colors.$beige-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
@@ -585,7 +588,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$gray-enfasis;
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$light-enfasis;
@@ -594,7 +596,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$deep-enfasis;
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
@@ -603,7 +604,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$crimson;
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$mars-enfasis;  
@@ -612,7 +612,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$desert;
     color: principal-colors.$dark-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
@@ -621,7 +620,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$fondo;
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
@@ -636,7 +634,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$light-enfasis;
     color: principal-colors.$dark-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
@@ -645,7 +642,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$dark-enfasis;
     color: principal-colors.$beige-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
@@ -655,19 +651,17 @@ pre{
     color: principal-colors.$basic-enfasis;
 }
 .alert--primary{
-    padding: principal-padding.$padding-medium;
-    height: principal-dimensiones.$medio-alto;
-    width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
-    background-color: principal-colors.$deep-enfasis;
-    color: principal-colors.$beige-enfasis;
-    border: 2px solid principal-colors.$sky-enfasis;
+  padding: principal-padding.$padding-medium;
+  height: principal-dimensiones.$medio-alto;
+  width: principal-dimensiones.$medio-ancho;
+  background-color: principal-colors.$deep-enfasis;
+  color: principal-colors.$beige-enfasis;
+  border: 2px solid principal-colors.$sky-enfasis;
 }
 .alert--secondary{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$gray-enfasis;
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$light-enfasis;
@@ -676,7 +670,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$deep-enfasis;
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
@@ -685,7 +678,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$crimson;
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$mars-enfasis;
@@ -694,7 +686,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$desert;
     color: principal-colors.$dark-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
@@ -703,7 +694,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$fondo;
     color: principal-colors.$light-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
@@ -712,7 +702,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$light-enfasis;
     color: principal-colors.$dark-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
@@ -721,7 +710,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$dark-enfasis;
     color: principal-colors.$beige-enfasis;
     border: 2px solid principal-colors.$gray-enfasis;
@@ -734,19 +722,14 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     background-color: principal-colors.$deep-enfasis;
     color: principal-colors.$basic-enfasis;
     border: 2px solid principal-colors.$sky-enfasis;
-}
-.triangle{
-    height: 30px;
 }
 .alert-primary-b{
     display: flex;
     align-items: flex-start;
     padding: principal-padding.$padding-medium;
-    font-size: principal-sizes.$txt-xmedium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
     background-color: principal-colors.$deep-enfasis;
@@ -757,7 +740,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     display: flex;
     align-items: flex-start;
     background-color: principal-colors.$light-enfasis;
@@ -768,7 +750,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     display: flex;
     align-items: flex-start;
     background-color: principal-colors.$desert;
@@ -779,7 +760,6 @@ pre{
     padding: principal-padding.$padding-medium;
     height: principal-dimensiones.$medio-alto;
     width: principal-dimensiones.$medio-ancho;
-    font-size: principal-sizes.$txt-xmedium;
     display: flex;
     align-items: flex-start;
     background-color: principal-colors.$crimson;
@@ -790,17 +770,42 @@ pre{
 .alert-success{
   border: 2px solid principal-colors.$sky-enfasis;
 }
+.alert-triangle-primary {
+  display: flex;
+  align-items: center;
+}
+
+.triangle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 25px;
+  transform: translateY(-50%);
+}
+
 .imge1{
-    height: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 25px;
 }
 .imge2{
-    height: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+    height: 25px;
 }
 .imge3{
-    height: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 25px;
 }
 .imge4{
-    height: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 25px;
 }
 
 //Inicio de Benjamin ----------------------------------
@@ -867,6 +872,21 @@ pre{
   @extend %paddding_component;
 }
 
+.padding-arriba{
+  @extend %padding_top;
+}
+
+.padding-abajo{
+  @extend %padding_bottom;
+}
+
+.padding-izquierda{
+  @extend %padding_left;
+}
+
+.padding-derecha{
+  @extend %padding_rigth;
+}
 
 //clases para margen
 .margins{//margen pequeño
@@ -913,13 +933,13 @@ pre{
 }
 
 //clase para primero ocultar y si se minimiza la ventana entonces mostrar
-.oculto-mostrar{
-  @extend %spell;
+.mostrar-oculto{
+  @extend %magic;
 }
 
 //clase para primero mostrar y si se minimiza la ventana entonces ocultar
 .oculto-mostrar{
-  @extend %magic;
+  @extend %spell;
 }
 //fin de Ben ---------------------------------
 
@@ -935,8 +955,8 @@ pre{
 
 // CONFIGURACION BOTONES
 
-.btn {
-    background-color: principal-colors.$light-enfasis;
+.btn{
+    background-color: principal-colors.$transparent-enfasis;
     font-family: principal-fonts.$cmp-font;
     margin-left: auto;
     margin-right: auto;
@@ -979,31 +999,33 @@ pre{
   right: botones.$Cero;
   top: botones.$Cero;
   margin: auto; 
-  transition: all botones.$transicion ease;
+  transition: all 1s ease;
   z-index: -1;
 }
 
-// ANIMACION BOTON 1
+        // ANIMACION BOTON 1
 
 
 
-.btn_1::before {
+.btn_marte::before {
   width: 0;
-  background-color: principal-colors.$beige-enfasis;
+  background-color: principal-colors.$mars-enfasis;
   height: botones.$btn_width;
 }
-.btn_1:hover {
+.btn_marte:hover {
   color: principal-colors.$basic-enfasis;
 }
-.btn_1:hover::before {
+.btn_marte:hover::before {
   width: botones.$btn_width;
 }
 
 // ANIMACION BOTON 2
 
-.btn_2:hover {
-    background-color: principal-colors.$orange;
-     box-shadow: 0 0 25px principal-colors.$desert, 0 0 25px principal-colors.$desert, 0 0 25px principal-colors.$desert;
+.btn_gargantua:hover {
+    background-color: principal-colors.$black-enfasis;
+    box-shadow: 0 0 15px principal-colors.$Shadow-btn, 0 0 15px principal-colors.$Shadow-btn, 0 0 15px principal-colors.$Shadow-btn       ;
+    border: 2px solid #fff;
+    color: principal-colors.$basic-enfasis;
 }
 
 // ANIMACIONES BOTON 3
@@ -1015,7 +1037,7 @@ pre{
   height: botones.$btn_grande;
   left: botones.$Cero;
   top: botones.$Cero;
-  background-image: linear-gradient(90deg, rgb(197, 86, 222), rgb(86, 4, 145), rgb(255, 0, 0), rgb(255, 218, 9));
+  background-image: linear-gradient(90deg, rgb(197, 86, 222), rgb(86, 4, 145), #bc8474, #1F2A35);
   background-size: 300%;
   z-index: -1;
   transition: all 0.2s ease;
@@ -1039,7 +1061,7 @@ pre{
   left: botones.$Cero;
   top: botones.$Cero;
   background-size: 300%;
-  background-image: linear-gradient(90deg, rgb(197, 86, 222), rgb(86, 4, 145), rgb(255, 0, 0), rgb(255, 218, 9));
+  background-image: linear-gradient(90deg, rgb(197, 86, 222), rgb(86, 4, 145), #bc8474, #1F2A35);
   z-index: -1;
 }
 
@@ -1054,7 +1076,7 @@ pre{
   position: absolute;
   width: 10%;
   height: 110%;
-  left: -12%;
+  left: -13%;
   top: 0;
   transform: skew(20deg, 0deg);
   background-color: principal-colors.$dark-enfasis; //color de inicio de animacion
@@ -1132,6 +1154,7 @@ pre{
   transition: border-color 0.3s ease;
   border-radius: 15px;
   background-color: principal-colors.$transparent-enfasis;
+  font-size: principal-sizes.$txt-small;
 }
 
 .btn_home:hover{
@@ -1326,8 +1349,8 @@ pre{
 .input-space-check{
     color: principal-colors.$dark-enfasis;
     padding: 10px;
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
     padding: 5px 10px;
     box-sizing: border-box;
     border: 2px rgba($color: principal-colors.$deep-enfasis, $alpha: 0.5) solid;;
