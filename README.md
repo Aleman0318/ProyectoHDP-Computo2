@@ -15,6 +15,46 @@
 
 <hr>
 
-<h3><strong>Como iniciar</strong></h3><hr>
+<h3><strong>Inicio Rápido</strong></h3><hr>
 
 * Clona el repositorio usando el siguiente comando: `git clone https://github.com/Aleman0318/ProyectoHDP-Computo2`
+
+> [!NOTE]
+> El reposotorio solo esta disponible para su clonación, otros medios de instalación aún no se encuentran disponibles.
+
+<hr>
+
+<h3><strong>¿Qué incluimos?</strong></h3><hr>
+
+Clases y soluciones para el diseño de tus proyectos que te permitiran ser más eficiente a la hora de darles estilo, con nombres intuitivos y elegantes siempre estaras un paso por delante en la vanguardia del diseño web.
+
+<hr>
+
+<h3><strong>Contribuidores</strong></h3><hr>
+
+**Marlon Alemán**
+[Aleman0318](https://github.com/Aleman0318)
+
+**Alejandro**
+[XxAlexX003](https://github.com/XxAlexX003)
+
+**Benjamin**
+[RemarkablePhantasm349522](https://github.com/RemarkablePhantasm349522)
+
+**Raquel Ventura**
+[RaquelVentura](https://github.com/RaquelVentura)
+
+**Adán Quevedo**
+[Quev3do](https://github.com/Quev3do)
+
+<hr>
+
+<h3><strong>Version</strong></h3><hr>
+
+* Version `1.0.0`
+
+<hr>
+
+<h3><strong>Copyright y Licencia</strong></h3><hr>
+
+* Todos los derechos reservados 2024
