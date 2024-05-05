@@ -38,7 +38,7 @@ Clases y soluciones para el diseño de tus proyectos que te permitiran ser más 
 **Alejandro**
 [XxAlexX003](https://github.com/XxAlexX003)
 
-**Benjamin**
+**Benjamin Rivera**
 [RemarkablePhantasm349522](https://github.com/RemarkablePhantasm349522)
 
 **Raquel Ventura**
