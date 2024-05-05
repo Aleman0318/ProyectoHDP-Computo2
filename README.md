@@ -13,4 +13,8 @@
 * Version
 * Copyright y Licencia
 
-<hr height = 2px>
+<hr>
+
+<h3><strong>Como iniciar</strong></h3><hr>
+
+* Clona el repositorio usando el siguiente comando: 'git clone https://github.com/Aleman0318/ProyectoHDP-Computo2'
