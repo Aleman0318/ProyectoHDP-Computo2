@@ -2,10 +2,11 @@
 
 <p align = "center">"Un Enfoque Elegante, Intuitivo y Potente para el Desarrollo Front-end Acelerado."</p>
 
-**SpaceAround 1.0**
+<h3><strong>SpaceAround 1.0</strong></h3>
 <hr>
 
-**Tabla de contenidos**<hr>
+<h3><strong>Tabla de Contenidos</strong></h3><hr>
+
 * Inicio Rápido
 * ¿Qué incluimos?
 * Contribuidores
