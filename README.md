@@ -32,19 +32,19 @@ Clases y soluciones para el diseño de tus proyectos que te permitiran ser más 
 
 <h3><strong>Contribuidores</strong></h3><hr>
 
-**Marlon Alemán**
+**Marlon Adonay Alemán Gonzáles - **
 [Aleman0318](https://github.com/Aleman0318)
 
-**Alejandro Flores**
+**Diego Alejandro Flores Montesinos - FM22026**
 [XxAlexX003](https://github.com/XxAlexX003)
 
-**Benjamin Rivera**
+**Benjamin Franklin Rivera Leiva - RL22036**
 [RemarkablePhantasm349522](https://github.com/RemarkablePhantasm349522)
 
-**Raquel Ventura**
+**Cristina Raquel Ventura Gonzáles - VG22007**
 [RaquelVentura](https://github.com/RaquelVentura)
 
-**Adán Quevedo**
+**Adán Omar Quevedo Argueta - QA21002**
 [Quev3do](https://github.com/Quev3do)
 
 <hr>
