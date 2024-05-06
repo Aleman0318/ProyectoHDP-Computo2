@@ -1301,7 +1301,7 @@ svg.img4{
   color: principal-colors.$basic-enfasis;
 }
 .btn_marte:hover::before {
-  width: botones.$btn_width;
+  width: 100%;
 }
 
 // ANIMACION BOTON 2
@@ -1389,7 +1389,7 @@ svg.img4{
 
 .btn_fugaz:hover::after{
   background-color: principal-colors.$light-enfasis; //color final de animacion
-  transform: skew(20deg, 0deg) translateX(340px);
+  transform: skew(20deg, 0deg) translateX(1200%);
   color:principal-colors.$light-enfasis;
 }
 
