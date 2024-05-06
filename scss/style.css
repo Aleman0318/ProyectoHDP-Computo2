@@ -495,7 +495,7 @@ img {
   font-size: 10px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .txt-small {
     font-size: 7px;
   }
@@ -504,7 +504,7 @@ img {
   font-size: 13px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .txt-xsmedium {
     font-size: 8px;
   }
@@ -513,7 +513,7 @@ img {
   font-size: 15px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .txt-smedium {
     font-size: 10px;
   }
@@ -522,7 +522,7 @@ img {
   font-size: 20px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .txt-xmedium {
     font-size: 14px;
   }
@@ -531,7 +531,7 @@ img {
   font-size: 35px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .txt-medium {
     font-size: 18px;
   }
@@ -540,7 +540,7 @@ img {
   font-size: 50px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .txt-large {
     font-size: 23px;
   }
@@ -549,7 +549,7 @@ img {
   font-size: 70px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .txt-bigger {
     font-size: 40px;
   }
@@ -557,57 +557,52 @@ img {
     font-size: 30px;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   p {
-    font-size: 11px;
+    font-size: 15.5px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 850px) {
   p {
-    font-size: 14.5px;
+    font-size: 16.5px;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   p:not(.txt-xsmall):not(.txt-small):not(.txt-xsmedium):not(.txt-smedium):not(.txt-xmedium):not(.txt-medium):not(.txt-large):not(.txt-bigger) {
-    font-size: 11px;
+    font-size: 15.5px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 850px) {
   p:not(.txt-xsmall):not(.txt-small):not(.txt-xsmedium):not(.txt-smedium):not(.txt-xmedium):not(.txt-medium):not(.txt-large):not(.txt-bigger) {
-    font-size: 14.5px;
+    font-size: 16.5px;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   h1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 760px) {
+  h2 {
     font-size: 16px;
   }
 }
-@media (max-width: 560px) {
-  h2 {
+@media (max-width: 760px) {
+  h3 {
     font-size: 14px;
   }
 }
-@media (max-width: 560px) {
-  h3 {
+@media (max-width: 760px) {
+  h4 {
     font-size: 11px;
   }
 }
-@media (max-width: 560px) {
-  h4 {
-    font-size: 9px;
-  }
-}
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   h5 {
-    font-size: 7px;
+    font-size: 8px;
   }
 }
-@media (max-width: 560px) {
-  h6 {
-    font-size: 5px;
-  }
-}
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   button {
     font-size: 10px;
   }
@@ -626,7 +621,7 @@ ol {
   gap: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .container-A .pf-font {
     font-size: 10px;
   }
@@ -707,7 +702,7 @@ body::-webkit-scrollbar-thumb {
 
 .container-S {
   height: auto;
-  width: 60%;
+  width: 80%;
   display: grid;
   grid-template-columns: [col1] 1fr;
   grid-template-rows: auto;
@@ -740,10 +735,20 @@ body::-webkit-scrollbar-thumb {
   background-color: #1b1f22;
   color: #ffffff;
   font-family: parrafos;
-  font-size: 10px;
+  font-size: 15px;
   padding: 10px;
 }
 
+@media (max-width: 760px) {
+  .Lado-Arriba-S {
+    font-size: 13px;
+  }
+}
+@media (max-width: 760px) {
+  .Lado-Abajo-S {
+    font-size: 10px;
+  }
+}
 .container-E {
   height: auto;
   display: flex;
@@ -751,12 +756,12 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 850px) {
   .container-E p {
     font-size: 10px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 850px) {
   .container-E .pf-font {
     font-size: 10px;
   }
@@ -772,6 +777,12 @@ pre {
   height: 30px;
 }
 
+@media (max-width: 760px) {
+  .Lado-Izquierdo .icon-image {
+    width: 15px;
+    height: 15px;
+  }
+}
 .top-nav {
   top: 2.5em;
 }
@@ -825,7 +836,7 @@ pre {
   height: auto;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   span {
     font-size: 12px;
   }
@@ -907,7 +918,7 @@ pre {
   color: #e6f6f6;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-primary {
     height: 30px;
     width: 60px;
@@ -920,7 +931,7 @@ pre {
   padding: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-secondary {
     height: 30px;
     width: 60px;
@@ -933,7 +944,7 @@ pre {
   padding: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-success {
     height: 30px;
     width: 60px;
@@ -947,7 +958,7 @@ pre {
   border: 2px solid #bc8475;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-danger {
     height: 30px;
     width: 60px;
@@ -960,7 +971,7 @@ pre {
   padding: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-warning {
     height: 30px;
     width: 60px;
@@ -973,7 +984,7 @@ pre {
   padding: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-info {
     height: 30px;
     width: 60px;
@@ -987,7 +998,7 @@ pre {
   border: 2px solid #222236;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-ligth {
     height: 30px;
     width: 60px;
@@ -1000,7 +1011,7 @@ pre {
   padding: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-dark {
     width: 30px;
     width: 60px;
@@ -1013,7 +1024,7 @@ pre {
   padding: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-rounded-primary {
     width: 30px;
     width: 60px;
@@ -1026,7 +1037,7 @@ pre {
   padding: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-rounded-secondary {
     width: 30px;
     width: 60px;
@@ -1039,7 +1050,7 @@ pre {
   padding: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-rounded-success {
     width: 30px;
     width: 60px;
@@ -1052,7 +1063,7 @@ pre {
   padding: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-rounded-danger {
     width: 30px;
     width: 60px;
@@ -1065,7 +1076,7 @@ pre {
   padding: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-rounded-warning {
     width: 30px;
     width: 60px;
@@ -1078,7 +1089,7 @@ pre {
   padding: 5px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-rounded-info {
     width: 30px;
     width: 60px;
@@ -1092,7 +1103,7 @@ pre {
   border: 2px solid #4a4645;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-rounded-ligth {
     width: 30px;
     width: 60px;
@@ -1105,7 +1116,7 @@ pre {
   color: #e6f6f6;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .badge-rounded-dark {
     width: 30px;
     width: 60px;
@@ -1374,9 +1385,9 @@ svg.img4 {
   cursor: pointer;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .btn {
-    height: 30px;
+    height: 85px;
     width: 150px;
   }
 }
@@ -1392,12 +1403,11 @@ svg.img4 {
   transition: all 0.3s ease;
   border: 1.5px solid transparent;
   z-index: 0;
-  font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .btn-border-none {
     height: 30px;
     width: 150px;
@@ -1539,7 +1549,7 @@ svg.img4 {
   font-size: 35px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .btn_grande {
     font-size: 18px;
   }
@@ -1547,18 +1557,23 @@ svg.img4 {
 .btn_largo {
   width: 100%;
   height: 50px;
-  font-size: 10px;
+  font-size: 13px;
 }
 
+@media (max-width: 760px) {
+  .btn_largo {
+    font-size: 10px;
+  }
+}
 .btn_home {
   color: #222236;
-  width: 90px;
-  height: 40px;
+  width: 150px;
+  height: 50px;
   border: 1.5px solid transparent;
   transition: border-color 0.3s ease;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0);
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .btn_home:hover {
@@ -1606,7 +1621,7 @@ svg.img4 {
   font-family: parrafos;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .txt {
     font-size: 8.5px;
   }
@@ -1632,7 +1647,7 @@ svg.img4 {
   cursor: pointer;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 850px) {
   .txt {
     font-size: 10.5px;
   }
@@ -1700,7 +1715,7 @@ svg.img4 {
   align-items: center;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .navbar-space .btn {
     height: 30px;
     width: 150px;
