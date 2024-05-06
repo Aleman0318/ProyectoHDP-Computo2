@@ -18,9 +18,8 @@
 <h3><strong>Inicio Rápido</strong></h3><hr>
 
 * Clona el repositorio usando el siguiente comando: `git clone https://github.com/Aleman0318/ProyectoHDP-Computo2`
-
-> [!NOTE]
-> El reposotorio solo esta disponible para su clonación, otros medios de instalación aún no se encuentran disponibles.
+* Usa la etiqueta link:css con el siguiente link cdn:
+`https://cdn.jsdelivr.net/gh/Aleman0318/Aleman0318.github.io/style.css`
 
 <hr>
 
