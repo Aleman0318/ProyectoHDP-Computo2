@@ -21,6 +21,9 @@
 * Usa la etiqueta link:css con el siguiente link cdn:
 `https://cdn.jsdelivr.net/gh/Aleman0318/Aleman0318.github.io/style.css`
 
+> [!NOTE]
+> El uso de la libreria esta disponible unicamente por clonación de repositorio y enlace **cdn**.
+
 <hr>
 
 <h3><strong>¿Qué incluimos?</strong></h3><hr>
