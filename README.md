@@ -32,7 +32,7 @@ Clases y soluciones para el diseño de tus proyectos que te permitiran ser más 
 
 <h3><strong>Contribuidores</strong></h3><hr>
 
-**Marlon Adonay Alemán Gonzáles - **
+**Marlon Adonay Alemán Gonzáles - AG22011**
 [Aleman0318](https://github.com/Aleman0318)
 
 **Diego Alejandro Flores Montesinos - FM22026**
